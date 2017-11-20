@@ -1,0 +1,215 @@
+######### STRUCTURES CONDITIONNELLES #########
+
+######### 2.1 #########
+
+affichage : rien. (A==B et pas A>B)
+
+######### 2.2 #########
+#Test de type ET : 
+affichage : rien (A>B = faux)
+
+#Text de type OU : 
+affichage : 'A est plus grand que B OU plus petit que C' (A<C = vrai)
+
+#Test avec négation :
+affichage : "la condition est vraie"
+(NON(A>B) = vrai ET A<C = vrai)
+
+#Test multiple :
+affichage : la condition est vraie 
+(NON((A>B) ET (A<C))=vrai ET B<C=vrai)
+
+######### 2.3 #########
+Classer par ordre alphabétique deux mots entrés
+VARIABLES 
+	motA = chaine de caractères
+	motB = chaine de caractères
+DEBUT
+	LIRE (motA)
+	LIRE (motB)
+	SI (motA<motB)
+	ALORS
+		ECRIRE (""motA" ; "motB"")
+	SINON
+		ECRIRE (""motB" ; "motA"")
+	FINSI
+FIN
+
+######### 2.4 #########
+
+1) Premier Algorithme : le produit des nb entrés est-il négatif ou positif ?
+
+VARIABLES
+	A = float
+	B = float
+DEBUT
+	LIRE (A)
+	LIRE (B)
+	SI ((A*B)<0)
+	ALORS
+		ECRIRE ("le produit est négatif")
+	SINON
+		ECRIRE ("le produit est positif")
+	FINSI
+FIN
+
+2) Deuxième algorithme : le produit des nb entrés est-il négatif ou positif (version 2)?
+VARIABLES
+	A = float
+	B = float
+	C = float
+DEBUT
+	LIRE (A)
+	LIRE (B)
+	C <- (A*B)
+	SI (C<0)
+	ALORS
+		ECRIRE ("le produit est négatif")
+	SINON
+		ECRIRE ("le produit est positif")
+	FINSI
+FIN
+
+3) Troisième variable : le produit des nb entrés est-il négatif, nul ou positif ?
+VARIABLES
+	A = float
+	B = float
+	C = float
+DEBUT
+	LIRE (A)
+	LIRE (B)
+	C <- (A*B)
+	SI (C<0)
+	ALORS
+		ECRIRE ("le produit est négatif")
+	SINON
+		SI (C==0)
+		ALORS
+			ECRIRE ("le produit est nul")
+		SINON
+			ECRIRE ("le produit est positif")
+		FINSI
+	FINSI
+FIN
+
+
+######### 2.5 #########
+
+Classement de gens à partir de leur note
+
+VARIABLES
+	A = float
+	B = float
+DEBUT
+	LIRE ("Votre note :" A)
+	LIRE ("La note de votre voisin :" B)
+	SI (A<B)
+	ALORS
+		ECRIRE ("Votre voisin a la meilleures note")
+	SINON
+		ECRIRE ("Vous êtes le.la meilleur.e !")
+	FINSI
+FIN
+
+
+######### 2.6 #########
+Calcul de catégories d'âge
+
+1) Variable avec "SI ALORS SINON"
+VARIABLES
+	Age = integer
+DEBUT
+	LIRE (Age)
+	SI (Age>13)
+	ALORS
+		ECRIRE ("catégorie : Cadet")
+	FINSI
+	
+	SI ((Age<13) ET (Age>9))
+	ALORS
+		ECRIRE ("catégorie : Minime")
+	FINSI
+	
+	SI ((Age<10) ET (Age>7))
+	ALORS
+		ECRIRE ("Catégorie : Pupille")
+	FINSI
+
+	SI ((Age<8) ET (Age>5))
+	ALORS
+		ECRIRE ("Catégorie : Poussin")
+	FINSI
+
+	SI (Age<6)
+	ALORS
+		ECRIRE ("Hors catégorie")
+	FINSI
+FIN
+
+2) Même variable avec "AU CAS OU"
+VARIABLES
+	Age = integer
+DEBUT
+	LIRE (Age)
+	AU CAS OU (Age) VAUT
+		>12 : ECRIRE ("catégorie : Cadet")
+		(<13 ET >9) : ECRIRE ("catégorie : Minime")
+		(<10 ET >7) : ECRIRE ("Catégorie : Pupille")
+		(<8 ET >5) : ECRIRE ("Catégorie : Poussin")
+	SINON 
+		ECRIRE ("Hors catégorie")
+	FIN DE CAS
+FIN
+
+######### 2.7 #########
+
+Saisir 2 nombres et préciser l'opération souhaitée
+
+VARIABLES
+	A : float
+	B : float
+	operateur : chaine de caractères
+DEBUT
+	LIRE (A)
+	LIRE (B)
+	LIRE ("Choisissez l'opérateur :" operateur)
+
+	SI (operateur) VAUT
+		+ : ECRIRE (A+B)
+		- : ECRIRE (A-B)
+		* : ECRIRE (A*B)
+		/ : ECRIRE (A/B)
+	SINON
+		ECRIRE ("Erreur, choisissez un opérateur valide")
+	FIN DE CAS
+FIN
+
+######### 2.8 #########
+
+Calculer le coût des photocopies
+
+VARIABLE
+	nbcopies : integer
+	total : float
+
+DEBUT
+	LIRE (nbcopies)
+	ECRIRE ("Nombre de copies à faire :" nbcopies)
+	SI (nbcopies=<10)
+	ALORS
+		total <- (nbcopies*0.10)
+	SINON
+		total <- (10*0.10)
+		nbcopies <- (nbcopies-10)
+		SI (nbcopies=<20)
+		ALORS
+			total <- (total+(nbcopies*0.09))
+		SINON
+			total <- (total+(20*0.09))
+			nbcopies <- (nbcopies-20)
+			total <- (total+(nbcopies*0.08))
+		FINSI
+	FINSI
+	ECRIRE ("Prix à payer :" total)
+FIN
+	

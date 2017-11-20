@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead SYSTEM "ead.dtd">
+<ead>
+    <eadheader>
+        <eadid/>
+        <filedesc>
+            <titlestmt>
+                <titleproper>Inventaire des papiers de Pierre Lefranc</titleproper>
+                <author>par Agnès Calla et Patricia Gillet, conservateurs du patrimoine aux Archives
+                    natioanles</author>
+            </titlestmt>
+            <publicationstmt>
+                <publisher>Paris<lb/>Archives nationales</publisher>
+                <date>1999</date>
+            </publicationstmt>
+            <notestmt>
+                <note>
+                    <p>Un premier recensement des papiers de Pierre Lefranc (...)</p>
+                </note>
+            </notestmt>
+        </filedesc>
+    </eadheader>
+    <archdesc level="fonds">
+        <did> </did>
+        <acqinfo>
+            <p>En <date normal="1995">1995</date>, M. Pierre Lefranc a souhaité déposer au Centre
+                historique des Archives nationales ses papiers personnels (...)</p>
+        </acqinfo>
+
+        <bioghist>
+            <p>Notice biographique de Pierre Lefranc ...</p>
+        </bioghist>
+
+        <scopecontent>
+            <p>Les archives écrites (569 AP 1 à 264), volet le plus abouti, se taillent la part du
+                lion...</p>
+            <p>Engagé très tôt dans les rangs de la Résistance, Pierre Lefranc, après un passage
+                clandestin en Espagne, gagne l'Angleterre...</p>
+            <p>Après le retrait du général de Gaulle, Pierre Lefranc est aux premières loges, en
+                mars 1947...</p>
+        </scopecontent>
+        
+        <relatedmaterial>
+            
+        </relatedmaterial>
+    </archdesc>
+</ead>

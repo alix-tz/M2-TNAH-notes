@@ -1,0 +1,34 @@
+RDF
+XML EAD +DTD
+XML TEI + DTD
+ODD
+Unimarc
+OAIS (standard)
+FRBRoo
+Omeka - CMS
+HTML
+CSS
+Python
+Flask
+Javascript
+API/Client
+ORM
+xQuery
+BaseX
+Wireframe
+Git (+intégration continue ; Github ; Gitlab)
+XSLT
+SEO
+
+
+
+######################## BACK END vs FRONT END #
+Frontend code is run in the browser. The frontend is written in JavaScript, HTML and CSS. HTML structures the date, CSS makes it pretty, JavaScript makes it interactive. The combination of HTML, CSS and JavaScript — collectively known as the frontend — creates the User Interface (UI).
+			|
+			v
+The backend is code that runs on the server. Popular backend languages are PHP, Java, C#, Python and Ruby.
+			|
+			v
+The database is just like a large Excel spreadsheet.  It has columns and rows and contains all the important information that your website needs to remember between the time a user closes the site and when they re-open the site.
+
+A full-stack developer is a developer that can write code for the frontend, backend and typically also handle the set up of the database. 

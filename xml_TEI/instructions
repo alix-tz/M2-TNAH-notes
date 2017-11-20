@@ -1,0 +1,35 @@
+Bonjour à tous,
+Le lien vers le fichier utile (le résultat de notre conversion md > tei) : http://corpus.enc.sorbonne.fr/cours/m2/moliere/misanthrope_sc1-2.xml
+
+
+
+1. teiHeader (métadonnées)
+Construire l’en-tête de métadonnées, en essayant de documenter le "mapping" avec quelques éléments Dublin Core (dc:title, dc:creator, dc:publisher, dc:contributor, dc:date, dc:language).
+http://www.tei-c.org/release/doc/tei-p5-doc/fr/html/ref-teiHeader.html
+http://www.tei-c.org/release/doc/tei-p5-doc/fr/html/HD.html
+https://fr.wikipedia.org/wiki/Dublin_Core#Liste_des_.C3.A9l.C3.A9ments_et_raffinements
+Il ne s’agit ni de tout lire, ni d’utiliser tous les éléments disponibles dans teiHeader, mais de trouver une solution d’encodage pour chacun des champs DC listés ci-dessus.
+Nous prendrons le temps de discuter nos choix d’encodage.
+
+
+
+2. Schéma
+Construire la DTD de notre encodage théâtre (je vous épargne le teiHeader).
+Quels problèmes rencontrez-vous ?
+
+é
+
+3. TEI
+Lire la documentation pour se familiariser avec les structures éditoriales de base en TEI.
+http://www.tei-c.org/release/doc/tei-p5-doc/fr/html/CO.html
+* Structure d’un fichier TEI (teiHeader, text, front, body, back, div)
+* titres
+* enrichissement typograhique
+* listes
+* tableaux
+* images
+* notes
+* citations
+
+Bon travail et au plaisir de vous retrouver mercredi.
+Vincent Jolivet

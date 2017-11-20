@@ -1,0 +1,4 @@
+A faire : 
+2.4 à 2.8 -> au moins en algorithme, voire en Python
+
+Regarder les exercices 3 à 3.6 pour préparer le cours de la semaine prochaine. 

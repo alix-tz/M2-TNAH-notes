@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead SYSTEM "ead.dtd">
+<ead>
+    <eadheader>
+        <eadid></eadid>
+        <filedesc>
+            <titlestmt>
+                <titleproper></titleproper>
+            </titlestmt>
+        </filedesc>
+    </eadheader>
+    <archdesc level="">
+        <did></did>
+    </archdesc>
+</ead>

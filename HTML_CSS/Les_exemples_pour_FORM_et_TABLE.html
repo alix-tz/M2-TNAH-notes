@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang = "fr">
+<head>
+	<meta charset = "utf-8">
+	<title>Les exemples pour FORM et TABLE</title>
+	<!-- <link href="form.css" rel="stylesheet" type="text/css" /> -->
+</head>
+<body>
+
+<br />
+<p>========================== FORM =====================================</p>
+<br />
+
+<FORM method=post action="cgi-bin/script.pl">
+Enregistrement d'un utilisateur
+	<TABLE BORDER=0>
+		<TR>
+			<TD>Nom</TD>
+			<TD>
+				<INPUT type=text name="nom">
+			</TD>
+		</TR>
+		<TR>
+			<TD>Prénom</TD>
+			<TD>
+				<INPUT type=text name="prenom">
+			</TD>
+		</TR>
+		<TR>
+			<TD>Sexe</TD>
+			<TD> Homme : <INPUT type=radio name="sexe" value="M">
+			 <br>Femme : <INPUT type=radio name="sexe" value="F">
+			</TD>
+		</TR>
+		<TR>
+			<TD>Fonction</TD>
+			<TD>
+				<SELECT name="fonction">
+					<OPTION VALUE="enseignant">Enseignant</OPTION>
+					<OPTION VALUE="etudiant">Etudiant</OPTION>
+					<OPTION VALUE="ingenieur">Ingénieur</OPTION>
+					<OPTION VALUE="retraite">Retraité</OPTION>
+					<OPTION VALUE="autre">Autre</OPTION>
+				</SELECT>
+			</TD>
+		</TR>
+		<TR>
+			<TD>Commentaires</TD>
+			<TD>
+				<TEXTAREA rows="3" name="commentaires">Tapez ici vos commentaires</TEXTAREA>
+			</TD>
+		</TR>
+		<TR>
+			<TD COLSPAN=2>
+				<INPUT type="submit" value="Envoyer">
+			</TD>
+		</TR>
+	</TABLE>
+</FORM>
+
+<br />
+<p>======================== FORM avec FIELDSET et LEGEND=======================================</p>
+<br />
+
+<form action="inscription.php" method="post">
+     <fieldset class="etat-civil">
+         <legend>Etat civil</legend>
+         <label for="nom">Nom</label>
+			<input id="nom" name="nom" type="text" /><br />
+         <label for="prenom">Prénom </label>
+			<input id="prenom" name="prenom" type="text" /><br />
+         <label for="date-de-naissance">Date de naissance</label>
+			<input id="date-de-naissance" name="date-de-naissance" type="text" />
+     </fieldset>
+     
+	 <fieldset class="adresse">
+          <legend>Adresse</legend>
+          <label>Rue</label>
+			<input id="rue" name="rue" type="text" /><br />
+          <label>Code postal</label>
+			<input id="code-postal" name="code-postal" type="text" /><br />
+          <label>Ville</label>
+			<input id="ville" name="ville" type="text" />
+     </fieldset>
+     <button onclick="alert(this.value)">Valider</button>
+</form>
+
+<br />
+<p>========================== FORM avec DIV ===================</p>
+<br />
+
+<form action="/ma-page-de-traitement.php" method="post">
+    <div>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="user_name" />
+    </div>
+    <div>
+        <label for="courriel">Courriel :</label>
+        <input type="email" id="courriel" name="user_email" />
+    </div>
+    <div>
+        <label for="message">Message :</label>
+        <textarea id="message" name="user_message"></textarea>
+    </div>
+    
+    <div class="button">
+        <button type="submit">Envoyer votre message</button>
+    </div>
+</form>
+
+<br />
+<p>============================ FORM avec P et INPUT RADIO =============</p>
+<br />
+
+<form method="post" action="traitement.php">
+	<p>
+		Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
+		<input type="radio" name="age" value="moins15" id="moins15" /> 
+			<label for="moins15">Moins de 15 ans</label><br />
+		<input type="radio" name="age" value="medium15-25" id="medium15-25" /> 
+			<label for="medium15-25">15-25 ans</label><br />
+		<input type="radio" name="age" value="medium25-40" id="medium25-40" /> 
+			<label for="medium25-40">25-40 ans</label><br />
+		<input type="radio" name="age" value="plus40" id="plus40" /> 
+			<label for="plus40">Encore plus vieux que ça ?!</label>
+	</p>
+	<p>
+		Sur quel continent habitez-vous ?<br />
+		<input type="radio" name="continent" value="europe" id="europe" /> 
+			<label for="europe">Europe</label><br />
+		<input type="radio" name="continent" value="afrique" id="afrique" /> 
+			<label for="afrique">Afrique</label><br />
+		<input type="radio" name="continent" value="asie" id="asie" /> 
+			<label for="asie">Asie</label><br />
+		<input type="radio" name="continent" value="amerique" id="amerique" /> 
+			<label for="amerique">Amérique</label><br />
+		<input type="radio" name="continent" value="australie" id="australie" /> 
+			<label for="australie">Australie</label>
+	</p>
+</form>
+
+<br />
+<p>======================== FORM avec CHECKBOX et LABEL=======================================</p>
+<br />
+
+<form method="post" action="traitement.php">
+   <p>
+       Cochez les aliments que vous aimez manger :<br />
+       <input type="checkbox" name="frites" id="frites" /> <label for="frites">Frites</label><br />
+       <input type="checkbox" name="steak" id="steak" /> <label for="steak">Steak haché</label><br />
+       <input type="checkbox" name="epinards" id="epinards" /> <label for="epinards">Epinards</label><br />
+       <input type="checkbox" name="huitres" id="huitres" /> <label for="huitres">Huitres</label>
+   </p>
+</form>
+
+<br />
+<p>========================= FORM avec SELECT/OPTION ======================================</p>
+<br />
+
+<form method="post" action="traitement.php">
+   <p>
+       <label for="pays">Dans quel pays habitez-vous ?</label><br />
+       <select name="pays" id="pays">
+           <option value="france">France</option>
+           <option value="espagne">Espagne</option>
+           <option value="italie">Italie</option>
+           <option value="royaume-uni">Royaume-Uni</option>
+           <option value="canada">Canada</option>
+           <option value="etats-unis">États-Unis</option>
+           <option value="chine">Chine</option>
+           <option value="japon">Japon</option>
+       </select>
+   </p>
+</form>
+
+<br />
+<p>===================== FORM avec SELECT/OPTION et OPTGROUP ==========================================</p>
+<br />
+
+<form method="post" action="traitement.php">
+   <p>
+       <label for="pays">Dans quel pays habitez-vous ?</label><br />
+       <select name="pays" id="pays">
+           <optgroup label="Europe">
+               <option value="france">France</option>
+               <option value="espagne">Espagne</option>
+               <option value="italie">Italie</option>
+               <option value="royaume-uni">Royaume-Uni</option>
+           </optgroup>
+           <optgroup label="Amérique">
+               <option value="canada">Canada</option>
+               <option value="etats-unis">Etats-Unis</option>
+           </optgroup>
+           <optgroup label="Asie">
+               <option value="chine">Chine</option>
+               <option value="japon">Japon</option>
+           </optgroup>
+       </select>
+   </p>
+</form>
+
+<br />
+<p>=========================== FORM et FIELDSET====================================</p>
+<br />
+
+<form method="post" action="traitement.php">
+   <fieldset>
+		<legend>Vos coordonnées</legend> <!-- Titre du fieldset --> 
+		<label for="nom">Quel est votre nom ?</label>
+			<input type="text" name="nom" id="nom" />
+		<label for="prenom">Quel est votre prénom ?</label>
+			<input type="text" name="prenom" id="prenom" />
+		<label for="email">Quel est votre e-mail ?</label>
+			<input type="email" name="email" id="email" />
+   </fieldset>
+   <fieldset>
+       <legend>Votre souhait</legend> <!-- Titre du fieldset -->
+       <p>
+           Faites un souhait que vous voudriez voir exaucé :
+           <input type="radio" name="souhait" value="riche" id="riche" /> 
+				<label for="riche">Etre riche</label>
+           <input type="radio" name="souhait" value="celebre" id="celebre" /> 
+				<label for="celebre">Etre célèbre</label>
+           <input type="radio" name="souhait" value="intelligent" id="intelligent" /> 
+				<label for="intelligent">Etre <strong>encore</strong> plus intelligent</label>
+           <input type="radio" name="souhait" value="autre" id="autre" /> 
+				<label for="autre">Autre...</label>
+       </p>
+       <p>
+           <label for="precisions">Si "Autre", veuillez préciser :</label>
+           <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+       </p>
+   </fieldset>
+</form>
+
+<br />
+<p>======================== TABLE avec THEAD, TFOOT, TBODY et TH ===============</p>
+<br />
+
+<table border="1">
+   <caption>Passagers du vol 377</caption>
+   <thead> <!-- En-tête du tableau -->
+       <tr>
+           <th>Nom</th>
+           <th>Âge</th>
+           <th>Pays</th>
+       </tr>
+   </thead>
+   <tfoot> <!-- Pied de tableau -->
+       <tr>
+           <th>Nom</th>
+           <th>Âge</th>
+           <th>Pays</th>
+       </tr>
+   </tfoot>
+   <tbody> <!-- Corps du tableau -->
+       <tr>
+           <td>Carmen</td>
+           <td>33 ans</td>
+           <td>Espagne</td>
+       </tr>
+       <tr>
+           <td>Michelle</td>
+           <td>26 ans</td>
+           <td>États-Unis</td>
+       </tr>
+       <tr>
+           <td>François</td>
+           <td>43 ans</td>
+           <td>France</td>
+       </tr>
+       <tr>
+           <td>Martine</td>
+           <td>34 ans</td>
+           <td>France</td>
+       </tr>
+       <tr>
+           <td>Jonathan</td>
+           <td>13 ans</td>
+           <td>Australie</td>
+       </tr>
+       <tr>
+           <td>Xu</td>
+           <td>19 ans</td>
+           <td>Chine</td>
+       </tr>
+   </tbody>
+</table>
+
+<br />
+<p>=================== TABLE avec COLGROUPS et COL ===============================</p>
+<br />
+
+<table border="1" width="300">
+<colgroups>
+  <col width="40%" bgcolor="#ff0000" />
+  <col width="30%" bgcolor="#00ff00" />
+  <col width="30%" bgcolor="#ffff00" />
+</colgroups>
+    <thead>
+        <tr>
+            <td>Header 1</td>
+            <td>Header 2</td>
+            <td>Header 3</td>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td>Footer 1</td>
+            <td>Footer 2</td>
+            <td>Footer 3</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+		<tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        <!-- etc. -->
+    </tbody>
+</table>
+
+<br />
+<p>=================== TABLE avec COLGROUPS, COL et SPAN ===============================</p>
+<br />
+
+<table border="1">
+  <colgroup>
+    <col span="2" style="background-color:red" />
+    <col style="background-color:yellow" />
+  </colgroup>
+  <tr>
+    <th>Numéro</th>
+    <th>Titre</th>
+    <th>Prix</th>
+  </tr>
+  <tr>
+    <td>3476896</td>
+    <td>Livre sur le HTML5</td>
+    <td>20 Euros</td>
+  </tr>
+</table>
+
+<br />
+<p>=================== TABLE avec COLGROUPS et COL with % ===============================</p>
+<br />
+
+<table width="400" height="200" border="1">
+<colgroups>
+  <col width="50%" bgcolor="#ff0000" />
+  <col width="30%" bgcolor="#00ff00" />
+  <col width="20%" bgcolor="#0000ff" />
+</colgroups>
+<tr>
+  <td>contenu 1</td>
+  <td>contenu 2</td>
+  <td>contenu 3</td>
+</tr>
+<tr>
+  <td>contenu 4</td>
+  <td>contenu 5</td>
+  <td>contenu 6</td>
+</tr>
+</table>
+
+<br />
+<p>=================== TABLE avec COLGROUPS, COL et SPAN ===============================</p>
+<br />
+
+<table border="1" height="50">
+<colgroup>
+  <col width="150" span="3" />
+  <col width="100" span="2" />
+</colgroup>
+<tr>
+  <td>contenu 1</td>
+  <td>contenu 2</td>
+  <td>contenu 3</td>
+  <td>contenu 4</td>
+  <td>contenu 5</td>
+</tr>
+</table>
+
+<br />
+<p>=================== TABLE avec COLGROUPS sans COL ===============================</p>
+<br />
+
+<table width="500" height="100" border="1">
+<colgroup width="200">
+</colgroup>
+<tr>
+  <td>texte 1</td>
+  <td>texte 2</td>
+  <td>texte 3</td>
+  <td>texte 4</td>
+  <td>texte 5</td>
+</tr>
+</table>
+
+<br />
+<p>======================= TABLE ROWSPAN et COLSPAN =========================</p>
+<br />
+
+<table  border="1" style="width:500px; height:300px; text-align:center">
+	<tr>
+		<td rowspan="2">- Cellule  -</td>
+		<td colspan="3">- Cellule  -</td>
+		<!-- <td>- Cellule 03 -</td> -->
+		<!-- <td>- Cellule 04 -</td> -->
+		<td rowspan="2">- Cellule  -</td>
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 06 -</td> -->
+		<td>- Cellule  -</td>
+		<td rowspan="3">- Cellule  -</td>
+		<td>- Cellule  -</td>
+		<!-- <td>- Cellule 10 -</td> -->
+	</tr>
+	<tr>
+		<td colspan="2">- Cellule  -</td>
+		<!-- <td>- Cellule 12 -</td> -->
+		<!-- <td>- Cellule 13 -</td> -->
+		<td colspan="2">- Cellule  -</td>
+		<!-- <td>- Cellule 15 -</td> -->
+	</tr>
+	<tr>
+		<td rowspan="2">- Cellule  -</td>
+		<td>- Cellule  -</td>
+		<!-- <td>- Cellule 18 -</td> -->
+		<td>- Cellule  -</td>
+		<td rowspan="2">- Cellule  -</td>
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 21 -</td> -->
+		<td colspan="3">- Cellule  -</td>
+		<!-- <td>- Cellule 23 -</td> -->
+		<!-- <td>- Cellule 24 -</td> -->
+		<!-- <td>- Cellule 25 -</td> -->
+	</tr>
+</table>
+
+<br />
+<br />
+<br />
+
+<table border="1" style="width:500px; height:300px; text-align:center">
+	<tr>
+		<td colspan="4">- Cellule  -</td>
+		<!-- <td>- Cellule 02 -</td> -->
+		<!-- <td>- Cellule 03 -</td> -->
+		<!-- <td>- Cellule 04 -</td> -->
+		<td rowspan="4">- Cellule  -</td>
+	</tr>
+	<tr>
+		<td rowspan="4">- Cellule  -</td>
+		<td colspan="2">- Cellule  -</td>
+		<!-- <td>- Cellule 08 -</td> -->
+		<td rowspan="2">- Cellule  -</td>
+		<!-- <td>- Cellule 10 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 11 -</td> -->
+		<td rowspan="2">- Cellule  -</td>
+		<td>- Cellule  -</td>
+		<!-- <td>- Cellule 14 -</td> -->
+		<!-- <td>- Cellule 15 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 16 -</td> -->
+		<!-- <td>- Cellule 17 -</td> -->
+		<td colspan ="2">- Cellule  -</td>
+		<!-- <td>- Cellule 19 -</td> -->
+		<!-- <td>- Cellule 20 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 21 -</td> -->
+		<td colspan="4">- Cellule  -</td>
+		<!-- <td>- Cellule 23 -</td> -->
+		<!-- <td>- Cellule 24 -</td> -->
+		<!-- <td>- Cellule 25 -</td> -->
+	</tr>
+</table>
+
+<br />
+<br />
+<br />
+
+<table border="1" style="width:500px; height:300px; text-align:center">
+	<tr>
+		<td rowspan="3">- Cellule  -</td>
+		<td colspan="4">- Cellule  -</td>
+		<!-- <td>- Cellule 03 -</td> -->
+		<!-- <td>- Cellule 04 -</td> -->
+		<!-- <td>- Cellule 05 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 06 -</td> -->
+		<td colspan="2">- Cellule  -</td>
+		<!-- <td>- Cellule 08 -</td> -->
+		<td colspan="2">- Cellule  -</td>
+		<!-- <td>- Cellule 10 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 11 -</td> -->
+		<td>- Cellule  -</td>
+		<td>- Cellule  -</td>
+		<td>- Cellule  -</td>
+		<td>- Cellule  -</td>
+	</tr>
+	<tr>
+		<td rowspan="2">- Cellule  -</td>
+		<td>- Cellule  -</td>
+		<td rowspan="2">- Cellule  -</td>
+		<td>- Cellule  -</td>
+		<td rowspan="2">- Cellule  -</td>
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 21 -</td> -->
+		<td>- Cellule  -</td>
+		<!-- <td>- Cellule 23 -</td> -->
+		<td>- Cellule  -</td>
+		<!-- <td>- Cellule 25 -</td> -->
+	</tr>
+</table>
+
+<br />
+<p>=================== TABLE ROWSPAN et COLSPAN =========================</p>
+<br />
+
+<table  border="1" style="width:500px; height:300px; text-align:center">
+	<tr>
+		<td rowspan="2" bgcolor="#ff0000">- Cellule  -</td>
+		<td colspan="3" bgcolor="#ff00ff">- Cellule  -</td>
+		<!-- <td>- Cellule 03 -</td> -->
+		<!-- <td>- Cellule 04 -</td> -->
+		<td rowspan="2" bgcolor="#ff0000">- Cellule  -</td>
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 06 -</td> -->
+		<td bgcolor="#00ff00">- Cellule  -</td>
+		<td rowspan="3" bgcolor="#ffff00">- Cellule  -</td>
+		<td bgcolor="#00ff00">- Cellule  -</td>
+		<!-- <td>- Cellule 10 -</td> -->
+	</tr>
+	<tr>
+		<td colspan="2" bgcolor="#00ffff">- Cellule  -</td>
+		<!-- <td>- Cellule 12 -</td> -->
+		<!-- <td>- Cellule 13 -</td> -->
+		<td colspan="2" bgcolor="#00ffff">- Cellule  -</td>
+		<!-- <td>- Cellule 15 -</td> -->
+	</tr>
+	<tr>
+		<td rowspan="2" bgcolor="#ff0000">- Cellule  -</td>
+		<td bgcolor="#00ff00">- Cellule  -</td>
+		<!-- <td>- Cellule 18 -</td> -->
+		<td bgcolor="#00ff00">- Cellule  -</td>
+		<td rowspan="2" bgcolor="#ff0000">- Cellule  -</td>
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 21 -</td> -->
+		<td colspan="3" bgcolor="#ff00ff">- Cellule  -</td>
+		<!-- <td>- Cellule 23 -</td> -->
+		<!-- <td>- Cellule 24 -</td> -->
+		<!-- <td>- Cellule 25 -</td> -->
+	</tr>
+</table>
+
+<br />
+<br />
+<br />
+
+<table border="1" style="width:500px; height:300px; text-align:center">
+	<tr>
+		<td colspan="4" bgcolor="#ff0000">- Cellule  -</td>
+		<!-- <td>- Cellule 02 -</td> -->
+		<!-- <td>- Cellule 03 -</td> -->
+		<!-- <td>- Cellule 04 -</td> -->
+		<td rowspan="4" bgcolor="#ff00ff">- Cellule  -</td>
+	</tr>
+	<tr>
+		<td rowspan="4" bgcolor="#ff00ff">- Cellule  -</td>
+		<td colspan="2" bgcolor="#00ffff">- Cellule  -</td>
+		<!-- <td>- Cellule 08 -</td> -->
+		<td rowspan="2" bgcolor="#00ff00">- Cellule  -</td>
+		<!-- <td>- Cellule 10 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 11 -</td> -->
+		<td rowspan="2" bgcolor="#00ff00">- Cellule  -</td>
+		<td bgcolor="#ffff00">- Cellule  -</td>
+		<!-- <td>- Cellule 14 -</td> -->
+		<!-- <td>- Cellule 15 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 16 -</td> -->
+		<!-- <td>- Cellule 17 -</td> -->
+		<td colspan ="2" bgcolor="#00ffff">- Cellule  -</td>
+		<!-- <td>- Cellule 19 -</td> -->
+		<!-- <td>- Cellule 20 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 21 -</td> -->
+		<td colspan="4" bgcolor="#ff0000">- Cellule  -</td>
+		<!-- <td>- Cellule 23 -</td> -->
+		<!-- <td>- Cellule 24 -</td> -->
+		<!-- <td>- Cellule 25 -</td> -->
+	</tr>
+</table>
+
+<br />
+<br />
+<br />
+
+<table border="1" style="width:500px; height:300px; text-align:center">
+	<tr>
+		<td rowspan="3" bgcolor="#ff00ff">- Cellule  -</td>
+		<td colspan="4" bgcolor="#ff0000">- Cellule  -</td>
+		<!-- <td>- Cellule 03 -</td> -->
+		<!-- <td>- Cellule 04 -</td> -->
+		<!-- <td>- Cellule 05 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 06 -</td> -->
+		<td colspan="2" bgcolor="#00ff00">- Cellule  -</td>
+		<!-- <td>- Cellule 08 -</td> -->
+		<td colspan="2" bgcolor="#00ff00">- Cellule  -</td>
+		<!-- <td>- Cellule 10 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 11 -</td> -->
+		<td bgcolor="#ffff00">- Cellule  -</td>
+		<td bgcolor="#ffff00">- Cellule  -</td>
+		<td bgcolor="#ffff00">- Cellule  -</td>
+		<td bgcolor="#ffff00">- Cellule  -</td>
+	</tr>
+	<tr>
+		<td rowspan="2" bgcolor="#00ffff">- Cellule  -</td>
+		<td bgcolor="#ffff00">- Cellule  -</td>
+		<td rowspan="2" bgcolor="#00ffff">- Cellule  -</td>
+		<td bgcolor="#ffff00">- Cellule  -</td>
+		<td rowspan="2" bgcolor="#00ffff">- Cellule  -</td>
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 21 -</td> -->
+		<td bgcolor="#ffff00">- Cellule  -</td>
+		<!-- <td>- Cellule 23 -</td> -->
+		<td bgcolor="#ffff00">- Cellule  -</td>
+		<!-- <td>- Cellule 25 -</td> -->
+	</tr>
+</table>
+
+<br />
+<p>=================== TABLE ROWSPAN et COLSPAN =========================</p>
+<br />
+
+<table  border="1" style="width:500px; height:300px; text-align:center">
+	<tr>
+		<td rowspan="2" bgcolor="#ff0000">- Cellule 01 -</td>
+		<td colspan="3" bgcolor="#ff00ff">- Cellule 02 -</td>
+		<!-- <td>- Cellule 03 -</td> -->
+		<!-- <td>- Cellule 04 -</td> -->
+		<td rowspan="2" bgcolor="#ff0000">- Cellule 05 -</td>
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 06 -</td> -->
+		<td bgcolor="#00ff00">- Cellule 07 -</td>
+		<td rowspan="3" bgcolor="#ffff00">- Cellule 08 -</td>
+		<td bgcolor="#00ff00">- Cellule 09 -</td>
+		<!-- <td>- Cellule 10 -</td> -->
+	</tr>
+	<tr>
+		<td colspan="2" bgcolor="#00ffff">- Cellule 11 -</td>
+		<!-- <td>- Cellule 12 -</td> -->
+		<!-- <td>- Cellule 13 -</td> -->
+		<td colspan="2" bgcolor="#00ffff">- Cellule 14 -</td>
+		<!-- <td>- Cellule 15 -</td> -->
+	</tr>
+	<tr>
+		<td rowspan="2" bgcolor="#ff0000">- Cellule 16 -</td>
+		<td bgcolor="#00ff00">- Cellule 17 -</td>
+		<!-- <td>- Cellule 18 -</td> -->
+		<td bgcolor="#00ff00">- Cellule 19 -</td>
+		<td rowspan="2" bgcolor="#ff0000">- Cellule 20 -</td>
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 21 -</td> -->
+		<td colspan="3" bgcolor="#ff00ff">- Cellule 22 -</td>
+		<!-- <td>- Cellule 23 -</td> -->
+		<!-- <td>- Cellule 24 -</td> -->
+		<!-- <td>- Cellule 25 -</td> -->
+	</tr>
+</table>
+
+<br />
+<br />
+<br />
+
+<table border="1" style="width:500px; height:300px; text-align:center">
+	<tr>
+		<td colspan="4" bgcolor="#ff0000">- Cellule 01 -</td>
+		<!-- <td>- Cellule 02 -</td> -->
+		<!-- <td>- Cellule 03 -</td> -->
+		<!-- <td>- Cellule 04 -</td> -->
+		<td rowspan="4" bgcolor="#ff00ff">- Cellule 05 -</td>
+	</tr>
+	<tr>
+		<td rowspan="4" bgcolor="#ff00ff">- Cellule 06 -</td>
+		<td colspan="2" bgcolor="#00ffff">- Cellule 07 -</td>
+		<!-- <td>- Cellule 08 -</td> -->
+		<td rowspan="2" bgcolor="#00ff00">- Cellule 09 -</td>
+		<!-- <td>- Cellule 10 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 11 -</td> -->
+		<td rowspan="2" bgcolor="#00ff00">- Cellule 12 -</td>
+		<td bgcolor="#ffff00">- Cellule 13 -</td>
+		<!-- <td>- Cellule 14 -</td> -->
+		<!-- <td>- Cellule 15 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 16 -</td> -->
+		<!-- <td>- Cellule 17 -</td> -->
+		<td colspan ="2" bgcolor="#00ffff">- Cellule 18 -</td>
+		<!-- <td>- Cellule 19 -</td> -->
+		<!-- <td>- Cellule 20 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 21 -</td> -->
+		<td colspan="4" bgcolor="#ff0000">- Cellule 22 -</td>
+		<!-- <td>- Cellule 23 -</td> -->
+		<!-- <td>- Cellule 24 -</td> -->
+		<!-- <td>- Cellule 25 -</td> -->
+	</tr>
+</table>
+
+<br />
+<br />
+<br />
+
+<table border="1" style="width:500px; height:300px; text-align:center">
+	<tr>
+		<td rowspan="3" bgcolor="#ff00ff">- Cellule 01 -</td>
+		<td colspan="4" bgcolor="#ff0000">- Cellule 02 -</td>
+		<!-- <td>- Cellule 03 -</td> -->
+		<!-- <td>- Cellule 04 -</td> -->
+		<!-- <td>- Cellule 05 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 06 -</td> -->
+		<td colspan="2" bgcolor="#00ff00">- Cellule 07 -</td>
+		<!-- <td>- Cellule 08 -</td> -->
+		<td colspan="2" bgcolor="#00ff00">- Cellule 09 -</td>
+		<!-- <td>- Cellule 10 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 11 -</td> -->
+		<td bgcolor="#ffff00">- Cellule 12 -</td>
+		<td bgcolor="#ffff00">- Cellule 13 -</td>
+		<td bgcolor="#ffff00">- Cellule 14 -</td>
+		<td bgcolor="#ffff00">- Cellule 15 -</td>
+	</tr>
+	<tr>
+		<td rowspan="2" bgcolor="#00ffff">- Cellule 16 -</td>
+		<td bgcolor="#ffff00">- Cellule 17 -</td>
+		<td rowspan="2" bgcolor="#00ffff">- Cellule 18 -</td>
+		<td bgcolor="#ffff00">- Cellule 19 -</td>
+		<td rowspan="2" bgcolor="#00ffff">- Cellule 20 -</td>
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 21 -</td> -->
+		<td bgcolor="#ffff00">- Cellule 22 -</td>
+		<!-- <td>- Cellule 23 -</td> -->
+		<td bgcolor="#ffff00">- Cellule 24 -</td>
+		<!-- <td>- Cellule 25 -</td> -->
+	</tr>
+</table>
+
+<br />
+<p>=================== TABLE =========================</p>
+<br />
+<!-- rowspan="x" -->
+<!-- colspan="x" -->
+<table border="1">
+	<tr>
+		<td rowspan="3">- Cellule 01 -</td>
+		<td colspan="4">- Cellule 02 -</td>
+		<!-- <td>- Cellule 03 -</td> -->
+		<!-- <td>- Cellule 04 -</td> -->
+		<!-- <td>- Cellule 05 -</td> -->
+	</tr>
+	<tr>
+		<!--<td>- Cellule 06 -</td>-->
+		<td colspan="2">- Cellule 07 -</td>
+		<!-- <td>- Cellule 08 -</td> -->
+		<td colspan="2">- Cellule 09 -</td>
+		<!-- <td>- Cellule 10 -</td> -->
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 11 -</td> -->
+		<td>- Cellule 12 -</td>
+		<td>- Cellule 13 -</td>
+		<td>- Cellule 14 -</td>
+		<td>- Cellule 15 -</td>
+	</tr>
+	<tr>
+		<td rowspan="2">- Cellule 16 -</td>
+		<td>- Cellule 17 -</td>
+		<td rowspan="2">- Cellule 18 -</td>
+		<td>- Cellule 19 -</td>
+		<td rowspan="2">- Cellule 20 -</td>
+	</tr>
+	<tr>
+		<!-- <td>- Cellule 21 -</td> -->
+		<td>- Cellule 22 -</td>
+		<!-- <td>- Cellule 23 -</td> -->
+		<td>- Cellule 24 -</td>
+		<!-- <td>- Cellule 25 -</td> -->
+	</tr>
+</table>
+
+<br />
+<br />
+
+</body>
+</html>

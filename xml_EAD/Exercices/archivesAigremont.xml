@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ead SYSTEM "ead.dtd">
+<ead>
+    <eadheader>
+        <eadid/>
+        <!--il vaut mieux ici le mettre en le laissant vide pour que son absence ne passe pas pour un oubli-->
+        <filedesc>
+            <titlestmt>
+                <titleproper>Archives de la commune d'Aigremont</titleproper>
+                <subtitle>Inventaire en ligne</subtitle>
+            </titlestmt>
+            <publicationstmt>
+                <publisher>Archives départementales de la Haute-Marne</publisher>
+                <address>
+                    <addressline>Rue du Lycee, 52000 Chamarandes-Choignes</addressline>
+                </address>
+            </publicationstmt>
+        </filedesc>
+    </eadheader>
+
+    <archdesc level="fonds">
+        <did>
+            <unitdate normal="1746-01-01/1952-12-31">1746-1952</unitdate>
+            <unittitle>Archives de la commune d'Aigremont</unittitle>
+            <origination>
+                <corpname>Commune d'Aigremont</corpname>
+            </origination>
+
+            <langmaterial>
+                <language langcode="fre">français</language>
+            </langmaterial>
+
+            <physdesc>
+                <dimensions>divers</dimensions>
+                <extent>65 éléments</extent>
+                <extent>7.00 ml</extent>
+                <genreform>Documents d'archives</genreform>
+                <physfacet>papier</physfacet>
+            </physdesc>
+
+            <repository>Archives départementales de la Haute-Marne</repository>
+            <physloc>Archives départementales de la Haute-Marne</physloc>
+        </did>
+
+        <accessrestrict>
+            <p>Statut juridiques : Archives publiques</p>
+            <p>Libre sauf pour les documents concernant la vie privée et familiale de moins de 75
+                ans, ceux concernant la sécurité de l'Etat de moins de 50 ans. Les décès sont
+                immédiatement communicables.</p>
+        </accessrestrict>
+        <userestrict>
+            <p>Libre sauf pour les documents concernant la vie privée et familiale de moins de 75
+                ans, ceux concernant la sécurité de l'Etat de moins de 50 ans. Les décès sont
+                immédiatement communicables. Interdit également les documents fragiles ou reliés</p>
+        </userestrict>
+        <acqinfo>
+            <p>Dépot <date normal="1997-07-08">8 juillet 1997</date></p>
+        </acqinfo>
+        <arrangement>
+            <p>Classement thématique selon le cadre de classement réglementaire.</p>
+        </arrangement>
+
+        <bioghist>
+            <p>Commune d'Aigremont</p>
+        </bioghist>
+
+        <scopecontent>
+            <p>Archives papiers de la commune d'Aigremont entre 1746 et 1952.</p>
+        </scopecontent>
+
+        <dsc>
+            <c level="series">
+                <did>
+                    <unitid>D</unitid>
+                    <unittitle>Administration générale de la commune</unittitle>
+                </did>
+                <c level="subseries">
+                    <did>
+                        <unitid>E dépot 6032</unitid>
+                        <unitdate normal="1808-04-28/1848-10-15">1808-1848</unitdate>
+                        <unittitle>Conseil municipal : registre des délibérations
+                            (28/04/1808-15/10/1848)</unittitle>
+                        <physdesc>
+                            <genreform>Registre</genreform>
+                        </physdesc>
+                    </did>
+                </c>
+                <c level="subseries">
+                    <did>
+                        <unitid>E dépot 6033</unitid>
+                        <unitdate normal="1848-12-13/1878-10-27">1848-1878</unitdate>
+                        <unittitle>Conseil municipal : registre des délibérations
+                            (13/12/1848-27/10/1878)</unittitle>
+                        <physdesc>
+                            <genreform>Registre</genreform>
+                        </physdesc>
+                    </did>
+                </c>
+                <c level="subseries">
+                    <did>
+                        <unitid>E dépot 6034</unitid>
+                        <unitdate normal="1878-10-27/1922-12-02">1878-1922</unitdate>
+                        <unittitle>Conseil municipal : registre des délibérations
+                            (27/10/1878-02/12/1922)</unittitle>
+                        <physdesc>
+                            <genreform>Registre</genreform>
+                        </physdesc>
+                    </did>
+                </c>
+                <c level="subseries">
+                    <did>
+                        <unitid>E dépot 6035</unitid>
+                        <unitdate normal="1801/1821">An X-1821</unitdate>
+                        <unittitle>Registre des arrêtés du Maire.</unittitle>
+                        <physdesc>
+                            <genreform>Registre</genreform>
+                        </physdesc>
+                    </did>
+                </c>
+                <c level="subseries">
+                    <did>
+                        <unitid>E dépot 6036</unitid>
+                        <unitdate normal="1889/1891">1889-1891</unitdate>
+                        <unittitle>Registre d'inscription des envois</unittitle>
+                        <physdesc>
+                            <genreform>Registre</genreform>
+                        </physdesc>
+                    </did>
+                </c>
+            </c>
+        </dsc>
+    </archdesc>
+</ead>

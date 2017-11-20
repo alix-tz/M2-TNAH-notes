@@ -1,0 +1,10 @@
+/*Pour notre prochain cours, je vous propose de :
+** baliser en TEI, les deux premières scènes du Misanthrope :
+http://corpus.enc.sorbonne.fr/cours/m2/moliere/misanthrope_sc1-2.md
+** définir la DTD associée (uniquement pour l’édition du texte, et non pour
+les métadonnées ; pensez à adapter la DTD que nous avions déjà formalisée).
+** construire votre en-tête de métadonnées (teiHeader) :
+    http://www.tei-c.org/release/doc/tei-p5-doc/fr/html/ref-teiHeader.html)
+    http://www.tei-c.org/release/doc/tei-p5-doc/fr/html/HD.html#HD11
+Nous prendrons le temps de comparer vos choix d’encodage pour aborder cette
+question des métadonnées.*/
