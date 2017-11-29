@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI.2 SYSTEM "../tei.dtd">
+<TEI.2 n="81">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <!-- Aménagement à faire, pour le nota bene&#160;: deux titres -->
+                <title>999. Acte royal <expan>1279, copie authentique</expan></title>
+            </titleStmt>
+            <publicationStmt>
+                <idno type="numero">81</idno>
+                <publisher>École nationale des chartes</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Orig.&#160;: Arch. nat., S 1165, n° 13.</p>
+                <p>Fac-sim. ENC&#160;: AF 322 (lithographie)</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc/>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <div type="facsimile" rend="fax.jpg">
+                <p>
+                    <seg rend="71,171,85,157,99,166,102,185,614,203,617,233,417,223,196,219,61,220,61,219,68,192,69,192,71,168" n="poly">A touz ceuls qui ces leittres v<expan>er</expan>ront, Guy du Mes, garde de la p<expan>re</expan>vosté de Paris, salut.</seg>
+                    <seg rend="623,203,842,210,857,206,878,213,964,226,955,258,743,239,620,233" n="poly">Nous faisons asavoir que, l’an de grace mil</seg>
+                    <seg rend="68,226,198,225,416,231,427,240,426,258,226,252,75,252" n="poly">CC soissante dis <expan>et</expan> neuf, ou mois de decembre,</seg>
+                    <seg rend="425,233,562,236,786,250,966,263,962,286,782,274,602,264,452,257,433,257,431,240" n="poly">veïmes unes leittres en la fourme qui s’ensuit&#160;: «&#160;In nomine sancte <expan>et</expan> individue</seg>
+                    <seg rend="73,259,299,259,556,266,560,287,471,292,162,285,72,285" n="poly">Trinitatis. Robertus, divina providente clemencia Francor<expan>um</expan> rex.</seg>
+                    <seg rend="561,268,759,277,959,294,955,319,792,310,618,295,563,290" n="poly">Si erga loca divinis cultib<expan>us</expan> mancipata p<expan>ro</expan>pt<expan>er</expan> amorem D<expan>e</expan>i</seg>
+                    <seg rend="72,293,252,292,453,296,564,303,562,328,346,324,191,320,71,320" n="poly">eor<expan>um</expan>que in eisd<expan>em</expan> locis famulancium beneficia oportuna largimur,</seg>
+                    <seg rend="570,304,759,314,960,328,952,353,692,336,569,330" n="poly">p<expan>re</expan>mia nob<expan>is</expan> ap<expan>u</expan>d D<expan>omi</expan>n<expan>u</expan>m et<expan>er</expan>ne remun<expan>er</expan>ac<expan>i</expan>onis rependi non</seg>
+                    <seg rend="73,325,349,330,605,339,604,365,365,361,163,355,77,355" n="poly">diffidimus. Idcirco nov<expan>er</expan>it sagacitas seu indust<expan>r</expan>ia om<expan>n</expan>ium n<expan>ost</expan>ror<expan>um</expan> fidelium</seg>
+                    <seg rend="618,341,860,351,964,358,965,383,785,378,614,365" n="poly">tam p<expan>re</expan>sencium q<expan>u</expan>a<expan>m</expan> eciam futuror<expan>um</expan> q<expan>uia</expan> miles q<expan>u</expan>ida<expan>m</expan></seg>
+                    <seg rend="77,364,345,368,575,374,573,400,247,396,74,389" n="poly">n<expan>oste</expan>r nomine Ermenfredus eciam uxor sua nomine Ermensendis</seg>
+                    <seg rend="583,374,885,388,951,398,944,421,685,408,579,401" n="poly">n<expan>ost</expan>ram adierunt serenitatem, humilit<expan>er</expan> petentes</seg>
+                    <seg rend="78,399,340,407,582,410,715,415,745,420,745,441,549,437,299,432,213,430,139,429,67,433" n="poly">quatinus res eor<expan>um</expan>, quas in pago Parisiaco sitas super fluvium Sequane habebant,</seg>
+                    <seg rend="754,420,972,428,968,456,852,450,751,449" n="poly">scil<expan>icet</expan> alodum nomine Arvre-</seg>
+                    <seg rend="72,442,271,436,473,441,483,452,480,466,285,467,72,468" n="poly">-um, ab oppido Corbolii distantem miliariis duob<expan>us</expan>,</seg>
+                    <seg rend="489,444,728,450,757,456,969,461,963,490,618,476,487,468" n="poly">cum ecc<expan>lesi</expan>a eciam vicaria eciam advocac<expan>i</expan>o<expan>n</expan>e, cum silvis, vineis,</seg>
+                    <seg rend="71,477,414,476,537,478,537,508,271,503,73,507" n="poly">pratis, aquis, t<expan>er</expan>ris cultis <expan>et</expan> incultis ad eundem p<expan>er</expan>tinentib<expan>us</expan>,</seg>
+                    <seg rend="544,479,766,487,952,496,952,519,732,511,588,509,546,508" n="poly">monast<expan>er</expan>io Fossaten<expan>si</expan>, quod est dedicatum in honore beate</seg>
+                    <seg rend="69,513,419,511,606,518,606,546,357,541,156,540,73,541,72,540,68,523" n="poly">Dei genit<expan>r</expan>icis Marie <expan>et</expan> beator<expan>um</expan> ap<expan>osto</expan>lor<expan>um</expan> Pet<expan>r</expan>i <expan>et</expan> Pauli seu beati Mauri,</seg>
+                    <seg rend="614,520,834,523,943,529,938,554,665,548,611,549,610,549,612,536" n="poly">pat<expan>r</expan>is B<expan>e</expan>n<expan>e</expan>dicti discipuli, qui in eod<expan>em</expan> loco</seg>
+                    <seg rend="71,551,329,548,497,551,487,574,230,578,75,575" n="poly">requiescit, eciam abbati ejusd<expan>em</expan> loci nomine Teutoni,</seg>
+                    <seg rend="503,554,690,553,853,560,946,566,932,590,662,582,493,576" n="poly">eciam frat<expan>r</expan>ib<expan>us</expan> ibidem D<expan>e</expan>o militantib<expan>us</expan> pro et<expan>er</expan>ne remunerac<expan>i</expan>one</seg>
+                    <seg rend="72,584,334,587,360,582,603,588,700,592,698,622,309,616,127,610,67,615" n="poly">vite <expan>et</expan> pro animar<expan>um</expan> suar<expan>um</expan> sive Zelonis atq<expan>ue</expan> parentum eor<expan>um</expan> absoluc<expan>i</expan>one t<expan>r</expan>adid<expan>er</expan>unt</seg>
+                    <seg rend="707,589,954,596,951,619,940,629,756,621,703,622" n="poly">auctoritatis n<expan>ost</expan>re p<expan>re</expan>cepto co<expan>n</expan>cede<expan>re</expan></seg>
+                    <seg rend="71,625,320,626,320,648,185,653,75,654" n="poly">eciam confirmare dignaremur.</seg>
+                    <seg rend="330,626,410,623,644,627,944,637,939,663,766,660,543,650,327,648" n="poly">Similit<expan>er</expan> petierunt obsecrentes ut roboraretur n<expan>ost</expan>ro regali munimine donac<expan>i</expan>o</seg>
+                    <seg rend="71,662,219,657,431,656,426,685,136,685,73,685" n="poly">de villa in eodem pago sita, que vocatur Licias,</seg>
+                    <seg rend="436,658,651,661,895,668,948,674,940,699,606,690,432,685" n="poly">prope jamdictum alodum miliariis duob<expan>us</expan>, qua<expan>m</expan> de benefic<expan>i</expan>o Burchardi</seg>
+                    <seg rend="74,693,290,692,610,695,611,720,264,720,67,722" n="poly">comitis eciam filii ejus honore pontificali p<expan>r</expan>udentis Rainaldi tenent,</seg>
+                    <seg rend="616,696,867,702,945,705,941,734,693,726,616,724" n="poly">quor<expan>um</expan> co<expan>n</expan>sensu eciam voluntate hoc donac<expan>i</expan>o<expan>n</expan>is</seg>
+                    <seg rend="75,731,279,725,489,726,654,734,663,760,369,756,165,756,74,763" n="poly">p<expan>re</expan>ceptum contul<expan>er</expan>unt. Suggerentib<expan>us</expan> itaq<expan>ue</expan> ac int<expan>er</expan>venientib<expan>us</expan> dilectis n<expan>ost</expan>ris vid<expan>elicet</expan></seg>
+                    <seg rend="664,735,898,740,948,743,936,772,701,765,667,759" n="poly">dulcissima genit<expan>r</expan>ice n<expan>ost</expan>ra Adelaide atq<expan>ue</expan></seg>
+                    <seg rend="76,771,240,761,513,770,514,792,317,791,119,795,75,796" n="poly">conjuge n<expan>ost</expan>ra Berta, nos p<expan>re</expan>cib<expan>us</expan> eor<expan>um</expan> libentissime faventes,</seg>
+                    <seg rend="520,767,765,773,932,781,927,799,689,795,519,796" n="poly">sup<expan>er</expan>ius inserta jamdicto monast<expan>er</expan>io munificencie n<expan>ost</expan>re</seg>
+                    <seg rend="71,804,392,799,627,806,626,831,240,827,69,833" n="poly">p<expan>re</expan>cepto confirmamus, per quod jubentes firmit<expan>er</expan> autorizamus ut,</seg>
+                    <seg rend="631,802,817,803,955,811,951,838,788,833,631,828" n="poly">ambob<expan>us</expan> ab hac luce migrantib<expan>us</expan>, Ermenfre-</seg>
+                    <seg rend="69,839,260,835,268,837,269,855,268,864,128,865,73,868" n="poly">-do vid<expan>elicet</expan> <expan>et</expan> co<expan>n</expan>jugeq<expan>ue</expan> ejus,</seg>
+                    <seg rend="275,834,567,837,845,841,901,842,933,855,922,871,630,864,436,864,363,867,305,866,273,862" n="poly">p<expan>re</expan>d<expan>i</expan>c<expan>t</expan>o in cenobio Regi militantes sup<expan>er</expan>no villas jam sup<expan>er</expan>ius nominatas cu<expan>m</expan> ecc<expan>lesi</expan>is eciam</seg>
+                    <seg rend="75,876,249,869,451,871,467,885,462,895,317,897,124,904,69,904" n="poly">advocac<expan>i</expan>onib<expan>us</expan> eciam cu<expan>m</expan> his q<expan>ue</expan> ad ip<expan>s</expan>as respiciunt</seg>
+                    <seg rend="469,873,653,872,924,879,924,893,916,899,839,899,631,897,504,900,472,896" n="poly">absq<expan>ue</expan> ulla cont<expan>r</expan>adict<expan>i</expan>o<expan>n</expan>e v<expan>e</expan>l aliq<expan>u</expan>a vicarior<expan>um</expan> potestate p<expan>er</expan>petuo</seg>
+                    <seg rend="73,914,357,903,577,906,579,928,324,933,70,941" n="poly">teneant atq<expan>ue</expan> possideant. Quapropt<expan>er</expan> p<expan>re</expan>cipimus ut nullus rex,</seg>
+                    <seg rend="584,905,833,904,922,911,919,935,717,932,583,931" n="poly">nullus ep<expan>iscopu</expan>s, nullus comes sive q<expan>u</expan>al<expan>ibet</expan> potestas</seg>
+                    <seg rend="72,950,245,945,426,939,427,966,200,969,74,971" n="poly">illas res ut in sup<expan>er</expan>ius nominatas disponere</seg>
+                    <seg rend="432,940,611,938,769,941,915,940,914,970,630,969,464,968,433,968" n="poly">aut in sua potestate quicqua<expan>m</expan> horum dec<expan>er</expan>nere v<expan>e</expan>l delegare</seg>
+                    <seg rend="79,976,396,977,428,979,427,1000,222,1006,68,1006" n="poly">p<expan>re</expan>sumat, sed ut p<expan>er</expan>petua soliditate consistens</seg>
+                    <seg rend="435,979,607,979,732,976,924,974,920,996,742,999,580,999,432,1003" n="poly">per cuncta evi tempora inviolabilem obtineat firmitatis</seg>
+                    <seg rend="63,1014,287,1011,382,1011,372,1031,140,1038,62,1042" n="poly">vigorem, manu p<expan>ro</expan>p<expan>r</expan>ia subt<expan>er</expan>firmavimus</seg>
+                    <seg rend="390,1012,624,1005,805,1006,933,1008,927,1031,590,1035,381,1032" n="poly">eciam sigilli n<expan>ost</expan>ri inp<expan>re</expan>ssione insigniri jussimus. Franco cancellarius</seg>
+                    <seg rend="66,1050,204,1046,399,1037,403,1060,205,1070,66,1074" n="poly">sc<expan>r</expan>ipsit. Signum Roberti gloriosisimi</seg>
+                    <seg rend="421,1065,440,1038,487,1042,530,1059,575,1070,575,1127,521,1131,472,1148,462,1185,418,1197,414,1159,420,1133,371,1114,350,1133,323,1134,324,1105,325,1073,357,1072,360,1088,409,1084,434,1058" n="poly">[<hi rend="italic">monogramme</hi>]</seg>
+                    <seg rend="574,1043,727,1038,881,1036,934,1038,933,1066,757,1060,574,1063" n="poly">regis. Data VIII k<expan>a</expan>l<expan>endas</expan> nov<expan>em</expan>br<expan>is</expan>, indict<expan>ion</expan>e XII<hi rend="exposant">a</hi>,</seg>
+                    <seg rend="49,1081,149,1079,300,1075,313,1098,299,1105,194,1105,40,1109" n="poly">anno XII° regnante Roberto</seg>
+                    <seg rend="594,1072,781,1069,938,1074,934,1098,711,1101,587,1106" n="poly">rege gllorioso. Acta publice Parisiaca</seg>
+                    <seg rend="63,1120,123,1115,310,1110,308,1131,128,1142,74,1141" n="poly">urbe, anno incarnati V<expan>er</expan>bi</seg>
+                    <seg rend="589,1114,732,1107,904,1109,901,1129,697,1130,589,1138" n="poly">millesimo.&#160;» Et nous le transc<expan>r</expan>ist de ces</seg>
+                    <seg rend="72,1150,217,1144,347,1140,411,1149,408,1171,159,1175,67,1172" n="poly">leittres avons seelé de seel de la p<expan>re</expan>vosté</seg>
+                    <seg rend="570,1143,657,1141,819,1135,900,1140,914,1167,697,1170,576,1172" n="poly">de Paris l’an <expan>et</expan> le mois desusdiz.</seg>
+                </p>
+            </div>
+            <div type="transcription">
+                <div type="texte">
+                    <l>A touz ceuls qui ces leittres verront, <term n="Guy du Més est attesté comme prévôt de Paris (plus exactement comme «&#160;garde de la prévôté&#160;», ne tenant pas la prévôté à ferme), représentant direct du pouvoir royal dans la ville et alentour, entre 1277 et 1281.">Guy du Mes</term>, garde de la prevosté de Paris, salut.</l>
+                    <l>Nous faisons asavoir que, l’an de grace mil CC soissante dis et neuf, ou mois de decembre,</l>
+                    <l>veimes unes leittres en la fourme qui s’ensuit&#160;:</l>
+                    <l>«&#160;In nomine sancte et individue Trinitatis. <term n="Robert II le Pieux, associé au trône le 25 décembre 987, seul roi au décès de Hugues Capet le 24 octobre 996.">Robertus</term>, divina providente clemencia</l>
+                    <l>Francorum rex. Si erga loca divinis cultibus mancipata propter amorem Dei eorumque in</l>
+                    <l>eisdem locis famulancium beneficia oportuna largimur, premia nobis apud Dominum</l>
+                    <l>eterne remuneracionis rependi non diffidimus. Idcirco noverit sagacitas seu industria</l>
+                    <l>omnium nostrorum fidelium tam presencium <term n="Le copiste de 1279 a souvent lu à tort «&#160;eciam&#160;» l’abréviation «&#160;et&#160;» de l’original de 999, que l’on rend ici avec un sens affaibli ou comme une simple conjonction.">quam eciam</term> futurorum quia miles quidam</l>
+                    <l>noster nomine <term n="Ermenfroi, connu comme vassal du comte Bouchard II, mort après 1006.">Ermenfredus</term> eciam uxor sua nomine Ermensendis nostram adierunt</l>
+                    <l>serenitatem, humiliter petentes quatinus res eorum, quas in pago Parisiaco sitas super</l>
+                    <l>fluvium Sequane habebant, scilicet alodum nomine <term n="Évry (Essonne, ch.-l. dép.). L’original de 999 donne «&#160;Ayvreum&#160;».">Arvreum</term>, ab oppido <term n="Corbeil-Essonnes (Essone, ch.-l. cant.).">Corbolii</term></l>
+                    <l>distantem miliariis duobus, cum ecclesia eciam <term n="La «&#160;voirie&#160;» (on parle plus bas des voyers) recouvre fondamentalement les droits de police et de justice, tout ce qui touche le maintien de l’ordre&#160;; elle sous-entend aussi l’idée de délégation (le vicarius est à l’origine un subordonné du comte).">vicaria</term> eciam <term n="L’avouerie semble viser ici à la fois l’exclusion de toute intervention d’un puissant laïque agissant comme avoué du monastère, et l’ensemble des droits qu’il exerce et lève à cette occasion.">advocacione</term>, cum silvis,</l>
+                    <l>vineis, pratis, aquis, terris cultis et incultis ad eundem pertinentibus, monasterio</l>
+                    <l><term n="L’abbaye des Fossés (Saint-Maur-des-Fossés, Val-de-Marne, ch.-l. cant.), abbaye bénédictine fondé en 638, a été réformée par Maïeul de Cluny en 988 à la demande de Hugues Capet. Elle a accueilli en 868 les reliques de saint Maur, dont elle finit par prendre le nom.">Fossatensi</term>, quod est dedicatum in honore beate Dei genitricis Marie et beatorum</l>
+                    <l>apostolorum Petri et Pauli seu beati Mauri, patris Benedicti discipuli, qui in eodem loco</l>
+                    <l>requiescit, eciam abbati ejusdem loci nomine Teutoni, eciam fratribus ibidem Deo</l>
+                    <l>militantibus pro eterne remuneracione vite et pro animarum suarum sive <term n="Hésitant sur un «&#160;G&#160;» majuscule qui lui était étranger, le copiste de 1279 a rendu par «&#160;Zelo&#160;» le nom franc «&#160;Gelo/Geilo&#160;».">Zelonis</term> atque</l>
+                    <l>parentum eorum absolucione tradiderunt auctoritatis nostre precepto concedere eciam</l>
+                    <l>confirmare dignaremur. Similiter petierunt obsecrentes ut roboraretur nostro regali</l>
+                    <l>munimine donacio de villa in eodem pago sita, que vocatur <term n="Lisses (Essonne, cant. Évry-Sud).">Licias</term>, prope jamdictum</l>
+                    <l>alodum miliariis duobus, quam de beneficio <term n="Bouchard «&#160;le Vénérable&#160;», fidèle du roi de France, comte de Vendôme, de Corbeil, de Melun et de Paris de 959 à 1007, avoué de Saint-Maur-des-Fossés.">Burchardi</term> comitis eciam filii ejus honore</l>
+                    <l>pontificali <term n="Peinant à lire et comprendre le «&#160;precluenti[s]&#160;» à la fois alambiqué et fautif de l’original, le copiste a simplifié la leçon (c’est une illustration du principe philologique de la lectio difficilior&#160;: les copistes préfèrant des mots plus simples, la leçon plus complexe a plus de chance d’être bonne).">prudentis</term> <term n="Renaud, fils du comte Bouchard, chancelier du roi à partir de 989, évêque de Paris à partir de 991.">Rainaldi</term> tenent, quorum consensu eciam voluntate hoc donacionis</l>
+                    <l>preceptum contulerunt. Suggerentibus itaque ac intervenientibus dilectis nostris videlicet</l>
+                    <l>dulcissima genitrice nostra <term n="Adélaïde, sœur du duc d’Aquitaine Guillaume IV, épouse de Hugues Capet, encore attestée en 1003.">Adelaide</term> atque conjuge nostra <term n="Adélaïde, sœur du duc d’Aquitaine Guillaume IV, épouse de Hugues Capet, encore attestée en 1003.">Berta</term>, nos precibus eorum</l>
+                    <l>libentissime faventes, superius inserta jamdicto monasterio munificencie nostre precepto</l>
+                    <l>confirmamus, per quod jubentes firmiter autorizamus ut, ambobus ab hac luce</l>
+                    <l>migrantibus, Ermenfredo videlicet et conjugeque ejus, predicto in cenobio Regi militantes</l>
+                    <l>superno villas jam superius nominatas cum ecclesiis eciam advocacionibus eciam cum his</l>
+                    <l>que ad ipsas respiciunt absque ulla contradictione vel aliqua vicariorum potestate</l>
+                    <l>perpetuo teneant atque possideant. Quapropter precipimus ut nullus rex, nullus</l>
+                    <l>episcopus, nullus comes sive qualibet potestas illas res ut in superius nominatas disponere</l>
+                    <l>aut in sua potestate quicquam horum decernere vel delegare presumat, sed ut perpetua</l>
+                    <l>soliditate consistens per cuncta evi tempora inviolabilem obtineat firmitatis vigorem,</l>
+                    <l>manu propria subterfirmavimus eciam sigilli nostri inpressione insigniri jussimus. <term n="Francon, chancelier du roi jusqu’en 1018, évêque de Paris de 1020 à 1030.">Franco</term></l>
+                    <l>cancellarius scripsit. Signum Roberti gloriosisimi [<hi rend="italic">monogramme</hi>] regis. Data VIII kalendas</l>
+                    <l>novembris, indictione XII<hi rend="exposant">a</hi>, anno XII° regnante Roberto rege gllorioso. Acta publice</l>
+                    <l>Parisiaca urbe, anno incarnati Verbi millesimo.&#160;»</l>
+                   <l>Et nous le transcrist de ces leittres avons seelé de seel de la prevosté de Paris l’an et le mois desusdiz.</l>
+                </div>
+                <div type="traduction">
+                    <l>À tous ceux qui verront ces lettres, <term n="Guy du Més est attesté comme prévôt de Paris (plus exactement comme «&#160;garde de la prévôté&#160;», ne tenant pas la prévôté à ferme), représentant direct du pouvoir royal dans la ville et alentour, entre 1277 et 1281.">Guy du Més</term>, garde de la prévôté de Paris, salut. Nous</l>
+                    <l>faisons savoir que, l’an de grâce 1279, au mois de décembre, nous avons vu des lettres</l>
+                    <l>ainsi rédigées&#160;:</l>
+                    <l>«&#160;Au nom de la sainte et indivise Trinité. <term n="Robert II le Pieux, associé au trône le 25 décembre 987, seul roi au décès de Hugues Capet le 24 octobre 996.">Robert</term>, par la disposition de la divine clémence</l>
+                    <l>roi des Francs. Si nous offrons des bénéfices appropriés aux lieux consacrés au culte divin</l>
+                    <l>pour l’amour de Dieu et de ceux qui le servent dans ces mêmes lieux, nous ne doutons pas</l>
+                    <l>d’être gratifiés auprès de Dieu des dons de la récompense éternelle. Sachent donc la</l>
+                    <l>sagacité et l’attention de tous nos fidèles, tant présents <term n="Le copiste de 1279 a souvent lu à tort «&#160;eciam&#160;» l’abréviation «&#160;et&#160;» de l’original de 999, que l’on rend ici avec un sens affaibli ou comme une simple conjonction.">que</term> futurs, que l’un de nos</l>
+                    <l>chevaliers nommé <term n="Ermenfroi, connu comme vassal du comte Bouchard II, mort après 1006.">Ermenfroi</term> et son épouse nommée Ermensende se rendirent devant</l>
+                    <l>notre sérénité et lui demandèrent humblement de bien vouloir concéder et confirmer d’un</l>
+                    <l>précepte de notre autorité le don qu’ils avaient fait des biens qu’ils possédaient, sis en</l>
+                    <l>Parisis, sur la Seine, c’est-à-dire un alleu nommé <term n="Évry (Essonne, ch.-l. dép.). L’original de 999 donne «&#160;Ayvreum&#160;».">Évry</term>, distant de deux milles du château</l>
+                    <l>de <term n="Corbeil-Essonnes (Essone, ch.-l. cant.).">Corbeil</term>, avec l’église, la <term n="La «&#160;voirie&#160;» (on parle plus bas des voyers) recouvre fondamentalement les droits de police et de justice, tout ce qui touche le maintien de l’ordre&#160;; elle sous-entend aussi l’idée de délégation (le vicarius est à l’origine un subordonné du comte).">voirie</term> et <term n="L’avouerie semble viser ici à la fois l’exclusion de toute intervention d’un puissant laïque agissant comme avoué du monastère, et l’ensemble des droits qu’il exerce et lève à cette occasion.">l’avouerie</term>, avec les bois, les vignes, les prés, les eaux,</l>
+                    <l>les terres cultivées et incultes qui en dépendent, au monastère des <term n="L’abbaye des Fossés (Saint-Maur-des-Fossés, Val-de-Marne, ch.-l. cant.), abbaye bénédictine fondé en 638, a été réformée par Maïeul de Cluny en 988 à la demande de Hugues Capet. Elle a accueilli en 868 les reliques de saint Maur, dont elle finit par prendre le nom.">Fossés</term> qui est dédié en</l>
+                    <l>l’honneur de la bienheureuse Marie mère de Dieu et des saints apôtres Pierre et Paul et du</l>
+                    <l>disciple du père Benoît, saint Maur, qui repose en ce lieu, ainsi qu’à l’abbé de ce lieu</l>
+                    <l>nommé Teuton et aux frères qui y combattent pour Dieu, et ce en échange de la</l>
+                    <l>récompense de la vie éternelle et pour l’absolution de leurs âmes et de celles de <term n="Hésitant sur un «&#160;G&#160;» majuscule qui lui était étranger, le copiste de 1279 a rendu par «&#160;Zelo&#160;» le nom franc «&#160;Gelo/Geilo&#160;».">Geilon</term> et</l>
+                    <l>de leurs parents. De même ils ont demandé et supplié que soit confirmée de notre royale</l>
+                    <l>protection la donation d’une <hi rend="italic">villa</hi> sise dans le même territoire, nommée <term n="Lisses (Essonne, cant. Évry-Sud).">Lisses</term> et à deux</l>
+                    <l>milles de l’alleu susmentionné, qu’ils tiennent du bénéfice du comte <term n="Bouchard «&#160;le Vénérable&#160;», fidèle du roi de France, comte de Vendôme, de Corbeil, de Melun et de Paris de 959 à 1007, avoué de Saint-Maur-des-Fossés.">Bouchard</term> et de son</l>
+                    <l>fils <term n="Renaud, fils du comte Bouchard, chancelier du roi à partir de 989, évêque de Paris à partir de 991.">Renaud</term> qui <term n="Peinant à lire et comprendre le «&#160;precluenti[s]&#160;» à la fois alambiqué et fautif de l’original, le copiste a simplifié la leçon (c’est une illustration du principe philologique de la lectio difficilior&#160;: les copistes préfèrant des mots plus simples, la leçon plus complexe a plus de chance d’être bonne).">brille</term> de l’éclat de la charge pontificale, qui ont consenti et acquiescé à</l>
+                    <l>leur acte de don. Sur les suggestions et les interventions de nos aimées <term n="Adélaïde, sœur du duc d’Aquitaine Guillaume IV, épouse de Hugues Capet, encore attestée en 1003.">Adélaïde</term>, notre</l>
+                    <l>très douce mère, et <term n="Berthe, veuve d’Eudes I de Blois et deuxième épouse de Robert le Pieux. Les époux sont alors sous le coup de l’anathème pontifical pour union illicite.">Berthe</term>, notre épouse, nous avons accueilli bien volontiers leurs prières,</l>
+                    <l>et confirmons ce qui a été rapporté plus haut audit monastère, du précepte de notre</l>
+                    <l>munificence, par lequel nous ordonnons et autorisons fermement que lorsque tous deux,</l>
+                    <l>Ermenfroi et son épouse, auront quitté cette vie, ceux qui combattent pour le Roi suprême</l>
+                    <l>dans le susdit monastère pourront tenir et posséder à perpétuité, sans aucune</l>
+                    <l>contradiction, hors du pouvoir de tout voyer, les <hi rend="italic">ville</hi> ci-dessus nommées, avec les églises</l>
+                    <l>et les avoueries et tout ce qui en dépend. Pour ce faire, nous ordonnons qu’aucun roi,</l>
+                    <l>aucun évêque, aucun comte ou puissance n’ose disposer des choses ci-dessus nommées ni</l>
+                    <l>les soumettre à son pouvoir ou les déléguer, mais pour que [cette décision], solidement</l>
+                    <l>fondée à perpétuité, obtienne la force inviolable de la fermeté pour les temps à venir, nous</l>
+                    <l>l’avons plus bas confirmée de notre main et fait marquer de l’empreinte de notre sceau. Le</l>
+                    <l>chancelier <term n="Francon, chancelier du roi jusqu’en 1018, évêque de Paris de 1020 à 1030.">Francon</term> a écrit. Seing de Robert très glorieux [<hi rend="italic">monogramme</hi>] roi. Donné le</l>
+                    <l>huitième jour des calendes de novembre, indiction 12<hi rend="exposant">e</hi>, 12<hi rend="exposant">e</hi> année du règne du glorieux roi</l>
+                    <l>Robert. Fait publiquement dans la ville de Paris, la millième année du Verbe incarné.&#160;»</l>
+                    <l>Et nous avons scellé la transcription de ces lettres du sceau de la prévôté de Paris l’an et le</l>
+                    <l>mois dessusdits.</l>
+                </div>
+                <div type="commentaire">
+                    <head>Conversion de la date&#160;:</head>
+                    <p>Sur l’acte original, on voit que l’année de l’Incarnation a été ajoutée d’une main postérieure&#160;; par recoupements, on sait qu’il s’agit d’une addition d’un moine historiographe de l’abbaye, Eudes de Saint Maur, auteur de la Vie du comte Bouchard (entre 1037 et 1058). Son calcul d’ailleurs est erroné&#160;: la douzième année du règne de Robert II court du 25 décembre 998 au 24 décembre 999, couvrant exactement l’indiction douze (sans doute changée à Noël).</p>
+                </div>
+                <div type="regeste">
+                    <head>999, 26 octobre. — Paris.</head>
+                    <p>Le roi Robert [le Pieux], à la prière du chevalier Ermenfroi et de son épouse Ermensende, confirme la donation que ces derniers ont faite au monastère de Saint Maur-des-Fossés et à son abbé Teuton, de l’alleu d’Évry, sis à deux milles de Corbeil, avec l’église, la voirie et l’avouerie, les forêts, les vignes, les prés, les eaux et les terres qui en dépendent. Le roi confirme aussi au monastère la <hi rend="italique">villa</hi> de Lisses, à deux milles d’Evry, qu’ils tiennent en bénéfice du comte Bouchard et de son fils l’évêque Renaud. Le don, de plein effet à leur décès, est fait pour l’âme des donateurs, de Geilon et de leurs parents. — Vidimus de décembre 1279 sous le sceau de la prévôté de Paris.</p>
+                    <p>L’acte est décrit par W.M. Newman, <hi rend="italic">Catalogue des actes de Robert II, roi de France</hi>, Paris, 1937, n° 13.</p>
+                </div>
+            </div>
+            <div type="commentaire" n="diplomatique">
+                <head>Commentaire diplomatique</head>
+                <div n="1">
+                    <head>Commentaire de l&#x2019;acte de 999</head>
+                    <div type="contenu_commentaire">
+                    <p>La source ici commentée ne nous permet pas d’étudier les caractères externes de l’acte de 999, à l’exception (et encore sous la forme d’une copie inévitablement infidèle) du monogramme royal (la copie de 1279 peut être de ce fait qualifiée de «&#160;copie figurée&#160;»). De la même façon, la comparaison avec l’original, conservé par ailleurs, montre que la transcription n’est pas exempte de déformations, la plupart du temps bénignes (voir ci-après). À la jonction des traits de fond et de forme, la médiation de la copie nous empêcherait, si l’original n’était pas conservé, de comprendre la présence du millésime (d’ailleurs faux) dans la formule de date. Autant d’indices qui montrent tout le péril qu’il y a, surtout pour les actes du haut Moyen Âge, à fonder l’examen diplomatique sur des textes qui seraient connus par copies. Pourtant, comme la tradition de ces textes est souvent pauvre et compliquée, les diplomatistes sont bien contraints de recourir aux copies&#160;: ils tentent d’établir une base de connaissance plus solide sur les originaux, et l’enrichissent ensuite, avec prudence, d’observations tirées des actes connus par copie.</p>
+                        <p>La comparaison avec les pratiques de l’acte royal des X<hi rend="exposant">e</hi>-XI<hi rend="exposant">e</hi> siècles permettent quelques conclusions sur l’acte de 999.</p>
+                    <p>En premier lieu, les parties du discours sont aussi traditionnelles que nettement délimitées&#160;: une invocation trinitaire usuelle depuis Charles le Chauve&#160;; une suscription qui exclut le pronom personnel&#160;; un préambule assez court et très stéréotypé, même si son expression est un peu fleurie (de l’utilité des aumônes aux églises)&#160;; un long exposé&#160;; un dispositif qui reprend sur le mode de l’ordre, du «&#160;précepte&#160;», le fond de la prière adressée au roi, assorti de quelques prohibitions&#160;; une corroboration annonçant monogramme et sceau (où <hi rend="italic">sigillum</hi> a achevé de remplacer <hi rend="italic">annulum</hi>)&#160;; la récognition du chancelier (allégée par rapport au canon carolingien)&#160;; la souscription du roi&#160;; la date bipartite (<hi rend="italic">Data</hi> + date de temps, <hi rend="italic">Acta</hi> + date de lieu, où le millésime détonne par sa position).</p>
+                    <p>Tout cela fleure le précepte caroligien, comme le vocabulaire de l’acte (<hi rend="italic">auctoritatis nostre precepto, munificiencie nostre precepto</hi>, qui contraste avec le «&#160;lettres&#160;» de 1279), comme les métaphores (<hi rend="italic">sagacitas seu industria fidelium, nostram adierunt serenitatem</hi>). Légères discordances&#160;: un acte carolingien classique n’aurait sans doute pas qualifié de «&#160;précepte&#160;» l’acte des donateurs laïques (le «&#160;précepte&#160;» royal s’oppose à la «&#160;charte&#160;» des autres auteurs) ni usé du vocabulaire des droits de voirie et avouerie. En sens inverse, l’absence originelle du millésime renvoie à une pratique antérieure aux années 960, où la chancellerie royale adopte l’usage systématique de l’ère chrétienne.</p>
+                    <p>Ces derniers points, confirmés par l’étude de l’écriture, nous mettent sur la piste d’une hypothèse très vraisemblable&#160;: celle de l’établissement de l’acte par le destinataire, sur la base des modèles carolingiens disponibles dans son chartrier, produisant un acte qui est largement consonnant à la tradition carolingienne de la chancellerie de Robert le Pieux, mais qui fait encore plus carolingien qu’elle. Cela ne veut pas dire que le roi soit totalement passif&#160;: l’acte s’insère parfaitement dans une série de dispositions prises en faveur de l’abbaye par les Capétiens, brillants et généreux protecteurs au-dessus du protecteur immédiat, leur très fidèle et non moins pieux Bouchard.</p>
+                        </div>
+                </div>
+                <div n="2">
+                    <head>Commentaire de la copie de 1279</head>
+                    <div type="contenu_commentaire">
+                        <p>Comme on l’a dit, l’original du diplôme de 999 est conservé&#160;: pour l’éditeur, la copie de 1279, ici présentée, est «&#160;inutile&#160;», en ce sens qu’elle n’apporte rien à l’établissement du texte (sauf le cas éventuel où l’original présenterait une lacune). Mais ce n’est pas à dire qu’elle est sans intérêt pour le diplomatiste et l’historien&#160;: elle atteste l’intérêt que l’on portait à l’acte vieux de près de trois siècles, et la façon dont on le lisait (qualité de la copie, fascination pour le monogramme royal,…). Elle est l’une des plus anciennes copies conservées de l’acte, avec le premier cartulaire de l’abbaye. De fait, aux côtés des copies (non authentiques) des cartulaires puis des érudits de l’époque moderne, elle appartient au troisième groupe de copies souvent rencontrés par les historiens&#160;: les copies authentiques, produites par des notaires ou des juridictions, très fréquentes du XIII<hi rend="exposant">e</hi> au XVI<hi rend="exposant">e</hi> siècle, et qui permettent de produire en justice des textes certifiés conformes, sans sortir le précieux original du chartrier.</p>
+                        <p>
+                            <figure rend="81/faxmoyen.jpg"/>
+                        </p>
+                        <p>La mise en page est soignée, mais économe de parchemin, dans les marges comme dans le repli où l’on voit la fente ménagée pour la double queue supportant le sceau&#160;; l’ornementation se limite à quelques initiales grossies, qui font ressortir d’autant la reproduction du monogramme royal, manifestement senti comme une pièce importante de l’autorité/authenticité de l’acte copié.</p>
+                        <p>La justification est bien respectée à gauche, à l’exception, à la ligne 26, du mot <hi rend="italic">anno</hi>, qui a sans doute été ajouté à la relecture. Les fins des lignes sont plus irrégulières, même si deux mots ont été coupés, mais sans trait d’union, pour ne pas trop déborder de la justification (<hi rend="italic">Arvre-rum</hi> l. 7, <hi rend="italic">Ermenfre-do</hi> l. 18). On remarque aussi que des lettres finales sont suivies d’un trait montant, comme pour éviter des rajouts et respecter la justification. Il y a donc une certaine recherche de cohérence visuelle. De même, à la fin de l’acte, on a laissé de l’espace autour du monogramme, mais sans reproduire l’étagement en plusieurs alinéas des souscriptions et de la date&#160;: le texte est copié en un seul bloc, comme si l’on voulait délibérément tout produire, et authentifier, dans une seule coulée. Comme souvent au XIII<hi rend="exposant">e</hi> siècle, le scribe a cherché à couvrir entièrement la dernière ligne&#160;; pour ce faire, il a laissé du blanc entre le monogramme et de Paris, puis achevé la ligne d’un trait de fantaisie. Il est d’ailleurs possible que le monogramme ait d’abord été dessiné (une fois le texte précédent transcrit&#160;?) et que la fin de l’acte ait été ensuite copiée, coulée dans l’espace demeuré disponible.</p>
+                        <p>L’écriture est de type gothique. On reconnaît ainsi des crochets tournés vers la gauche sur les hastes montantes (<hi rend="italic">l</hi>, <hi rend="italic">b</hi>, <hi rend="italic">h</hi>), ou l’utilisation du d oncial. La plume utilisée est assez fine, mais les gras sont bien marqués par le scribe, surtout sur les traits exécutés du haut vers le bas. Dans l’ensemble, cette écriture est facilement visible, mais il existe des lettres difficiles à distinguer les unes des autres. Ainsi, à la ligne 13, au mot <hi rend="italic">munimine</hi>, les traits utilisés comme points sont indispensables pour distinguer les i des jambages des m et des n. En effet, on remarque que dans cet acte tous les i ne sont pas pointés. Il est difficile d’expliquer ce choix: dans certains cas, les points sont mis pour distinguer les lettres, et dans d’autres ils paraissent presque superflus.</p>
+                        <p>Trois signes de ponctuation différents sont employés&#160;: le point, le double point et un trait montant oblique vers la droite. Le plus fort et aussi le moins employé est le double point, que l’on rencontre à la ligne 2 pour marquer le début de l’acte en latin, et à la ligne 3, à la fin de l’invocation trinitaire. Plus fréquent, le point sert aussi bien à séparer les phrases (ligne 5: …<hi rend="italic">diffidimus. Idcirco</hi>…) que les groupes de mots (ligne 7-8: …<hi rend="italic">Arvrerum. ab oppido</hi>…), voire les différents éléments de la date. Enfin, le trait montant constitue la ponctuation la plus faible.</p>
+                        <p>Comme il est de règle à l’époque, le Châtelet de Paris écrit en français, et le contraste avec le latin du diplôme royal fait mieux ressortir les limites de chaque acte, limites qui, cela n’est pas moins courant, sont assez discrètement marquées du point de vue graphique (le début du diplôme royal est marqué par deux points et une initiale grossie&#160;; la fin est plus que discrète). Le formulaire employé est sobre&#160;; l’acte n’est pas encore gagné par les modes stéréotypés mais détaillés de description de l’état physique de l’acte copié.</p>
+                        <p>Le formulaire de l’acte du Châtelet s’ouvre, sur le mode des lettres d’officialité, par un protocole ternaire, adresse/suscription/salut. Rédigé en mode de procès-verbal, il donne la date de temps aussitôt après la notification. Sa partie finale comprend la corroboration et le rappel de la date.</p>
+                        <p>La copie est authentique, et fait foi devant les tribunaux. Ce n’est pas pour autant qu’elle est fidèle. Une collation avec l’original fait pourtant ressortir le soin avec lequel elle a été effectuée. Le copiste est, certes, dérouté par quelques formes&#160;: il développe l’abréviation et en «&#160;eciam&#160;», lit de travers les «&#160;g&#160;» et «&#160;y&#160;» dont la morphologie le déroute dans des noms propres («&#160;Gelo&#160;» > «&#160;Zelo&#160;», «&#160;Ayvreum&#160;» > «&#160;Arvreum&#160;»). Il corrige d’instinct des graphies sorties d’usage («&#160;Rodbertus&#160;» > «&#160;Robertus&#160;», «&#160;Franchorum&#160;» > «&#160;Francorum&#160;»). En deux endroits enfin il troque des termes vermoulus ou incompréhensibles pour des mots plus courants à son époque («&#160;propiciante&#160;» > «&#160;providente&#160;», ce qui cache la source d’inspiration de la formule de dévotion, celle des diplômes de Louis le Pieux&#160;; «&#160;precluenti&#160;» > «&#160;prudentis&#160;»)&#160;: il raisonne en termes de providence divine et de «&#160;sage homme&#160;». La qualité de la copie n’en est pas moins flagrante et dénote tout le soin apporté à sa confection.</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+    </TEI.2>

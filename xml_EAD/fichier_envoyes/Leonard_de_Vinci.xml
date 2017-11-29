@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:isbn:1-931666-33-4 file:/F:/ENC/ENC_2015-16/Cours/07_3_decembre/cpf.xsd">
+    <!-- À associer : schéma cpf, schéma pour les espace de noms XML (xml:) et schéma pour les liens xlink (pour créer des liens entre fichiers xml). -->
+    
+    <!-- ******************************************* Informations relatives au contrôle de l'instance *******************************************-->
+    
+    <control>
+        <recordId>FR-ENC-0001</recordId><!-- Identifiant de la notice, obligatoire. -->
+        <maintenanceStatus>new</maintenanceStatus><!-- Etat de la notice, obligatoire. Valeurs : new, revised, deleted, deletedReplaced (remplacée par 1 NP), deletedSplit(NP remplacée par 2 ou plusieurs NP), cancelled (obsolète mais gardée dans le système à des fins d'orientation), derived (NP exportée). -->
+        <maintenanceAgency>
+            <agencyName>Ecole nationale des chartes</agencyName><!-- Organisme responsable de la NP -->
+        </maintenanceAgency>
+        <maintenanceHistory><!-- Historique des interventions, obligatoire. -->
+            <maintenanceEvent><!-- Intervention (a minima la création) -->
+                <eventType>created</eventType><!-- Type d'interventions. Valeurs : created, derived, revised, updated (mise à jour), deleted, cancelled. -->
+                <eventDateTime>2016</eventDateTime>
+                <agentType>human</agentType>
+                <agent>Vincent Verdese</agent>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        
+        <sources><!-- Sources utilisée pour la decription de l'entité -->
+            <source>
+                <sourceEntry>BNF</sourceEntry><!-- Nom de la source -->
+                <descriptiveNote>
+                    <p>Notice BNF FRBNF11915703</p>
+                </descriptiveNote>
+            </source>
+        </sources>
+        
+    </control>
+    
+    <cpfDescription>
+        
+        <identity><!-- Eléments nécessaires à l'identification de l'entité -->
+            <entityId>ID VIAF24604287</entityId><!-- Elements identifiant l'entité -->
+            <entityType>person</entityType><!-- Autres valeurs : corporateBody, family, obligatoire. -->
+            
+            <nameEntry>
+                <part localType="surname">da Vinci</part><!-- Parties du nom de l'entité -->
+                <part localType="forename">Leonardo</part>
+            </nameEntry>
+            
+            <nameEntryParallel>
+                <nameEntry>
+                    <part localType="surname">да Винчи</part><!-- a ne pas utiliser pour les formes rejetées. -->
+                    <part localType="forename">Леонардо</part>
+                    <preferredForm>Wikipedia</preferredForm><!-- Indication du contexte ou cette forme est préférée. -->
+                </nameEntry>
+                <nameEntry>
+                    <part localType="surname">de Vinci</part>
+                    <part localType="forename">Léonard</part>
+                    <preferredForm>SUDOC</preferredForm>
+                </nameEntry>                
+            </nameEntryParallel>
+            
+        </identity>
+        
+        <description><!-- Tous les éléments de contenu comme biographie, statut juridique... -->
+            <existDates>
+                <dateRange><!-- Dates d'existence -->
+                    <fromDate standardDate="1452">1452</fromDate>
+                    <toDate standardDate="1519">1519</toDate>
+                </dateRange>
+            </existDates>
+            
+            <occupation><!-- Occupation de l'entité -->
+                <term>architecte</term>
+                <dateRange>
+                    <fromDate standardDate="1499">1499</fromDate>
+                    <toDate standardDate="1513">1513</toDate>
+                </dateRange>
+            </occupation>
+            
+            <place>
+                <placeRole>Residence</placeRole>
+                <placeEntry>château du Clos Lucé</placeEntry>
+            </place>
+            
+            <biogHist>
+                <p>Léonard de Vinci (Leonardo di ser Piero da Vinci dit Leonardo da Vinci, né à Vinci le 15 avril 1452 et mort à Amboise le 2 mai 1519, est un peintre florentin et un homme d'esprit universel, à la fois artiste, scientifique, ingénieur, inventeur, anatomiste, peintre, sculpteur, architecte, urbaniste, botaniste, musicien, poète, philosophe et écrivain.</p>
+            </biogHist>            
+        </description>
+        
+        <relations>
+            
+            <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink" cpfRelationType="associative" xlink:href="FRAN_NP_XXXXXX" xlink:type="simple" ><!-- Relations avec une entité CPF. Valeurs : identity, hierarchical, hierarchical-parent, hierarchical-child, temporal, temporal-earleir, temporal-later, family, associative -->
+                <relationEntry>Andrea del Verrocchio</relationEntry>
+                <dateRange>
+                    <fromDate standardDate="1469">1469</fromDate>
+                    <toDate standardDate="1478">1478</toDate>
+                </dateRange>
+                <descriptiveNote>
+                    <p>Après un an passé au nettoyage des pinceaux et autres petits travaux d’apprenti...</p>
+                </descriptiveNote>
+            </cpfRelation>
+            
+            <resourceRelation resourceRelationType="creatorOf"><!-- Relations avec une ressource (par exemple des ensembles documentaires, ressources bibliographiques ou artefacts.) Autres valeurs : subjectOf, other. -->
+                <relationEntry>La Joconde</relationEntry>
+                <dateRange>
+                    <fromDate standardDate="1503">1503</fromDate>
+                    <toDate standardDate="1503">1506</toDate>
+                </dateRange>
+            </resourceRelation>
+            
+            <!--<functionRelation><relationEntry></relationEntry></functionRelation>--><!-- Relations avec des fonctions -->
+        </relations>
+        
+    </cpfDescription>
+</eac-cpf>

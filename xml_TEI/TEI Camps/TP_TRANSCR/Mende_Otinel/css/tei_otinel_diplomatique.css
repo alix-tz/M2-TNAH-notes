@@ -1,0 +1,115 @@
+@import "tei_oxygen.css";
+
+/*Les régularisations de formes*/
+orig{
+    display:none
+}
+abbr{
+    display:none
+}
+
+expan{
+    content:normal;
+    font-style:normal;
+}
+ex{
+    content:normal;
+    font-style:italic;
+}
+
+reg{
+    content:normal;
+    font-style:normal;
+}
+
+/*Les règles d'espacement*/
+space[quantity="0.5"]{
+    content:""
+}
+
+w[rend="aggl"]::after{
+    content:" ";
+}
+
+w[rend="elision"]::after{
+    content:"'";
+}
+
+pb::before{
+    content:"[fol. ";
+    font-weight:bold;
+}
+pb::after{
+    content:"]";
+    font-weight:bold;
+}
+pb{
+    display:block;
+    content:attr(n);
+    color:blue;
+    font-weight:bold;
+}
+
+cb::before{
+    content:"[col. ";
+    font-weight:bold;
+}
+cb::after{
+    content:"]";
+    font-weight:bold;
+}
+cb{
+    display:block;
+    content:attr(n);
+    color:blue;
+    font-weight:bold;
+    counter-reset:lb;
+}
+
+lg::before{
+    display:block;
+    content:attr(n);
+    font-weight:bold;
+}
+
+
+l::before{
+    content:counter(numVers);
+    color:gray;
+    width:2em;
+    display:inline-block;
+    counter-increment:numVers;
+}
+
+
+corr::before{
+    content:"["
+}
+corr::after{
+    content:"]"
+}
+sic::before{
+    content:"<"
+}
+sic::after{
+    content:">"
+}
+
+sic{
+    display:inline
+}
+/*Noms propres*/
+name{
+    color:brown;
+}
+persName{
+    color:brown;
+}
+placeName{
+    color:brown;
+}
+rs{
+    color:brown;
+}
+
+

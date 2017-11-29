@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>La Chason de Roland</title>
+            <author>anonyme</author>
+            <editor>Alix Chagué</editor>
+         </titleStmt>
+         <publicationStmt>
+            <p>Document de travail produit pour le cours de TEI avec Jean-Baptiste Camps</p>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <settlement>Oxford</settlement>
+                  <repository>lieu de conservation</repository>
+                  <idno>identifiant</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface>
+         <graphic url="004rb.jpg" width="1848px" height="2663px" xml:id="fax"/>
+         <zone xml:id="zone_1" ulx="98" uly="112" lrx="1200" lry="190"/>
+         <zo
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <pb/>
+         <lg type="laisse">
+            <lb/><l>L e duc oger ⁊ larceueſque turpın.</l>
+            <lb/><l>R ıcharδ lı uélz ⁊ ſun neuͦld henrı.</l>
+            <lb/><l>e δe gaſcuıgne lı proz quenſ acelın.</l>
+            <lb/><l>t eδbalδ de reınſ ⁊ mılun ſun cuſın.</l>
+            <lb/><l>⁊ ſı ıfurent ⁊ gererſ ⁊ gerın.</l>
+            <lb/><l>e nſembloδ elſ lı quenſ Rollant ıuınt.</l>
+            <lb/><l>⁊ olıuer lı proz ⁊ lı gentılz.</l>
+            <lb/><l>δ eſ francs δe france en ı aδ pluſ δe mıl.</l>
+            <lb/><l>G ueneſ ıuınt kı la traıſun fıſt.</l>
+            <lb/><l>D eſ ore cumencet le cunſeıll que mal pͥſt .AOI.</l>
+         </lg>
+         <lg type="laisse">
+            <lb/><l>D e ſun aueır me uoelt duner grant maſſe.</l>
+            <lb/><l>v rſ ⁊ leunſ ⁊ ueltreſ caeıgnableſ.</l>
+            <lb/><l>S et cenz cameılz ⁊ mıl hoſturſ muableſ.</l>
+            <lb/><l>Q uatre cenz mulſ cargez δel ór δarabe.</l>
+            <lb/><l>a uoec ı co pluſ δe cınquante care.</l>
+            <lb/><l>M aıſ ıl me manδet que en france men alge.</l>
+            <lb/><l>J l me ſıurat aδ aíſ a mun eſtage.</l>
+            <lb/><l>S ı receu͛rat la noſtre leı pluſ ſalue.</l>
+            <lb/><l>x pĩenſ err δe meı tenδrat ſeſ marcheſ.</l>
+            <lb/><l>M aıſ ıo ne ſaı quelſ en ÷ ſıſ curageſ.</l>
+            <lb/><l>D ıent franceıſ ıl nuſ ıcuuent guarδe. AOI.</l>
+         </lg>
+         <lg type="laisse">
+            <!-- il manque deux vers ici-->
+            <lb/><l>L ı emꝑereſ out ſa raıſun fenıe.</l>
+            <lb/><l>L ıquenſ Roll̃. kı nel otrıet mıe.</l>
+            <lb/><l>e n pıez ſe drecet ſı lı uınt cuntreδıre.</l>
+            <lb/><l>J l dıſt alreı ıa mar crerez marſılıe.</l>
+            <lb/><l>S et anz pleınſ que en eſpaıgne uenımeſ.</l>
+         </lg>
+         <lb/>
+         <pb/>
+         <lg type="laisse">
+            <lb/><l>J o uoſ cũqͥſ ⁊ nopleſ ⁊ cõmıbleſ.</l>
+            <lb/><l>p rıſ auualte~rne ⁊ la tere δe pıne.</l>
+            <lb/><l>⁊ balaſgueδ ⁊ tuele ⁊ ſezılıe.</l>
+            <lb/><l>L ı reıſ marſılıe ıfıſt mult que traıtre.</l>
+            <lb/><l>D e ſeſ paıenueıat quınze.</l>
+            <lb/><l>c haucunſ poꝛtout une brancheδolıue.</l>
+            <lb/><l>N uncerent uoſ cez paroleſ meıſme.</l>
+            <lb/><l>A uoz franceıſ un cunſeıll en preſıſteſ.</l>
+            <lb/><l>L oerent uoſ alqͤſ de legerıe.</l>
+            <lb/><l>D ouſ δe uoz cunteſ al paıen trameſıſteſ</l>
+            <lb/><l>L un fut baſan ⁊ lı altreſ baſılıeſ.</l>
+            <lb/><l>L eſ chef en pͥſt eſ puıſ δe ſuz haltılıe.</l>
+            <lb/><l>F aıteſ la guer cũ uoſ lauez enpͥſe.</l>
+            <lb/><l>e n ſarraguce menez uoſtre oſt banıe.</l>
+            <lb/><l>M etez le ſege a tute vrẽ uıe.</l>
+            <lb/><l>S ı uengez celſ que lı felſ fıſt ocıre. AOI.</l>
+         </lg>
+         <lg type="laisse">
+            <lb/><l>L ı emꝑe en tınt ſun chef enbrunc.</l>
+            <lb/><l>S ı duıſt ſa barbe a faıtaδ fun gernuN.</l>
+            <lb/><l>N e ben ne mal ne reſpunt ſun neuulδ.</l>
+            <lb/><l>F ranceıſ ſe taıſent ne maıſ que guenelun.</l>
+            <lb/><l>e n pıez ſe drecet ſı uınt δeuant carlun.</l>
+            <lb/><l>M ult fıerem̃t cum̃cet ſa raıſun.</l>
+            <lb/><l>e dıſt al reı ıa mar crerez brıcuN.</l>
+            <lb/><l>N e meı ne altre ſe δe uoſtre ꝓδ nun.</l>
+            <lb/><l>Q uant co uoſ manδet lı reıſ marſılıun</l>
+            <lb/><l>Qͥ l δeuenδrat ıoınteſ ſeſ maınſ tıſ hom.</l>
+            <lb/><l>e tute eſpaıgne tenδrat par uoſtre dun.</l>
+         </lg>
+      </body>
+   </text>
+</TEI>

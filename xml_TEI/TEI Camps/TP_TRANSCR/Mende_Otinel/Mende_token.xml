@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="rng/Modele.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="rng/Modele.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="css/tei_otinel_imitatif.css" title="imitative" alternate="yes"?>
+<?xml-stylesheet type="text/css" href="css/tei_otinel_diplomatique.css" title="diplomatique" alternate="yes"?>
+<?xml-stylesheet type="text/css" href="css/tei_otinel_edition.css" title="edition" alternate="yes"?>
+<!DOCTYPE TEI [
+<!-- allographes -->
+    <!ENTITY a-rond "<choice><reg>a</reg><orig>ɑ</orig></choice>">
+    <!ENTITY D "<choice><reg>d</reg><orig>D</orig></choice>">
+    <!ENTITY i "<choice><reg>i</reg><orig>ı</orig></choice>">
+    <!ENTITY s-long  "<choice><reg>s</reg><orig>ſ</orig></choice>">
+    <!ENTITY u-pour-v "<choice><reg>v</reg><orig>u</orig></choice>">
+<!-- diacritiques -->
+    <!ENTITY accent "<orig>&#769;</orig>">
+<!-- abréviations -->
+    <!ENTITY uostre "<choice><expan>v<ex>ost</ex>re</expan><abbr>ure&#x0303;</abbr></choice>">
+] >
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">La Chanson d'Otinel, ms. M</title>
+                <title type="sub">Transcription du fragment de Mende de la
+                    Chanson d'Otinel</title>
+                <editor xml:id="JBC">Jean-Baptiste camps</editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority>
+                    <persName><forename>Jean-Baptiste</forename><surname>Camps</surname></persName>
+                    <address>
+                        <orgName>École nationale des chartes</orgName>
+                        <addrLine>65 rue de Richelieu</addrLine>
+                        <addrLine>F-75012 Paris</addrLine>
+                    </address>
+                    <email>jbcamps@hotmail.com</email>
+                </authority>
+                <availability status="restricted">
+                    <licence>Fichier de travail, à ne pas diffuser.</licence>
+                </availability>
+                <date>2015</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="M">
+                    <msIdentifier>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Département des manuscrits</repository>
+                        <collection>Nouvelles acquisitions françaises</collection>
+                        <idno>5094-II</idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change from="2013" to="2015" who="#JBC">Transcription et encodage du fichier</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="1r" facs="facsimile/naf-5094_1r.jpg"/>
+            <cb n="a"/>
+            <lg type="laisse" n="[XIX]">
+                <lb/>
+                <l>
+                    <unclear><w><hi rend="initiale detach">&D;</hi>e</w>
+                        <w>que&i;</w></unclear>
+                    <rs><w>fr&a-rond;nce&i;&s-long;</w></rs>
+                    <w>unt</w>
+                    <w>l&i;</w>
+                    <w>plu&s-long;ur</w>
+                    <w>en&u-pour-v;&i;&accent;e</w></l>
+                <lb/>
+                <l>
+                    <gap reason="damage"/>
+                    <w>e&s-long;t</w>
+                    <w>l&a-rond;</w>
+                    <w>le&i;</w>
+                    <w>empl&i;&accent;</w></l>
+                <lb/>
+                <l>
+                    <gap reason="damage"/>
+                    <unclear reason="damage"><w>pt&i;ze</w></unclear>
+                    <gap/>
+                    <w>&a-rond;&u-pour-v;ez</w>
+                    <w>&uostre;</w>
+                    <w>le&i;</w>
+                    <w>gerp&i;&accent;e</w>
+                </l>
+                <lb/>
+                <l><unclear><w><hi rend="initiale detach">p</hi>renez</w>
+                        <w>me&a-rond;</w>
+                        <w>f&i;lhe</w></unclear>
+                    <persName ref="#Belissent"><forename><w>bel&i;&s-long;&s-long;ent</w></forename></persName>
+                    <w>&a-rond;</w><space quantity="0.5"/><w>&a-rond;m&i;&accent;e</w></l>
+                <!-- Fin de la laisse -->
+            </lg>
+            <!-- Laisses suivantes -->
+            
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="rng/Modele.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="rng/Modele.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="css/tei_otinel_imitatif.css" title="imitative" alternate="yes"?>
+<?xml-stylesheet type="text/css" href="css/tei_otinel_diplomatique.css" title="diplomatique" alternate="yes"?>
+<?xml-stylesheet type="text/css" href="css/tei_otinel_edition.css" title="edition" alternate="yes"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <!-- transcription diplomatique et allographétique du ms de Mende de la Chanson d'Otinel-->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">La Chanson d'Otinel, ms. M</title>
+                <title type="sub">Transcription du fragment de Mende de la
+                    Chanson d'Otinel</title>
+                <editor xml:id="JBC">Jean-Baptiste camps</editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority>
+                    <persName><forename>Jean-Baptiste</forename><surname>Camps</surname></persName>
+                    <address>
+                        <orgName>École nationale des chartes</orgName>
+                        <addrLine>65 rue de Richelieu</addrLine>
+                        <addrLine>F-75012 Paris</addrLine>
+                    </address>
+                    <email>jbcamps@hotmail.com</email>
+                </authority>
+                <availability status="restricted">
+                    <licence>Fichier de travail, à ne pas diffuser.</licence>
+                </availability>
+                <date>2015</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="M">
+                    <msIdentifier>
+                        <settlement>Paris</settlement>
+                        <institution>Bibliothèque nationale de France</institution>
+                        <repository>Département des manuscrits</repository>
+                        <collection>Nouvelles acquisitions françaises</collection>
+                        <idno>5094-II</idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc status="draft">
+            <change from="2013" to="2015" who="#JBC" status="draft">Transcription et encodage du fichier</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="1r" facs="facsimile/naf-5094_1r.jpg"/>
+            <cb n="a"/>
+            <lg type="laisse" n="[XIX]">
+                <lb/>
+                <l n="1" xml:id="M_l_1">
+                    <unclear><w lemma="de" ana="#PRE" xml:id="M_w_000001"><hi rend="initiale detach"><choice><reg>d</reg><orig>D</orig></choice></hi>e</w>
+                        <w lemma="coi2" ana="#PROrel #s #n #i" xml:id="M_w_000002">que<choice><reg>i</reg><orig>ı</orig></choice></w></unclear>
+                    <rs><w lemma="françois" ana="#NOMpro #p #m #n" xml:id="M_w_000003">fr<choice><reg>a</reg><orig>ɑ</orig></choice>nce<choice><reg>i</reg><orig>ı</orig></choice><choice><reg>s</reg><orig>ſ</orig></choice></w></rs>
+                    <w lemma="avoir" ana="#VERcjg #ind #pst #3 #p" xml:id="M_w_000004">unt</w>
+                    <w lemma="le" ana="#DETdef #p #m #n" xml:id="M_w_000005">l<choice><reg>i</reg><orig>ı</orig></choice></w>
+                    <w lemma="plusor" ana="#NOMcom #p #m #n" xml:id="M_w_000006">plu<choice><reg>s</reg><orig>ſ</orig></choice>ur</w>
+                    <w lemma="envie" ana="#NOMcom #s #f #r" xml:id="M_w_000007">en<choice><reg>v</reg><orig>u</orig></choice><choice><reg>i</reg><orig>ı</orig></choice><orig>́</orig>e</w></l>
+                <lb/>
+                <l n="2" xml:id="M_l_2">
+                    <gap reason="damage"/>
+                    <w lemma="estre1|estre" ana="#VERcjg #ind #pst #3 #s" xml:id="M_w_000008">e<choice><reg>s</reg><orig>ſ</orig></choice>t</w>
+                    <w lemma="le" ana="#DETdef #s #f #n" xml:id="M_w_000009">l<choice><reg>a</reg><orig>ɑ</orig></choice></w>
+                    <w lemma="loi" ana="#NOMcom #s #f #n" xml:id="M_w_000010">le<choice><reg>i</reg><orig>ı</orig></choice></w>
+                    <w lemma="amplir" ana="#VERppe #s #f #n" xml:id="M_w_000011">empl<choice><reg>i</reg><orig>ı</orig></choice><orig>́</orig></w></l>
+                <lb/>
+                <l n="3" xml:id="M_l_3">
+                    <gap reason="damage"/>
+                    <unclear reason="damage">
+                        <w lemma="batisier" ana="#VERppe #s #m #n" xml:id="M_w_000012">pt<choice><reg>i</reg><orig>ı</orig></choice>ze</w></unclear>
+                    <gap/>
+                    <w lemma="avoir" ana="#VERcjg #ind #pst #2 #p" xml:id="M_w_000013"><choice><reg>a</reg><orig>ɑ</orig></choice><choice><reg>v</reg><orig>u</orig></choice>ez</w>
+                    <w lemma="vostre" ana="#DETpos #2 #p #s #r" xml:id="M_w_000014"><choice><expan>v<ex>ost</ex>re</expan><abbr>urẽ</abbr></choice></w>
+                    <w lemma="loi" ana="#NOMcom #s #f #r" xml:id="M_w_000015">le<choice><reg>i</reg><orig>ı</orig></choice></w>
+                    <w lemma="guerpir" ana="#VERppe #s #f #r" xml:id="M_w_000016">gerp<choice><reg>i</reg><orig>ı</orig></choice><orig>́</orig>e</w>
+                </l>
+                <lb/>
+                <l n="4" xml:id="M_l_4"><unclear><w lemma="prendre|prenre" ana="#VERcjg #imp #2 #p" xml:id="M_w_000017"><hi rend="initiale detach">p</hi>renez</w>
+                        <w lemma="mon1" ana="#DETpos #1 #s #f #r" xml:id="M_w_000018">me<choice><reg>a</reg><orig>ɑ</orig></choice></w>
+                        <w lemma="fille" ana="#NOMcom #s #f #r" xml:id="M_w_000019">f<choice><reg>i</reg><orig>ı</orig></choice>lhe</w></unclear>
+                    <persName ref="#Belissent"><forename><w lemma="Belisent" ana="#NOMPro #s #f #r" xml:id="M_w_000020">bel<choice><reg>i</reg><orig>ı</orig></choice><choice><reg>s</reg><orig>ſ</orig></choice><choice><reg>s</reg><orig>ſ</orig></choice>ent</w></forename></persName>
+                    <w lemma="a3" ana="#PRE" xml:id="M_w_000021"><choice><reg>a</reg><orig>ɑ</orig></choice></w><space quantity="0.5"/><w lemma="ami|mie2" ana="#NOMcom #s #f #r" xml:id="M_w_000022"><choice><reg>a</reg><orig>ɑ</orig></choice>m<choice><reg>i</reg><orig>ı</orig></choice><orig>́</orig>e</w></l>
+                <!-- Fin de la laisse -->
+            </lg>
+            <!-- Laisses suivantes -->
+        </body>
+    </text>
+</TEI>
