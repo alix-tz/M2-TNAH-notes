@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>La Chason de Roland</title>
+            <title>La Chanson de Roland</title>
             <author>anonyme</author>
             <editor>Alix Chagué</editor>
          </titleStmt>
@@ -25,20 +25,30 @@
       </fileDesc>
    </teiHeader>
    <facsimile>
-      <surface>
-         <graphic url="004rb.jpg" width="1848px" height="2663px" xml:id="fax"/>
-         <zone xml:id="zone_1" ulx="98" uly="112" lrx="1200" lry="190"/>
-         <zo
-      </surface>
+      <surfaceGrp>
+         <surface>
+            <graphic url="004rb.jpg" width="1848px" height="2663px" xml:id="fax_recto"/>
+            <zone xml:id="line_1" ulx="98" uly="112" lrx="1200" lry="190"/>
+            <zone xml:id="line_2" ulx="93" uly="196" lrx="1330" lry="266"/>
+            <zone xml:id="line_3" ulx="100" uly="267" lrx="1344" lry="345"/>
+            <zone xml:id="line_4" ulx="101" uly="356" lrx="1368" lry="428"/>
+            <zone xml:id="maj_s" points="66,891 165,874 162,1021 87,1042 58,1074"/>
+            <zone xml:id="maj_l" points="6,1681 108,1686 120,1821 183,1803 180,1869 4,1891"/>
+         </surface>
+         <surface>
+            <graphic url="OO4vb.jpg" width="1529px" height="2184px" xml:id="fax_verso"/>
+            <zone xml:id="maj_l2" points="2,1057 109,1072 97,1230 193,1242 175,1311 2,1309"/>
+         </surface>
+      </surfaceGrp>
    </facsimile>
    <text>
       <body>
          <pb/>
          <lg type="laisse">
-            <lb/><l>L e duc oger ⁊ larceueſque turpın.</l>
-            <lb/><l>R ıcharδ lı uélz ⁊ ſun neuͦld henrı.</l>
-            <lb/><l>e δe gaſcuıgne lı proz quenſ acelın.</l>
-            <lb/><l>t eδbalδ de reınſ ⁊ mılun ſun cuſın.</l>
+            <lb/><l facs="#line_1">L e duc oger ⁊ larceueſque turpın.</l>
+            <lb/><l facs="#line_2">R ıcharδ lı uélz ⁊ ſun neuͦld henrı.</l>
+            <lb/><l facs="#line_3">e δe gaſcuıgne lı proz quenſ acelın.</l>
+            <lb/><l facs="#line_4">t eδbalδ de reınſ ⁊ mılun ſun cuſın.</l>
             <lb/><l>⁊ ſı ıfurent ⁊ gererſ ⁊ gerın.</l>
             <lb/><l>e nſembloδ elſ lı quenſ Rollant ıuınt.</l>
             <lb/><l>⁊ olıuer lı proz ⁊ lı gentılz.</l>
@@ -47,6 +57,8 @@
             <lb/><l>D eſ ore cumencet le cunſeıll que mal pͥſt .AOI.</l>
          </lg>
          <lg type="laisse">
+            <!-- il manque deux vers ici-->
+            <lb/><l><seg facs="#maj_s">S</seg> ...</l>
             <lb/><l>D e ſun aueır me uoelt duner grant maſſe.</l>
             <lb/><l>v rſ ⁊ leunſ ⁊ ueltreſ caeıgnableſ.</l>
             <lb/><l>S et cenz cameılz ⁊ mıl hoſturſ muableſ.</l>
@@ -60,8 +72,7 @@
             <lb/><l>D ıent franceıſ ıl nuſ ıcuuent guarδe. AOI.</l>
          </lg>
          <lg type="laisse">
-            <!-- il manque deux vers ici-->
-            <lb/><l>L ı emꝑereſ out ſa raıſun fenıe.</l>
+            <lb/><l><seg facs="#maj_l">L</seg> ı emꝑereſ out ſa raıſun fenıe.</l>
             <lb/><l>L ıquenſ Roll̃. kı nel otrıet mıe.</l>
             <lb/><l>e n pıez ſe drecet ſı lı uınt cuntreδıre.</l>
             <lb/><l>J l dıſt alreı ıa mar crerez marſılıe.</l>
@@ -88,7 +99,7 @@
             <lb/><l>S ı uengez celſ que lı felſ fıſt ocıre. AOI.</l>
          </lg>
          <lg type="laisse">
-            <lb/><l>L ı emꝑe en tınt ſun chef enbrunc.</l>
+            <lb/><l><seg facs="#maj_l2">L</seg> ı emꝑe en tınt ſun chef enbrunc.</l>
             <lb/><l>S ı duıſt ſa barbe a faıtaδ fun gernuN.</l>
             <lb/><l>N e ben ne mal ne reſpunt ſun neuulδ.</l>
             <lb/><l>F ranceıſ ſe taıſent ne maıſ que guenelun.</l>

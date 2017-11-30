@@ -1,0 +1,57 @@
+ALGORITHME : questionnaire suivi d'un calcul des points en fonction des réponses pour évaluer l'estime de soi.
+
+VARIABLES
+  questions = tableau de chaines
+  interpretation = tableau de chaines
+  reponses = tableau d'entiers
+  inverser = tableau d'entiers
+  reponse = chaine
+  resultat = entier
+
+DEBUT
+  questions <- [ "texte_question_1" , "texte_question_2" , "texte_question_3" , "texte_question_4" , "texte_question_5" , "texte_question_6" , "texte_question_7" , "texte_question_8" , "texte_question_9" , "texte_question_10" ]
+  interpretation <- [ "très faible estime de soi" , "faible estime de soi" , "estime de soi moyen" , "fort estime de soi" , "très fort estime de soi" ]
+  inverser <- [2, 4, 7, 8, 9]
+  resultat <- 0
+
+  POUR x ALLANT DE 0 A 10 (PAR PAS DE 1)
+    ECRIRE(questions[(x)])
+    LIRE (reponse)
+
+    SI reponse >= 1 ET reponse <= 4
+    ALORS
+      reponses[x] <- reponse
+    SINON
+      TANT QUE reponse < 1 OU reponse > 4
+        ECRIRE("Erreur, la réponse doit être 1, 2, 3 ou 4")
+        ECRIRE(question[x])
+        LIRE (reponse)
+      FIN TANT QUE
+
+      reponses[x] <- reponse
+    FIN SI
+  FIN POUR
+
+  POUR y ALLANT DE 0 A 6 (PAR PAS DE 1)
+    SELON reponses(inverses[y])
+      4 : reponses(inverser[y]) <- 1
+      3 : reponses(inverser[y]) <- 2
+      2 : reponses(inverser[y]) <- 3
+      1 : reponses(inverser[y]) <- 4
+    FIN SELON
+
+  POUR z ALLANT DE 0 A 11 (PAR PAS DE 1)
+    resultat <- resultat + reponses[z]
+  FIN POUR
+
+  ECRIRE ("Total de point ", resultat)
+
+  SELON resultat
+    < 25 : ECRIRE (interpretation[0])
+    < 31 : ECRIRE (interpretation[1])
+    < 34 : ECRIRE (interpretation[2])
+    < 39 : ECRIRE (interpretation[3])
+    AUTREMENT : ECRIRE (interpretation[4])
+  FIN SELON
+
+FIN
