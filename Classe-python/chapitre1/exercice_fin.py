@@ -10,16 +10,17 @@ distribution = {'1821': 1, '2006': 1, 'Depuis': 1, 'Enseignement': 1, 'Fondée':
 'établissement': 1, 'étudiants': 1}
 nombre_de_a = 0
 nombre_de_mots = 0
+repetition = 0
 # insert your code here
 for mot in distribution:
-    if "a" in mot:
-        nombre_de_a += distribution[mot]
-        nombre_de_mots += 1
+    for lettre in mot:
+        if lettre == "a":
+            repetition = distribution[mot] * 1
+            nombre_de_a += repetition
 print(nombre_de_a)
-print(nombre_de_mots)
 
 # Ce code vérifie
-if nombre_de_a == 26:
+if nombre_de_a == 30:
     print('Bien joué!')
 else:
     print('La réponse est incorrecte, essaye encore!')

@@ -1,31 +1,79 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Exercice 3</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>Exercice 3</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-  </head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+</head>
 
-  <body>
-    <div class="container">
-      <nav class="navbar container">
-        <h2 class="row">Open Greek and Latin Project</h2>
-        <ul class="row">
-          <li class="nav-item"><a href="#">Collections</a></li>
-          <li class="nav-item"><a href="#">About</a></li>
-          <li class="nav-item"><a href="#">Help</a></li>
+<body>
+  <div class="container">
+    <nav class="row">
+      <div style="background:red;" class="col-12">
+        <ul class="nav">
+          <li class="col-3">
+            <p>Open Greek and Latin Project</p>
+          </li>
+          <li class="nav-item col-4">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item col-4">
+            <ul class="nav">
+              <li class="nav-item">
+                <form>
+                  <div class="form-row align-items-center">
+                    <div class="col-sm-4">
+                      <label class="sr-only" for="Searchbar">Search</label>
+                      <input type="text" class="form-control" id="Searchbar" placeholder="Search">
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-primary">Ok</button>
+                    </div>
+                  </div>
+                </form>
+              </li>
+              <li class="nav-item col-1">
+                <img src="image/user-icon.png" alt="user" href="#"/>
+              </li>
+              <li class="nav-item col-1">
+                <select class="form-control form-control-sm"><option>English</option>
+                </select>
+              </li>
+            </ul>
+          </li>
         </ul>
-        <form class="form-inline row">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+      </div>
+    </nav>
 
-      </nav>
-    </div>
+    <header style="background:blue;" class="row">
+      <div class="col-12">
+        <p>Header</p>
+      </div>
+    </header>
+
+    <article class="row">
+      <div style="background:yellow;" class="col-12"><p>Article 1</p></div>
+    </article>
+
+    <article class="row">
+      <div style="background:green;" class="col-12"><p>Article 2</p></div>
+    </article>
+
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
