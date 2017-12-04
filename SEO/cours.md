@@ -137,3 +137,32 @@ Le référencement Google pénalise la duplication de contenus sur un site.
 L'intention de recherche
 ====
 Compréhension des requêtes de recherche et les résultats en réponse.
+
+Une même thématiques peut être décliné en plusieurs requêtes. En comprenant l'intention d'une requête, le moteur de recherche est capable d'apporter des réponses différentes.
+Des outils de suivi de référencement permettent de suivre les mots-clefs utilisés pour des SERP dans lesquelles un site donné apparaît. C'est au SEO/Référenceur de s'assurer que le site apparaît au moins sur les requêtes du public visé (ex par rapport aux services proposés par le site ou l'organisme derrière le site). Ensuite, on élargit les résultats sémantiques.
+
+`https://answerthepublic.com/` permet de connaître des mot-clefs les plus utilisés avec telle ou telle requêtes.
+
+Théorie de la longue traîne appliquée au SEO
+======
+C'est une théorie popularisée par Chris Anderson en 2004 (*Wired*). La présence sur les mot-clefs moins concurrentiels peut apporter un volume de visites égal ou supérieur à celui sur les mots-clefs difficiles à atteindre. Plus on est présent sur les mots-clefs plus longs en élargissant vos champs sémantiques, plus vous devenez pertinents et pourrez vous positionner sur les mots-clefs courts. C'est la stratégie d'Amazon.   
+
+On vise normalement les requêtes courtes et pertinentes, et ensuite on élargit sont champs sémantique.
+
+Le référencement naturel au plan juridiques
+====
+Il y a des enjeux légaux derrière le SEO.  
+Le référencement naturel est soumis aux problématiques de concurrence. Les moteurs de recherche mettent à disposition des consignes et des règles pour guider les créateurs de site, mais *ils ne dictent pas les lois*. Les actions réalisées en ligne doivent avant tout être en cohésion avec les lois du pays pour lequel il est destiné.  
+
+Exemple d'*Interflora* : pénalisé pendant plusieurs semaine par Google pour une campagne de publicité anti-concurrentielle -> est-ce que c'était vraiment à Google de s'occuper de pénaliser le site ? C'était en réalité plutôt au pays de régler ce problème légal.
+
+La loi a une influence directe sur la gestion des sites :
++ droit au déréférencement (ou "droit à l'oubli") : https://www.cnil.fr/fr/le-droit-au-dereferencement
++ Bandeau d'acceptation de cookie obligatoire :
++ ...
+
+Pratiques anti-concurrentielle :
+Chercher à se positionner soi-même sur les requêtes liées précisément à la marque d'un concurrent, vouloir détourner son trafic, ou mener des actions pour porter atteinte à ses résultats, sont des pratiques anti-concurrentielles punies par la loi. On peut être accusé de parasitisme économique, concurrence déloyale, dénigrement commercial. Il est admis que le client d'un prestataire de SEO est responsable de ses pratiques : c'est donc important de bien choisir son prestataire (réputation, etc).
+
+Propriété intellectuelle et industrielle :
+sur le web on s'expose aussi aux problématiques de contrefaçons, de plagiat. [cf fin du diapo]
