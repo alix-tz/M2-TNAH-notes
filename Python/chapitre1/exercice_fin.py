@@ -24,6 +24,3 @@ if nombre_de_a == 30:
     print('Bien joué!')
 else:
     print('La réponse est incorrecte, essaye encore!')
-
-# REMARQUE :
-# J'ai modifié le nombre à vérifier qui était originellement 30.
