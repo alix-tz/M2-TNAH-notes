@@ -1,0 +1,234 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_enrich.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_enrich.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--Notice extraite de 
+    http://www.manuscriptorium.com/apps/main/en/index.php?request=show_record_num&param=0&mode=&client=&mode=&viewas=XSL_XML_DRAW
+    et associée au schema ENRICH et à l'espace de nom TEI
+-->
+<TEI  xmlns="http://www.tei-c.org/ns/1.0" >
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="idset20070920_12_84" xml:lang="cze">
+                    <msIdentifier>
+                        <country key="se">Švédsko</country>
+                        <settlement>Stockholm</settlement>
+                        <repository>Kungl. Biblioteket - Sveriges nationalbiblioteket</repository>
+                        <idno>A 148</idno>
+                        <msName type="nickname">Codex gigas</msName>
+                        <msName type="nickname">Ďáblova bible</msName>
+                    </msIdentifier>
+                    <head>
+                        <title>Codex mixtus</title>
+                        <origDate notBefore="1200" notAfter="1230">1200-1230</origDate>
+                        <origPlace>Čechy - Podlažice</origPlace>
+                    </head>
+                    <msContents>
+                        <msItem n="1">
+                            <locus from="1r" to="1r">1r</locus>
+                            <note>přilepeno k desce - obsah neznámý</note>
+                        </msItem>
+                        <msItem n="2">
+                            <locus from="1v" to="1v">1v</locus>
+                            <note>hebrejská, řecká a latinská abeceda</note>
+                        </msItem>
+                        <msItem n="3">
+                            <locus from="1v" to="1v">1v</locus>
+                            <note>zápis břevnovského opata Bavora z Nečtin z roku 1295 o okolnostech vykoupení rukopisu ze zástavy u sedleckých cisterciáků</note>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="4">
+                            <locus from="1v" to="1v">1v</locus>
+                            <note>přípisek ze 14. století, v němž je jednak hlaholice (alphabetum Sclavorum), jednak cyrilice (alphabetum Ruthenorum)</note>
+                        </msItem>
+                        <msItem n="5">
+                            <locus from="1v" to="117r">1v-117r</locus>
+                            <note>Starý zákon odchylující se od znění Vulgáty (zápis sice dosud nebyl textologicky soustavně zkoumán, přece však lze říci, že Žaltář je podle třetí verze Hieronyma ze Stridonu překladem do latiny z hebrejštiny)</note>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="6">
+                            <locus from="117r" to="177v">117r-177v</locus>
+                            <author>Iosephus Flavius</author>
+                            <title>Antiquitates iudaice</title>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="7">
+                            <locus from="177v" to="199v">177v-199v</locus>
+                            <author>Iosephus Flavius</author>
+                            <title>De bello iudaico</title>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="8">
+                            <locus from="200r" to="200v">200r-200v</locus>
+                            <author>Isidorus Hispalensis</author>
+                            <title>Epistola ad Braulionem Cesaree episcopum </title>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="9">
+                            <locus from="200v" to="238r">200v-238r</locus>
+                            <author>Isidorus Hispalensis</author>
+                            <title>Ethymologiae</title>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="10">
+                            <locus from="238v" to="238v">238v</locus>
+                            <note>vacat</note>
+                        </msItem>
+                        <msItem n="11">
+                            <locus from="239r" to="251r">239r-251r</locus>
+                            <author>Iohannicius Iohannes Alexandrinus</author>
+                            <title>Isagoge de phisica racione </title>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="12">
+                            <locus from="251v" to="251v">251v</locus>
+                            <note>vacat</note>
+                        </msItem>
+                        <msItem n="13">
+                            <locus from="252r" to="252v">252r-252v</locus>
+                            <author>Hieronymus Stridonensis</author>
+                            <title>Epistola ad Damianum papam cum introduccione ad quatuor evangelia</title>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="14">
+                            <locus from="252v" to="285r">252v-285r</locus>
+                            <note>Nový zákon odchylující se od znění Vulgáty (zápis dosud nebyl textologicky soustavně zkoumán, lze však předběžně říci, že se odlišuje řazením jednotlivých částí po Skutcích apoštolských, jež prokazují mnohé souvislosti s předjeronýmovskými překlady známými ze středomořské oblasti a které a byly nejspíše zapsány později, protože pro zápis jejich závěru, který se nevešel na příslušné místo na foliu 273, byl využit zvláštní proužek pergamenu přišitý k následujícímu foliu 274: sedm kanonických epištol. Zjevení sv. Jana text je příbuzný se zněním, které ve 4. stol. cituje sv. Ambrož a další předjeronýmovští autoři, listy sv. Pavla, přičemž na závěr je zařazena apokryfní Epištola sv. Pavla k Laodicejským)</note>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="15">
+                            <locus from="285v" to="287v">285v-287v</locus>
+                            <title>Confessio peccatorum</title>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="16">
+                            <locus from="288r" to="288r">288r</locus>
+                            <note>vacat</note>
+                        </msItem>
+                        <msItem n="17">
+                            <locus from="288v" to="288v">288v</locus>
+                            <decoNote type="unspecified">
+                                <p>celostranná iluminace Nebeského Jeruzaléma znázorněného jako městská architektura</p>
+                            </decoNote>
+                        </msItem>
+                        <msItem n="18">
+                            <locus from="289r" to="289r">289r</locus>
+                            <decoNote type="unspecified">
+                                <p>celostranná kolorovaná kresba ďábla</p>
+                            </decoNote>
+                        </msItem>
+                        <msItem n="19">
+                            <locus from="289v" to="290r">289v-290r</locus>
+                            <note>zaklínací formule proti nemocem a zlodějům</note>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="20">
+                            <locus from="290v" to="292v">290v-292v</locus>
+                            <note>vacant</note>
+                        </msItem>
+                        <msItem n="21">
+                            <locus from="293r" to="303v">293r-303r</locus>
+                            <author>Cosmas Pragensis</author>
+                            <title>Cronica Bohemorum</title>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="22">
+                            <locus from="303v" to="303v">303v</locus>
+                            <note>vacat</note>
+                        </msItem>
+                        <msItem n="23">
+                            <locus from="304r" to="304r">304r</locus>
+                            <note>Conspectus confraternitatis monasterii de Podlažice (soupis osob různým způsobem spojených s podlažickým klášterem)</note>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="24">
+                            <locus from="304v" to="310r">304v-310r</locus>
+                            <note>Calendarium benedictinum sive quasi-martyrologium cum necrologio monasterii de Podlažice (pozoruhodné je, že v kalendáři je na každý den uveden svátek alespoň jednoho svatého, ale často i více svatých, což je velice řídké a neobvyklé a přibližuje kalendář martyrologiu, ovšem s tím rozdílem, že v martyrologiu jsou krome jmen jakožto titulů-nadpisů uvedeny i více méně stručné články charakterizující ve zkratce toho kterého světce)</note>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="25">
+                            <locus from="310v" to="310v">310v</locus>
+                            <note>údaje, na svátek kterého světce připadne datum velikonoc v průběhu dvaceti šesti let</note>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="26">
+                            <locus from="311r" to="311r">311r</locus>
+                            <note>opisy výpočtů data velikonoc</note>
+                            <textLang mainLang="lat">latinsky</textLang>
+                        </msItem>
+                        <msItem n="27">
+                            <locus from="311v" to="312v">311v-312v</locus>
+                            <note>vacat</note>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <p>chybí stránky 8r, 8v</p>
+                        <p>
+                            <term>kniha - rukopis</term>
+                        </p>
+                        <objectDesc form="codex">
+                            <supportDesc material="perg">
+                                <support>
+                                    <p>pergamen</p>
+                                </support>
+                                <extent>312 ff.
+                                    <dimensions>
+                                        <height>890</height>
+                                        <width>490</width>
+                                    </dimensions>
+                                    <note type="2dimensions">
+                                        <p> x </p>
+                                        <p> mm</p>
+                                    </note>
+                                </extent>
+                                <condition>
+                                    <p>chybí stránky 8r, 8v</p>
+                                </condition>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <p>
+                                <name type="place">Podlažice,</name>
+                                <date>1200-1230</date>
+                            </p>
+                        </origin>
+                    </history>
+                    <additional>
+                        <listBibl>
+                            <bibl>
+                                <author>Zdeněk Uhlíř</author>
+                                <title level="a">Codex gigas: Jeho obsah a funkce</title>
+                                <title level="m">Codex gigas - Ďáblova bible: tajemství největší knihy světa</title>
+                                <pubPlace>Praha</pubPlace>
+                                <date>2007</date>
+                                <biblScope>pages17-44</biblScope>
+                            </bibl>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <classDecl>
+                <taxonomy xml:id="tax.mns">
+                    <category xml:id="tax.mns.conspectus">
+                        <catDesc>Conspectus</catDesc>
+                        <category>
+                            <catDesc xml:id="tax.mns.conspectus."/>
+                        </category>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+    </teiHeader>
+    <facsimile>
+        <p/>
+    </facsimile>
+</TEI>

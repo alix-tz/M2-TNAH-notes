@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Edition électronique du catalogue des manuscrits de Saint-Omer.</title>
+            <author>
+               <persName>                  
+                  <name>Stutzmann</name>
+                  <forename>Dominique</forename>
+                  <!--<note>Auteur de la notice</note>-->
+               </persName>
+            </author>
+            <respStmt>
+               <persName>
+                  <name>Lebarbey</name>
+                  <forename>Laura</forename>
+               </persName>
+               <resp>Encodage en format TEI</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <name type="org">Institut de recherche et d'histoire des textes, CNRS</name>
+            </publisher>
+            <pubPlace>
+               <name type="place">Paris</name>
+            </pubPlace>
+            <date>2015</date>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <note> Créé par conversion rétrospective de l'édition imprimée :</note>
+               <author>
+                  <forename>Henri</forename>
+                  <surname>Michelant</surname>
+               </author><title> [Catalogue général des manuscrits des bibliothèques publiques de
+                  France. Série in-quarto]. Catalogue général des manuscrits des bibliothèques
+                  publiques des départements. Publié sous les auspices du Ministre d'État </title>—
+                  <num>Tome III.</num>
+               <biblScope>Saint-Omer 1-842.</biblScope>
+               <pubPlace>Paris</pubPlace>, <publisher>Imprimerie impériale</publisher>,
+                  <date>1861</date>. <note>Numérisation et rendu en mode texte réalisés par la
+                  société AIS (Paris, France). Encodage effectué selon la DTD EAD-2002 par la
+                  société ArchProteus (Vancouver, Canada) le 17 février 2008</note>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>Conforme à la Manuscript Description des Guidelines de la TEI P5</p>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listBibl>
+            <msDesc xml:id="MS-0012">
+               <msIdentifier>
+                  <settlement>Saint-Omer</settlement>
+                  <repository>Bibliothèque d'agglomération de Saint-Omer</repository>
+                  <idno>Ms-12</idno>
+                  <altIdentifier type="Ms-813">
+                     <idno>3, </idno>
+                  </altIdentifier>
+                  <altIdentifier type="Ms-813">
+                     <idno>4</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <!--<head></head>-->
+               <msContents>
+                  <!--<summary></summary>-->
+                  <msItem>
+                     <locus scheme="folio" from="1r" to="1v" corresp="vol.1"/>
+                     <author corresp="Taio Caesaraugustanus (....-0682)"
+                        ref="http://viaf.org/viaf/10203798"><persName><name>Taion</name>, <roleName>évêque de Sarogosse</roleName></persName></author>
+                     <title>Visio</title>
+                  </msItem>
+                  <msItem>
+                     <locus from="2r" to="3v" corresp="vol.1"/>
+                     <author corresp="Augustinus, Aurelius (0354 0430)"
+                        ref="http://isni.org/isni/0000000121376443">Augustinus Hipponensis</author>
+                     <note resp="Michelant">Fragments, sans commencement ni fin.</note>
+                  </msItem>
+                  <msItem>
+                     <author xml:lang="lat" corresp="Gregorius I (pape ; 0540?-0604)"
+                        ref="http://viaf.org/viaf/100184667">
+                        <persName>Gregorius I papa</persName>
+                     </author>
+                     <title type="uniform" xml:lang="lat" corresp="Moralia in Job"
+                        ref="http://viaf.org/viaf/183885855">Moralium sancti Gregorii in Job</title>
+                     <textLang xml:lang="lat">Latin</textLang>                     
+                     <rubric>Sanctissimo fratri Leandro, Gregorius episcopus servus servorum
+                        Dei,</rubric>
+                     <incipit>Dudum te, frater beatissime,</incipit>
+                     <!-- <index @corresp="théologie"/> -->
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="mixed">
+                        <support>
+                           <material>Parchemin et papier alternés</material>
+                           <!--<watermark n="1"><locus scheme="folio" from="1" to="25"/><term
+                              ref="lien vers Briquet ou Piccard">Description héraldique</term></watermark>-->
+                        </support>
+                        <extent>
+                           <!--<dimensions scope="all" type="format">
+                              Grand in-folio
+                           </dimensions>
+                           -->
+                           <measure type="composition" unit="leaf" quantity="184" corresp="vol.1"
+                              >184</measure>
+                           <measure type="composition" unit="leaf" quantity="212" corresp="vol.2"
+                              >A-B, 212</measure>
+                           <dimensions scope="all" type="leaf" unit="mm">
+                              <height quantity="520"/>
+                              <width quantity="350"/>
+                           </dimensions>
+                           <dimensions scope="all" type="justification" unit="mm">
+                              <height quantity="410"/>
+                              <width quantity="265"/>
+                           </dimensions>
+                        </extent>
+                        <foliation >non</foliation>
+                        <collation>
+                           <formula corresp="vol.1" notation="Chroust"> I<hi rend="sup">2</hi> + (V-1)<hi rend="sup">11</hi> + 21 IV<hi rend="sup">169</hi> +
+                              (III-1)<hi rend="sup">184</hi></formula>
+                           <formula corresp="vol.2" notation="Chroust">(I-1)<hi rend="sup">1</hi> + 25 IV<hi rend="sup">209</hi> +
+                              (II-1)<hi rend="sup">212</hi></formula>
+                           <!--<desc type="quires" style="Chroust">
+                              <list >
+                                 <item corresp="vol.1" n="1"><dimensions type="bifolia" quantity="1"
+                                       /><locus to="2"/></item>
+                                 <item corresp="vol.1" n="2"><dimensions type="bifolia" quantity="5"
+                                       extent="V-1"/><locus to="11"/></item>
+                                 <item corresp="vol.1" n="3-23"><dimensions type="bifolia"
+                                       quantity="4"/><locus to="179"/></item>
+                                 <item corresp="vol.1" n="25"><dimensions type="bifolia"
+                                       quantity="3" extent="III-1"/><locus to="184"/></item>
+                                 <item corresp="vol.2" n="1"><dimensions type="bifolia" quantity="1"
+                                       extent="I-1"/><locus to="1"/></item>
+                                 <item corresp="vol.2" n="2-26"><dimensions type="bifolia"
+                                       quantity="4"/><locus to="209"/></item>
+                                 <item corresp="vol.2" n="1"><dimensions type="bifolia" quantity="2"
+                                       extent="II-1"/><locus to="212"/></item>
+                              </list>
+                           </desc>-->
+                           <signatures>
+                              <signatures corresp="vol.1" rend="Roman"><locus from="I-11v" to="179v"
+                                    rend="last_verso"/>
+                                 <!--en chiffres romains au dern. verso (11v-179v,.I.-.XXII.),-->
+                                 avec décor de quatre points</signatures>
+                              <signatures corresp="vol.2" rend="Alphabet"><locus from="II-9v"
+                                    to="II-185v"/>
+                                 <!--(vol. 2) en lettres latines au dern. verso (9v-185v, A.-.Z. ;) -->
+                                 (rognées ou absentes (en 57v, 105v, 201v), avec décor de quatre
+                                 (9v-49v), puis deux points (65v-209v)</signatures>
+                              <signatures corresp="vol.2" rend=".&amp;."><locus n="193v"/>
+                              </signatures>
+                              <signatures corresp="vol.2" rend="fleuron"><locus n="209v"/>
+                              </signatures>
+                           </signatures>
+                           <catchwords> Réclames absentes </catchwords>
+                           <!--<catchwords rend="horizontal" style="chiffres romains"/>-->
+                        </collation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" writtenLines="47"/>
+                        <layout>
+                           <desc type="ruling" rend="lead point">
+                              <list>
+                                 <item corresp="vol.1"><locus>52r</locus> : 30, [120], 30, [115], 60
+                                    x 25, [9, 390, 9], 85 ;</item>
+                                 <item corresp="vol.2">35, [120], 30, [117], 55 x 22, [9, 385, 8],
+                                    80). </item>
+                              </list>
+                           </desc>
+                           <!-- <formula  corresp="ruling" notation="Lemaire" rend="lead-point">
+                              <locus corresp="vol.1">f. 52r </locus> :  40+8+97+8+10+8+97+8+97 x 39+396+75
+                           </formula>  réglure-->
+                        </layout>
+                        <layout>
+                           <formula/>
+                           <desc type="pricking"> Piqûres int. et ext. </desc>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc n="3">
+                     <p>Trois mains (une au vol. 1, deux alternant au vol. 2.</p>
+                  </handDesc>
+                  <scriptDesc>
+                     <scriptNote script="Praegothica"/>
+                  </scriptDesc>
+                  <decoDesc>
+                     <decoNote>
+                        <p>Les deux volumes sont décorés par plusieurs ornemanistes, aux styles et
+                           aux techniques différents : utilisant au vol.1 et au vol. 2, 4r-49r, une
+                           peinture en à-plat pour les miniatures et les initiales peintes à
+                           rinceaux végétaux sur fond de couleur, et au vol. 2 pour le frontispice
+                           et les initiales à partir de 55v un dessin à l’encre sur fond de
+                           parchemin blanc. </p>
+                     </decoNote>
+                     <decoNote type="miniature">
+                        <p>2 miniatures pleine page :</p>
+                        <p> (Vol. 1, 5v) peinture en à-plat sur fond bleu, à trois registres : en
+                           haut, <term>Dieu assis, quatre anges, le Diable à droite</term> ; au
+                           milieu, <term>empereur ou pape trônant assis, avec sept personnages
+                              masculins à gauche et quatre personnages féminins à droite</term> ; en
+                           bas, <term>Job sur son fumier, un démon derrière lui griffant le torse de
+                              Job, un personnage féminin avec phylactère à gauche, trois personnages
+                              masculins assis à droite</term>, le tout est surmonté par <term>Dieu
+                              dans le ciel</term>. </p>
+                        <p> (Vol. 2, 1v)Dessin à l’encre : <term>Saint Grégoire devant son
+                              écritoire</term>, avec grand encadrement.</p>
+                     </decoNote>
+                     <decoNote type="initiale">
+                        <p> Lettres historiées : (Vol. 1>) 4ra, D, 170 mm, <term>s. Grégoire et
+                              Léandre assis sur un même banc </term>; 6ra, I, 455 mm, à trois
+                           médaillons, représentant <term>le Christ, s. Grégoire et Job</term> ,
+                           entre les médaillons<term>un ange et l’Église sous la forme d’une femme
+                              tenant les deux glaives</term> ; (Vol. 2) 35rb, Q avec <term>figure
+                              d’évêque</term> ; 49ra, I ; 55vb, Q, à l’encre, à queue de dragon,
+                           habité par <term>deux hommes combattant</term> ; 66ra, P, à <term>deux
+                              monstres zoomorphes</term> et des rinceaux ; 75vb, H,
+                              <term>zoomorphe</term> ; 84vb, I, <term>Église</term> sous les traits
+                           d’une femme portant les deux glaives ; 92va, I, à <term>figure
+                              masculine</term> ; 119v, P, avec <term>centaure et lapin</term> ;
+                           140vb, B, <term>Christ, démon, Église, Job sur le fumier</term> ; 154ra,
+                           I, 220 mm,<term> prophète à visage non idéalisé</term> ; 170vb, S, 175
+                           mm, <term>monstre avec serpent sortant de sa bouche</term> ; 180vb, A,
+                           235 mm, <term>homme tuant par épée et dague un serpent qui lui mord le
+                              cou</term> ; 194va, Q, 125 mm, <term>ornement floral
+                           symétrique</term>, accompagné par rubrique rouge et verte ; 203vb, Q, 120
+                           mm, sirène symétrique ; </p>
+                     </decoNote>
+                     <decoNote type="initiale">
+                        <p> Lettres ornées : (vol. 1) 9rb, V à l’or, à rinceaux vert et pourpre sur
+                           à plat bleu ; 16ra, S ; 28rb, B, à <term>figure anthropomorphe</term> ;
+                           37vb, Q ; 50va, C ; 65rb, S ; 75vb, Q ; 85vb, P ; 101vb, P ; 118rb, Q ;
+                           128rb, Q ; 137va, M ; 146rb, E ; 152va, S ; 163va, Q ; 174ra, Q ; (vol.
+                           2) 2va, Q à l’or sur fond bleu avec rinceaux et coquilles rouges ; 10ra,
+                           P ; 25ra, Q ; 49ra, I ; 55vb, Q ; 106rb, Q à ornement symétrique ; 128rb,
+                           D, à ornement symétrique ; </p>
+                     </decoNote>
+                     <decoNote type="rubrique">
+                        <p>(Vol. 2, 1r-35r) Titre courant à l’encre rouge, d’origine. (vol. 1, 137v
+                           sqq) nombreuses sous-rubriques en marge (Vol. 2, 4r-49r) Premier mot de
+                           chaque chapitre en capitales rouges. </p>
+                     </decoNote>
+                     <decoNote type="décor">
+                        <p> Décor à la pointe sèche ou à la mine de plomb : (vol. 2, 64v)
+                              <term>cheval</term> ; (65r) <term>chevalier avec une note Non sum a….s
+                              cabalatus [?]</term> ; (66r) <term>cygne</term> ; (92v)
+                              <term>tête</term> ; (122v) S à rinceaux ; (189v) <term>tête
+                              auréolée</term> ; (201r) pro ; (204v) <term>tête</term>. </p>
+                     </decoNote>
+                  </decoDesc>
+                  <additions>
+                     <p>(vol. 1, 8r, 32r… ; vol. 2, 100r, 179r…) nota en forme
+                        de chrisme ; (vol. 1, 98v) monogramme nota ; (vol. 1, 177v) manchette ;
+                        (vol. 2) de nombreux signes de renvois permettent d’insérer des rubriques
+                        dans le texte, dont des lettres et des chiffres arabes sans valeur
+                        numérique. (vol. 2) capitulation en chiffres arabe en marge sup. tracée à la
+                        pointe Notes à la pointe sèche ou à la mine de plomb : (vol. 1) 27v, vates
+                        [?] ; (vol. 2) 76v, Nota diligenter Gregorii XLa. Qui vivere cupis capierer
+                        ; 102r, Domini… ; 140v, eva ; 158v, quod aliter vobis quod domini ; 165va,
+                        note marginale du XIIIe s. Recapitulatio predictorum utilis ; 212rb, XIIIe
+                        s., Qui dimiserit uxorem suam erepta fornicationis ; 212v, XVe s., Michele
+                        pugnavit cuneum, efecit victoria. </p>
+                  </additions>
+                  <bindingDesc>
+                     <binding>
+                        <!--
+                        <condition><locus corresp="dos"/></condition>
+                        <decoNote></decoNote>
+                      -->
+                        <p>Reliure de basane sur ais de bois, à roulette de candélabre, sur les deux
+                           volumes. Vol. 1 : 2 gardes ; vol. 2 : contre garde et 2 ff. bl. de garde
+                           au plat sup. Fausse coupe au f. 46.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate notBefore="1150" notAfter="1175" calendar="Gregorian"
+                        evidence="external">1150-1175</origDate>
+                     <origPlace><geogName>Saint-Omer</geogName></origPlace>
+                     <!--<note rend="colophon">
+                        <locus scheme="folio" n="211v"/>
+                        <persName role="copiste"><name corresp="..." ref="...">...</name></persName>
+                     </note>
+                     -->
+                  </origin>
+                  <provenance>
+                     <orgName corresp="Saint-Omer, Saint-Bertin, abbaye O.S.B"
+                        ref="http://catalogue.bnf.fr/ark:/12148/cb11969647k/">Abbaye de
+                        Saint-Bertin</orgName>
+                     <p><date notBefore="1301" notAfter="1400" calendar="Gregorian"/>
+                        <locus>vol. 1, 3v</locus>
+                        <q>Titulus sancti B<damage/> sancto Audomaro e<gap reason="illegible"/>orum
+                           et sic <unclear>amen</unclear>. Titulus sancti Audomari
+                              <unclear>iñ</unclear> sanctum Bertinum</q></p>
+                     <p>
+                        <date notBefore="1301" notAfter="1400" calendar="Gregorian"/>
+                        <locus corresp="vol.2" n="1r"/>
+                        <q>De libraria sancti Bertini</q></p>
+                     <p><date notBefore="1401" notAfter="1500" type="table_de_contenu"/>
+                        <locus corresp="vol.2" n="1r"/>
+                        <q>Moralia in Job pars IIIIa, quinta et sexta </q>
+                     </p>
+                     <p>
+                        <date notBefore="1801" notAfter="1900" calendar="Gregorian"/>
+                        <locus corresp="vol.2" n="Ar"/>
+                        <q>St Bertin</q></p>
+                     <p><date notBefore="1601" notAfter="1800" calendar="Gregorian"/>
+                        <locus>vol. 2, Bv</locus>
+                        <q>4</q></p>
+                     <p><date notBefore="1601" notAfter="1800" calendar="Gregorian"/>
+                        <locus corresp="vol.2" n="2r"/>
+                        <q>3 codex [et] 4 codex</q></p>
+                     <p><date notBefore="1601" notAfter="1800" calendar="Gregorian"/>
+                        <locus corresp="vol.2" n="Ar"/>
+                        <q>3 codex</q></p>
+                  </provenance>
+               </history>
+               <additional>
+                  <adminInfo>
+                     <recordHist>
+                        <source>Manuscrit catalogué d'après original.</source>
+                        <change when="2014-05-05" who="DS"/>
+                     </recordHist>
+                     <note type="id-CGM" n="D03010015"/>
+                  </adminInfo>
+                  <surrogates>
+                     <list>
+                        <item>
+                           <title>BM Saint-Omer, Bibliothèque virtuelle, Ms-12, vol.1</title>
+                           <ptr target="http://www.purl.org/yoolib/bmsaintomer/60"/>
+                        </item>
+                        <item>
+                           <title>BM Saint-Omer, Bibliothèque virtuelle, Ms-12, vol.2</title>
+                           <ptr target="http://www.purl.org/yoolib/bmsaintomer/13"/>
+                        </item>
+                        <!--
+                        <item>
+                           <title>BVMM</title>
+                           <ptr target="lien vers le site de la BVMM"/>
+                           <graphic url="lien vers la vignette"/>
+                        </item>
+                        -->
+                     </list>
+                  </surrogates>
+                  <listBibl>
+                        <bibl>
+                           <author>
+                              <persName>
+                                 <name>Boutémy</name>, <forename>André</forename>
+                              </persName>
+                           </author>, “<title>Un trésor injustement oublié: les manuscrits enluminés
+                              du Nord de la France (période pré-gothique)</title>,”
+                              <series>Scriptorium 3</series>(<date calendar="Gregorian" when="1949"
+                              >1949</date>) <biblScope>110-122 at 120</biblScope>.</bibl>
+                        <bibl type="Notice_Bibliothèque_d_agglomération_de_St-Omer">
+                           <ptr corresp="vol.1"
+                              target="http://bibliotheque-numerique.bibliotheque-agglo-stomer.fr/collection/18979-gregoire-le-grand-morales-sur-job/?n=1"
+                           />
+                        </bibl>
+                        <bibl type="Notice_Bibliothèque_d_agglomération_de_St-Omer">
+                           <ptr corresp="vol.2"
+                              target="http://bibliotheque-numerique.bibliotheque-agglo-stomer.fr/collection/18979-gregoire-le-grand-morales-sur-job/?n=2"
+                           />
+                        </bibl>
+                        <bibl type="Medium">
+                           <ptr corresp="vol.1"
+                              target="http://medium.irht.cnrs.fr/Manuscrits/Voir?idFicheManuscrit=25030"
+                           />
+                        </bibl>
+                        <bibl>
+                           <ptr corresp="vol.2"
+                              target="http://medium.irht.cnrs.fr/Manuscrits/Voir?idFicheManuscrit=100032315"
+                           />
+                        </bibl>                     
+                  </listBibl>
+               </additional>
+               <!--
+               <msPart>
+                  <msIdentifier></msIdentifier>
+                  <msContents></msContents>
+                  <physDesc></physDesc>
+               </msPart>
+               -->
+            </msDesc>
+         </listBibl>
+      </body>
+   </text>
+</TEI>
