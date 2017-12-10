@@ -1,0 +1,46 @@
+def debat(chemin):
+	with open(chemin, 'r') as fichier :
+		texte = fichier.read()
+	texteParagraphe = texte.split("\n")
+	texte = []
+	i = 1
+	listeFinale=[]
+
+	for paragraphe in texteParagraphe : 
+		if paragraphe.startswith("FOLIE") or paragraphe.startswith("AMOUR") : 
+			separerNomPerso = paragraphe.split(". ")
+			replique = (i,"réplique",separerNomPerso[0], "".join(separerNomPerso[1:]))
+			listeFinale.append(replique)
+			i = i+1
+		if paragraphe.startswith("Folie") or paragraphe.startswith("Amour") : 
+			didascalie = (i, "didascalie", False, paragraphe)
+			listeFinale.append(didascalie)
+			i = i+1
+
+	return listeFinale
+# Tests
+resultats = debat("data/debat.folieamour.labbe.txt")
+print(resultats)
+
+
+
+
+assert isinstance(resultats, list) == True, "Le resultat doit être une liste"
+assert resultats[3] == (
+    4,
+    "réplique",
+    "AMOUR",
+    "II n'en ira pas ainsi : car avant que tu m'eschapes, je te donneray à connoitre que tu ne te dois atacher à moy."
+)
+assert resultats[16] == (
+    17,
+    "didascalie",
+    False,
+    "Folie se fait invisible, tellement, qu'Amour ne la peut assener."
+)
+assert resultats[8] == (
+    9,
+    "réplique",
+    "FOLIE",
+    "Tu es Amour, fils de Venus."
+)
