@@ -109,3 +109,67 @@ Il n'est pas facile de construire une base de données évolutive qui répondent
 
 [\#*diapo*  
 __le domaine des BD est vaste :__ chaque élément de la liste peut correspondre à un métier différent, regarder ce à quoi ils font référence. Dans le cadre du cours, on ne va toucher qu'à quelques aspects de cette liste]
+
+---
+
+## Cours 2
+
+
+Les bases de données se composent de 4 éléments essentiels :
+1. données
+2. matériel
+3. logiciel
+4. utilisateurs
+
+Il y a trois types d'utilisateurs
+- l'administrateur (qui gère qui peut accéder à une BDD et comment)
+- les utilisateurs finaux (gestion du fonctionnement de la base)
+- les programmeurs d'applications
+
+
+Il y a plusieurs types de données
+- données persistantes (celles qui sont enregistrées sur un disque dur dans une base de donnée. Pour pouvoir les changer, il faut directement s'adresser à ces données là.)
+- données relatives / volatiles
+
+Une entité signifie n'importe quel élément concret. Tout objet perceptible représenté dans la BDD
+Une association est une relation entre les entités.
+
+SQL est un langage de type ensembliste mais qui inclut des opérations qui permettent de réduire le nombre de données manipulées verticalement ou horizontalement. Cette selection s'appelle une **projection**.  
+
+* La `projection` permet la réduction verticale par diminution du nombre d'attributs manipulés.
+* La `sélection` permet la réduction horizontale par diminution du nombre de n-uples manipulés.
+
+SQL se décline sous la forme de deux langages
+- `LDD` (langage de manipulation de données)
+- `LMD` (langage de définition de données)
+- + `LID` (langage d'interrogation de données)
+
+### Objectifs du SGBD
+- contrôler les données :
+  - intégrité : (vérification de contraintes d'intégrités)
+  - (...)
+
+(...)
+
+Pour notre formation, on se trouve plutôt du côté logique de la base de données et pas du côté physique.
+
+### ACID
+Atomisation
+Cohérence
+Isolation
+Durabilité
+
+
+[...]
+
+---
+
+`Les dictionnaires de données` : une collection de métadonnées ou de données de référence nécessaire à la conception d'une base de données relationnelle. Il a une importance stratégique car il est le vocabulaire commun de l'organisation et il décrit des données aussi importantes que les clients, les nomenclatures de produits et de services, les annuaires, etc.
+C'est le référentiel principal de l'entreprise, sur lequel s'appuient les décisions de celle-ci. Il est souvent représenté par un tableau à quatre colonnes contenant le nom, le code, et le type de données ainsi que des commentaires.  
+
+Tous les noms doivent être monovalués et non décomposables.
+
+Il existe trois grands types de champs de données :
+- numériques (tinyint ; smallint ; mediumint ; int ; bigint ; float : double ; real -> prennent des tailles différentes (1 octet, 2 octets, etc) avec à chaque fois des limites hautes et basses pour ce que ces entiers peuvent contenir : etc tinyint peut aller de -128 à 127 ou de 0 à 255).
+- chaines de caractères (char ; varchar (1 à 255 caractères) ; tinyblob ; tinytext ; blob ; etc)
+- date et heure (date ; datetime ; time ; year ; timestamp)
