@@ -1,23 +1,74 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Exercice 4</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>Exercice 4</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-  </head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+</head>
 
-  <body>
-    <div class="container">
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Pandora Post-Correction Editor</a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">New Corpus</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+<main role="main">
+
+
+  <div class="container">
+    <div class="col">
+      <h1>Create New Corpus</h1>
+
+      <form>
+        <div class="form-group">
+          <label for="name">Corpus Name</label>
+          <input class="form-control" type="text" id="name" placeholder="Enter Name of the corpus">
+          <small id="nameHelp" class="form-text text-muted">This should be a clear name</small>
+        </div>
+
+        <div class="form-group">
+          <label for="token">Token (as TSV content)</label>
+          <small id="tokenHelp" class="form-text text-muted">This TSV should at least have the headers : lemma, POS, morph, for</small>
+          <textarea class="form-control" id="token" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="lemma">Allowed lemma</label>
+          <small id="lemmaHelp" class="form-text text-muted">This should be formated as a list of lemma separated by new line</small>
+          <textarea class="form-control" id="lemma" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="pos">Allowed POS</label>
+          <small id="posHelp" class="form-text text-muted">This should be formatted as a list of POS separated by coma <strong>and no space</strong></small>
+          <textarea class="form-control" id="pos" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="morph">Allowed Morph (as TSV content)</label>
+          <small id="morphHelp" class="form-text text-muted">This TSV should at least have the header : label and could have <code class="highlighter-rouge">readable</code> column for human</small>
+          <textarea class="form-control" id="morph" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
+  </div>
+</main>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./assets/js/jquery-3.2.1.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/css/bootstrap.css"></script>
-  </body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="./assets/js/jquery-3.2.1.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/css/bootstrap.css"></script>
+</body>
 </html>
