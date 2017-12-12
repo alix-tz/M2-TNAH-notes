@@ -11,8 +11,142 @@
   </head>
 
   <body>
-    <div class="container">
-    </div>
+<!--barre de navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Pandora Post-Correction Editor</a>
+      <div class="collapse navbar-collapse" id="navbarsPandora">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">New Corpus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SBath</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+<!-- corps de la page -->
+    <main role="main">
+      <div class="container mt-3">
+        <h1>Corpus SBath - List of tokens</h1>
+      </div>
+
+<!--liste des # de pages-->
+<div class="container">
+<div class="btn-group">
+<a href="#" class="btn btn-primary border border-secondary">1</a>
+<a href="#" class="btn border border-secondary">2</a>
+<a href="#" class="btn border border-secondary">3</a>
+<a href="#" class="btn border border-secondary">4</a>
+<a href="#" class="btn border border-secondary">5</a>
+<a href="#" class="btn disabled border border-secondary">...</a>
+<a href="#" class="btn border border-secondary">111</a>
+<a href="#" class="btn border border-secondary">112</a>
+</div>
+</div>
+
+<!-- tableau -->
+<div class="container">
+  <table class="table table-bordered mt-3">
+    <thead>
+      <tr>
+        <th scope="col">Form</th>
+        <th scope="col">Lemma</th>
+        <th scope="col">POS</th>
+        <th scope="col">Morph</th>
+        <th scope="col">Context</th>
+        <th scope="col">Save</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ch'</td>
+        <td>ce1</td>
+        <td>PROdem</td>
+        <td>-</td>
+        <td>Ch' est le</td>
+        <td><a href="#">Save</a></td>
+      </tr>
+      <tr>
+        <td>est</td>
+        <td>être1</td>
+        <td>VERcjpg</td>
+        <td>-</td>
+        <td>Ch' est le vie</td>
+        <td><a href="#">Save</a></td>
+      </tr>
+      <tr>
+        <td>le</td>
+        <td>le</td>
+        <td>DETdef</td>
+        <td>-</td>
+        <td>Ch' est le vie de</td>
+        <td><a href="#">Save</a></td>
+      </tr>
+      <tr>
+        <td>vie</td>
+        <td>vie</td>
+        <td>NOMcom</td>
+        <td>-</td>
+        <td>Ch' est le vie de sainte</td>
+        <td><a href="#">Save</a></td>
+      </tr>
+      <tr>
+        <td>de</td>
+        <td>de</td>
+        <td>PRE</td>
+        <td>-</td>
+        <td>est le vie de sainte Baltelt</td>
+        <td><a href="#">Save</a></td>
+      </tr>
+      <tr>
+        <td>sainte</td>
+        <td>sainte</td>
+        <td>ADJqua</td>
+        <td>-</td>
+        <td>le vie de saint Baltelt roine</td>
+        <td><a href="#">Save</a></td>
+      </tr>
+      <tr>
+        <td>Baltelt</td>
+        <td>NOMpro</td>
+        <td>Bathilde</td>
+        <td>-</td>
+        <td>vie de sainte Baltelt roine .</td>
+        <td><a href="#">Save</a></td>
+      </tr>
+      <tr>
+        <td>roine</td>
+        <td>reine</td>
+        <td>NOMcom</td>
+        <td>-</td>
+        <td>de sainte Baltelt roine . Beneois</td>
+        <td><a href="#">Save</a></td>
+      </tr>
+      <tr>
+        <td>.</td>
+        <td>.</td>
+        <td>PONfrt</td>
+        <td>-</td>
+        <td>sainte Baltelt roine . Beneois soit</td>
+        <td><a href="#">Save</a></td>
+      </tr>
+      <tr>
+        <td>Beneois</td>
+        <td>bénir</td>
+        <td>WERppe</td>
+        <td>-</td>
+        <td>Baltelt roine . Beneois soit Nostres</td>
+        <td><a href="#">Save</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+    </main>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
