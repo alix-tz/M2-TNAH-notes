@@ -1,7 +1,7 @@
 #Exercice 1
 
 def numeroter_poeme(chemin_de_fichier):
-    with open(chemin_de_fichier) as a_numeroter:
+   with open(chemin_de_fichier) as a_numeroter:
         liste_vers = a_numeroter.read()
     liste_vers = liste_vers.split('\n') 
         

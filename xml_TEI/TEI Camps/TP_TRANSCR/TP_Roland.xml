@@ -45,13 +45,13 @@
       <body>
          <pb/>
          <lg type="laisse">
-            <lb/><l facs="#line_1">L e duc oger ⁊ larceueſque turpın.</l>
-            <lb/><l facs="#line_2">R ıcharδ lı uélz ⁊ ſun neuͦld henrı.</l>
+            <lb/><l facs="#line_1">L e duc oger <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> larceueſque turpın.</l>
+            <lb/><l facs="#line_2">R ıcharδ lı uélz <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> ſun neuͦld henrı.</l>
             <lb/><l facs="#line_3">e δe gaſcuıgne lı proz quenſ acelın.</l>
-            <lb/><l facs="#line_4">t eδbalδ de reınſ ⁊ mılun ſun cuſın.</l>
-            <lb/><l>⁊ ſı ıfurent ⁊ gererſ ⁊ gerın.</l>
+            <lb/><l facs="#line_4">t eδbalδ de reınſ <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> mılun ſun cuſın.</l>
+            <lb/><l><choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> ſı ıfurent <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> gererſ <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> gerın.</l>
             <lb/><l>e nſembloδ elſ lı quenſ Rollant ıuınt.</l>
-            <lb/><l>⁊ olıuer lı proz ⁊ lı gentılz.</l>
+            <lb/><l><choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> olıuer lı proz <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> lı gentılz.</l>
             <lb/><l>δ eſ francs δe france en ı aδ pluſ δe mıl.</l>
             <lb/><l>G ueneſ ıuınt kı la traıſun fıſt.</l>
             <lb/><l>D eſ ore cumencet le cunſeıll que mal pͥſt .AOI.</l>
@@ -60,8 +60,8 @@
             <!-- il manque deux vers ici-->
             <lb/><l><seg facs="#maj_s">S</seg> ...</l>
             <lb/><l>D e ſun aueır me uoelt duner grant maſſe.</l>
-            <lb/><l>v rſ ⁊ leunſ ⁊ ueltreſ caeıgnableſ.</l>
-            <lb/><l>S et cenz cameılz ⁊ mıl hoſturſ muableſ.</l>
+            <lb/><l>v rſ <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> leunſ <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> ueltreſ caeıgnableſ.</l>
+            <lb/><l>S et cenz cameılz <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> mıl hoſturſ muableſ.</l>
             <lb/><l>Q uatre cenz mulſ cargez δel ór δarabe.</l>
             <lb/><l>a uoec ı co pluſ δe cınquante care.</l>
             <lb/><l>M aıſ ıl me manδet que en france men alge.</l>
@@ -81,9 +81,9 @@
          <lb/>
          <pb/>
          <lg type="laisse">
-            <lb/><l>J o uoſ cũqͥſ ⁊ nopleſ ⁊ cõmıbleſ.</l>
-            <lb/><l>p rıſ auualte~rne ⁊ la tere δe pıne.</l>
-            <lb/><l>⁊ balaſgueδ ⁊ tuele ⁊ ſezılıe.</l>
+            <lb/><l>J o uoſ cũqͥſ <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> nopleſ <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> cõmıbleſ.</l>
+            <lb/><l>p rıſ auualte~rne <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> la tere δe pıne.</l>
+            <lb/><l><choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> balaſgueδ <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> tuele <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> ſezılıe.</l>
             <lb/><l>L ı reıſ marſılıe ıfıſt mult que traıtre.</l>
             <lb/><l>D e ſeſ paıenueıat quınze.</l>
             <lb/><l>c haucunſ poꝛtout une brancheδolıue.</l>
@@ -91,7 +91,7 @@
             <lb/><l>A uoz franceıſ un cunſeıll en preſıſteſ.</l>
             <lb/><l>L oerent uoſ alqͤſ de legerıe.</l>
             <lb/><l>D ouſ δe uoz cunteſ al paıen trameſıſteſ</l>
-            <lb/><l>L un fut baſan ⁊ lı altreſ baſılıeſ.</l>
+            <lb/><l>L un fut baſan <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> lı altreſ baſılıeſ.</l>
             <lb/><l>L eſ chef en pͥſt eſ puıſ δe ſuz haltılıe.</l>
             <lb/><l>F aıteſ la guer cũ uoſ lauez enpͥſe.</l>
             <lb/><l>e n ſarraguce menez uoſtre oſt banıe.</l>
