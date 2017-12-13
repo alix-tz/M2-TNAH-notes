@@ -173,3 +173,95 @@ Il existe trois grands types de champs de données :
 - numériques (tinyint ; smallint ; mediumint ; int ; bigint ; float : double ; real -> prennent des tailles différentes (1 octet, 2 octets, etc) avec à chaque fois des limites hautes et basses pour ce que ces entiers peuvent contenir : etc tinyint peut aller de -128 à 127 ou de 0 à 255).
 - chaines de caractères (char ; varchar (1 à 255 caractères) ; tinyblob ; tinytext ; blob ; etc)
 - date et heure (date ; datetime ; time ; year ; timestamp)
+
+-----
+
+### Cours 3
+
+dictionnaires
+======
+Il faut un dictionnaire par table (?). Il donne la liste des éléments attendus dans la table avec des paramètres. Il précise donc le type de variables/valeur attendues, leur longueur, et précise des paramètres d'auto incrémentation, ou NOT NULL pour signaler que le champs doit absolument être rempli.
+
+entités
+======
+Il est difficile de donner une définition très précise des entités.  
+Une entité = tout objet identifiable et pertinent pour l'application.  
+Certains comprennent l'entité comme la table, d'autre comme la ligne dans la table.  
+D'une manière générale, il vaut mieux avoir des tables courtes, mieux optimisées, plutôt que des tables longues.
+
+attributs
+======
+Les entités sont caractérisées par des *propriétés* : titre, noms, date de naissance, adresse, etc.  
+Il faut se demander si certaines informations sont nécessaires pour le fonctionnement de la base. Par exemple, pour une table de personne, on pourrait vouloir mettre l'age, mais ça n'est utile que si c'est lié à un usage (ex: restriction de services en fonction de l'age, etc).
+
+- les attributs multivalués sont constitué d'un *ensemble* de valeurs prises dans un même domaine. Une telle construction permet de résoudre le problème des numéros de téléphones multiples.
+- les attributs composés sont constitués par agrégation d'autres attributs : (...)
+- un attribut atomique prend une valeur et une seule : c'est l'idéal. On peut recréer des attributs plus complexes par la concaténation d'attributs atomiques, c'est pour ça qu'on n'a pas forcément besoin d'attributs multivalués ou d'attributs composés (qu'il vaut mieux rassembler dans une table à part s'ils sont multiples, au lieu de les garder dans la table où ils sont multiples)
+
+Associations
+======
+Elles permettent de rattacher les tables entre elles. Les cardinalités permettent de préciser la nature des interaction entre deux 2 (1,1 ; 0,1 ; 0; N ; etc) : c'est-à-dire combien de ces interactions sont possibles et dans quel sens. Il faut faire attention à ces cardinalités et à ce qu'elles impliques plus tard.
+
+MCD -> MLD -> SQL
+======
+On élabore un dictionnaire pour les tables. On connecte les tables. On peut ensuite créer un modèle de relations. Ensuite, on peut passer à MySQL puisqu'on a un modèle clair.
+
+Les clefs
+======
+A définir :
+- clef étrangère (Foreign_key)
+- clef primaire (primary_key)
+
+### Manipulations
+`mysql -u root -p` (puis password [root ici c'est le nom de l'utilisateur]  
+`CREATE USER "nom"@"localhost" IDENTIFIED BY "mot-de-passe";`  
+On peut créer plusieurs utilisateurs. Attention à ne pas noter n'importe où les mots-de-passe !  
+
+`GRANT [permission type] ON "base"."table" TO "nom de la personne"@"localhost";`  
+On peut mettre : `GRANT ALL PRIVILEGES ON *. * TO 'nom'@'localhost';` -> les * permettent de dire "sur toutes les bases. sur toutes les tables". On peut ajouter "WITH GRANT OPTION"  
+
+`FLUSH PRIVILEGES` : permet d'activer ce qui vient d'être inscrit.  
+
+SELECT User, Host, Password FROM mysql.user;  
+
+`exit` permet de quiter MySQL. Ensuite on se reconnecte avec le nom de l'utilisateur qu'on a créé auquel on a donné tous les droits.  
+
+PRIVILEGES :
+======
+- GRANT CREATE, SELECT : peut créer des tables/bases/utilisateurs mais pas donner des droits, ni supprimer
+- `REVOKE [permission type] ON [base].[table name] FROM 'nom_utilisateur'@'localhost';` : permet de révoquer des droits !
+- `FLUSH PRIVILEGES;` pour activer ces modifications
+- `DROP USER "nom_utilisateur"@"localhost"; `: permet de supprimer un utilisateur
+
+AUTRES COMMANDES :
+======
+- SELECT USER();
+- SELECT CURRENT_USER();
+- SELECT database();
+- status;
+- SELECT DISTINCT User FROM mysql.user; : affiche la liste en ommettant les doublons
+
+
+CREATION d'UNE BASE DE DONNEES :
+=======
+- `CREATE DATABASE nom_de_la_base;`
+- `SHOW DATABASES;`
+- `USE nom_de_la_base;`
+- `CREATE TABLE client (cl_id int not null auto_increment, cl_nom varchar(20) not null, cl_prenom varchar(20) not null, cl_naissance date, cl_ville varchar(20) not null, cl_nbr_achats int, PRIMARY KEY (cl_id))ENGINE=InnoDB;` : il ne faut vraiment pas oublier le `;` à la fin. On peut retourner à la ligne autant qu'on veut, c'est le `;` qui signale la fin de la ligne de commande. Sauter des lignes permet plus de lisibilité. Exemple :
+```
+CREATE TABLE clients (
+  cl_id int not null auto_increment,
+  cl_nom varchar(20) not null,
+  cl_prenom varchar(20) not null,
+  cl_naissance date,
+  cl_ville varchar(20) not null,
+  cl_nbr_achats int,
+  PRIMARY KEY (cl_id)
+  )ENGINE=InnoDB;
+```
+- `SHOW TABLES;` ou `DESCRIBE clients;` :
+
+AJOUTER DES DONNEES :
+======
+- `INSERT INTO clients (cl_nom, cl_prenom, cl_naissance, cl_ville, cl_nbr_achats) VALUES ('Repa', 'Jan', '1974-03-03', 'Bratislava', 23),('Doom', 'Thomas', '1985-12-12', 'Trnava', NULL);` : ajoute 2 lignes.
+- `SELECT * FROM client;` : permet d'afficher ce qu'il y a dans la base
