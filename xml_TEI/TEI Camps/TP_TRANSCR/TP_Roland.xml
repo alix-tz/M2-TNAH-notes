@@ -2,6 +2,18 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!DOCTYPE [
+<!-- signes abbréviatifs-->
+<!ENTITY et-tironien "<choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice>">
+<!ENTITY i-suscrit-ri "<choice><abbr>&#869;</abbr><expan><ex>r</ex>i</expan></choice>"
+
+<!-- Allographes -->
+<!ENTITY i "<choice><abbr>ı</abbr><expan><ex>i</ex></expan></choice>">
+<!ENTITY u-pour-v "<choice><orig>u</orig><reg>v</reg></choice>"> <!-- celui là on est obligé de le faire à la main-->
+]>
+
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -17,9 +29,38 @@
             <msDesc>
                <msIdentifier>
                   <settlement>Oxford</settlement>
-                  <repository>lieu de conservation</repository>
-                  <idno>identifiant</idno>
+                  <institution>University of Oxford</institution>
+                  <repository>Bodleian Library</repository>
+                  <collection>Digby</collection>
+                  <idno>23</idno>
+                  <altIdentifier>
+                     <idno>S.C. 1624</idno>
+                  </altIdentifier>
                </msIdentifier>
+               <head>O – Oxford, Bodleian Library, Digby 23 (S.C. 1624)</head>
+               <msPart n="I">
+                  <msIdentifier>
+                     <idno>I</idno>
+                  </msIdentifier>
+                  <head>
+                     <persName>Calcidius</persName>,
+                     <title>Timaeus Platonis</title>
+                     (<origDate notBefore="1101" notAfter="1150">XII1/2</origDate>, 
+                     <origPlace cert="low" resp="nom de la personne qui a fait cette proposition">France ?</origPlace>                     
+                  </head>
+               </msPart>
+               <msPart n="II">
+                  <msIdentifier>
+                     <idno>II</idno>
+                  </msIdentifier>
+                  <head>
+                     <origDate notBefore="1101" notAfter="1150" cert="low">XII1/2 ?</origDate> 
+                     <origPlace>Angleterre</origPlace>, 
+                     <title>Chanson de Roland en laisses décasyllabiques</title>
+                  </head>
+                  
+                  
+               </msPart>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -45,71 +86,71 @@
       <body>
          <pb/>
          <lg type="laisse">
-            <lb/><l facs="#line_1">L e duc oger <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> larceueſque turpın.</l>
-            <lb/><l facs="#line_2">R ıcharδ lı uélz <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> ſun neuͦld henrı.</l>
-            <lb/><l facs="#line_3">e δe gaſcuıgne lı proz quenſ acelın.</l>
-            <lb/><l facs="#line_4">t eδbalδ de reınſ <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> mılun ſun cuſın.</l>
-            <lb/><l><choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> ſı ıfurent <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> gererſ <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> gerın.</l>
-            <lb/><l>e nſembloδ elſ lı quenſ Rollant ıuınt.</l>
-            <lb/><l><choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> olıuer lı proz <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> lı gentılz.</l>
-            <lb/><l>δ eſ francs δe france en ı aδ pluſ δe mıl.</l>
-            <lb/><l>G ueneſ ıuınt kı la traıſun fıſt.</l>
-            <lb/><l>D eſ ore cumencet le cunſeıll que mal pͥſt .AOI.</l>
+            <lb/><l facs="#line_1">L e duc oger &et-tironien; larceueſque turp&i;n.</l>
+            <lb/><l facs="#line_2">R &i;charδ l&i; uélz &et-tironien; ſun neuͦld henr&i;.</l>
+            <lb/><l facs="#line_3">e δe gaſcu&i;gne l&i; proz quenſ acel&i;n.</l>
+            <lb/><l facs="#line_4">t eδbalδ de re&i;nſ &et-tironien; m&i;lun ſun cuſ&i;n.</l>
+            <lb/><l>&et-tironien; ſ&i; &i;furent &et-tironien; gererſ &et-tironien; ger&i;n.</l>
+            <lb/><l>e nſembloδ elſ l&i; quenſ Rollant &i;u&i;nt.</l>
+            <lb/><l>&et-tironien; ol&i;uer l&i; proz &et-tironien; l&i; gent&i;lz.</l>
+            <lb/><l>δ eſ francs δe france en &i; aδ pluſ δe m&i;l.</l>
+            <lb/><l>G ueneſ &i;u&i;nt k&i; la tra&i;ſun f&i;ſt.</l>
+            <lb/><l>D eſ ore cumencet le cunſe&i;ll que mal &i-suscrit-ri;ſt .AOI.</l>
          </lg>
          <lg type="laisse">
             <!-- il manque deux vers ici-->
             <lb/><l><seg facs="#maj_s">S</seg> ...</l>
-            <lb/><l>D e ſun aueır me uoelt duner grant maſſe.</l>
-            <lb/><l>v rſ <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> leunſ <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> ueltreſ caeıgnableſ.</l>
-            <lb/><l>S et cenz cameılz <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> mıl hoſturſ muableſ.</l>
+            <lb/><l>D e ſun aue&i;r me uoelt duner grant maſſe.</l>
+            <lb/><l>v rſ &et-tironien; leunſ &et-tironien; ueltreſ cae&i;gnableſ.</l>
+            <lb/><l>S et cenz came&i;lz &et-tironien; m&i;l hoſturſ muableſ.</l>
             <lb/><l>Q uatre cenz mulſ cargez δel ór δarabe.</l>
-            <lb/><l>a uoec ı co pluſ δe cınquante care.</l>
-            <lb/><l>M aıſ ıl me manδet que en france men alge.</l>
-            <lb/><l>J l me ſıurat aδ aíſ a mun eſtage.</l>
-            <lb/><l>S ı receu͛rat la noſtre leı pluſ ſalue.</l>
-            <lb/><l>x pĩenſ err δe meı tenδrat ſeſ marcheſ.</l>
-            <lb/><l>M aıſ ıo ne ſaı quelſ en ÷ ſıſ curageſ.</l>
-            <lb/><l>D ıent franceıſ ıl nuſ ıcuuent guarδe. AOI.</l>
+            <lb/><l>a uoec &i; co pluſ δe c&i;nquante care.</l>
+            <lb/><l>M a&i;ſ &i;l me manδet que en france men alge.</l>
+            <lb/><l>J l me ſ&i;urat aδ aíſ a mun eſtage.</l>
+            <lb/><l>S &i; receu͛rat la noſtre le&i; pluſ ſalue.</l>
+            <lb/><l>x pĩenſ err δe me&i; tenδrat ſeſ marcheſ.</l>
+            <lb/><l>M a&i;ſ &i;o ne ſa&i; quelſ en ÷ ſ&i;ſ curageſ.</l>
+            <lb/><l>D &i;ent france&i;ſ &i;l nuſ &i;cuuent guarδe. AOI.</l>
          </lg>
          <lg type="laisse">
-            <lb/><l><seg facs="#maj_l">L</seg> ı emꝑereſ out ſa raıſun fenıe.</l>
-            <lb/><l>L ıquenſ Roll̃. kı nel otrıet mıe.</l>
-            <lb/><l>e n pıez ſe drecet ſı lı uınt cuntreδıre.</l>
-            <lb/><l>J l dıſt alreı ıa mar crerez marſılıe.</l>
-            <lb/><l>S et anz pleınſ que en eſpaıgne uenımeſ.</l>
+            <lb/><l><seg facs="#maj_l">L</seg> &i; emꝑereſ out ſa ra&i;ſun fen&i;e.</l>
+            <lb/><l>L &i;quenſ Roll̃. k&i; nel otr&i;et m&i;e.</l>
+            <lb/><l>e n p&i;ez ſe drecet ſ&i; l&i; u&i;nt cuntreδ&i;re.</l>
+            <lb/><l>J l d&i;ſt alre&i; &i;a mar crerez marſ&i;l&i;e.</l>
+            <lb/><l>S et anz ple&i;nſ que en eſpa&i;gne uen&i;meſ.</l>
          </lg>
          <lb/>
          <pb/>
          <lg type="laisse">
-            <lb/><l>J o uoſ cũqͥſ <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> nopleſ <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> cõmıbleſ.</l>
-            <lb/><l>p rıſ auualte~rne <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> la tere δe pıne.</l>
-            <lb/><l><choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> balaſgueδ <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> tuele <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> ſezılıe.</l>
-            <lb/><l>L ı reıſ marſılıe ıfıſt mult que traıtre.</l>
-            <lb/><l>D e ſeſ paıenueıat quınze.</l>
-            <lb/><l>c haucunſ poꝛtout une brancheδolıue.</l>
-            <lb/><l>N uncerent uoſ cez paroleſ meıſme.</l>
-            <lb/><l>A uoz franceıſ un cunſeıll en preſıſteſ.</l>
-            <lb/><l>L oerent uoſ alqͤſ de legerıe.</l>
-            <lb/><l>D ouſ δe uoz cunteſ al paıen trameſıſteſ</l>
-            <lb/><l>L un fut baſan <choice><abbr>⁊</abbr><expan><ex>e</ex></expan></choice> lı altreſ baſılıeſ.</l>
-            <lb/><l>L eſ chef en pͥſt eſ puıſ δe ſuz haltılıe.</l>
-            <lb/><l>F aıteſ la guer cũ uoſ lauez enpͥſe.</l>
-            <lb/><l>e n ſarraguce menez uoſtre oſt banıe.</l>
-            <lb/><l>M etez le ſege a tute vrẽ uıe.</l>
-            <lb/><l>S ı uengez celſ que lı felſ fıſt ocıre. AOI.</l>
+            <lb/><l>J o uoſ cũqͥſ &et-tironien; nopleſ &et-tironien; cõm&i;bleſ.</l>
+            <lb/><l>p r&i;ſ auualte~rne &et-tironien; la tere δe p&i;ne.</l>
+            <lb/><l>&et-tironien; balaſgueδ &et-tironien; tuele &et-tironien; ſez&i;l&i;e.</l>
+            <lb/><l>L &i; re&i;ſ marſ&i;l&i;e &i;f&i;ſt mult que tra&i;tre.</l>
+            <lb/><l>D e ſeſ pa&i;enue&i;at qu&i;nze.</l>
+            <lb/><l>c haucunſ poꝛtout une brancheδol&i;ue.</l>
+            <lb/><l>N uncerent uoſ cez paroleſ me&i;ſme.</l>
+            <lb/><l>A uoz france&i;ſ un cunſe&i;ll en preſ&i;ſteſ.</l>
+            <lb/><l>L oerent uoſ alqͤſ de leger&i;e.</l>
+            <lb/><l>D ouſ δe uoz cunteſ al pa&i;en trameſ&i;ſteſ</l>
+            <lb/><l>L un fut baſan &et-tironien; l&i; altreſ baſ&i;l&i;eſ.</l>
+            <lb/><l>L eſ chef en pͥſt eſ pu&i;ſ δe ſuz halt&i;l&i;e.</l>
+            <lb/><l>F a&i;teſ la guer cũ uoſ lauez enpͥſe.</l>
+            <lb/><l>e n ſarraguce menez uoſtre oſt ban&i;e.</l>
+            <lb/><l>M etez le ſege a tute vrẽ u&i;e.</l>
+            <lb/><l>S &i; uengez celſ que l&i; felſ f&i;ſt oc&i;re. AOI.</l>
          </lg>
          <lg type="laisse">
-            <lb/><l><seg facs="#maj_l2">L</seg> ı emꝑe en tınt ſun chef enbrunc.</l>
-            <lb/><l>S ı duıſt ſa barbe a faıtaδ fun gernuN.</l>
+            <lb/><l><seg facs="#maj_l2">L</seg> &i; emꝑe en t&i;nt ſun chef enbrunc.</l>
+            <lb/><l>S &i; du&i;ſt ſa barbe a fa&i;taδ fun gernuN.</l>
             <lb/><l>N e ben ne mal ne reſpunt ſun neuulδ.</l>
-            <lb/><l>F ranceıſ ſe taıſent ne maıſ que guenelun.</l>
-            <lb/><l>e n pıez ſe drecet ſı uınt δeuant carlun.</l>
-            <lb/><l>M ult fıerem̃t cum̃cet ſa raıſun.</l>
-            <lb/><l>e dıſt al reı ıa mar crerez brıcuN.</l>
-            <lb/><l>N e meı ne altre ſe δe uoſtre ꝓδ nun.</l>
-            <lb/><l>Q uant co uoſ manδet lı reıſ marſılıun</l>
-            <lb/><l>Qͥ l δeuenδrat ıoınteſ ſeſ maınſ tıſ hom.</l>
-            <lb/><l>e tute eſpaıgne tenδrat par uoſtre dun.</l>
+            <lb/><l>F rance&i;ſ ſe ta&i;ſent ne ma&i;ſ que guenelun.</l>
+            <lb/><l>e n p&i;ez ſe drecet ſ&i; u&i;nt δeuant carlun.</l>
+            <lb/><l>M ult f&i;erem̃t cum̃cet ſa ra&i;ſun.</l>
+            <lb/><l>e d&i;ſt al re&i; &i;a mar crerez br&i;cuN.</l>
+            <lb/><l>N e me&i; ne altre ſe δe uoſtre ꝓδ nun.</l>
+            <lb/><l>Q uant co uoſ manδet l&i; re&i;ſ marſ&i;l&i;un</l>
+            <lb/><l>Qͥ l δeuenδrat &i;o&i;nteſ ſeſ ma&i;nſ t&i;ſ hom.</l>
+            <lb/><l>e tute eſpa&i;gne tenδrat par uoſtre dun.</l>
          </lg>
       </body>
    </text>
