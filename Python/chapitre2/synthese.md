@@ -3,27 +3,41 @@
 ## Chapitre 2
 
 ### Fonctions et méthodes de base
-**Ouvrir un fichier stocké localement :** `variable = open('chemin/nom.fichier')`.  
+- **Ouvrir un fichier stocké localement :** `variable = open('chemin/nom.fichier')`.  
 On pourrait préciser un encodage, après une `,` à la suite du nom du fichier. Exemple : `variable = open('chemin/nom.fichier', encoding="latin")`.
 
-**Fermer un texte ouvert avec la fonction/méthode `open()` :** `fichier_ouvert.close()`.  
+- **Fermer un texte ouvert avec la fonction/méthode `open()` :** `fichier_ouvert.close()`.  
 Il est important de fermer un fichier car en cas de plantage, s'il est toujours ouvert cela peut le vider de son contenu.
 
-**Ouvrir un fichier de manière *safe* :** avec déclaration `with ___ as ___ :`.  
+- **Ouvrir un fichier de manière *safe* :** avec déclaration `with ___ as ___ :`.  
 *Exemple :* `with open ("chemin/fichier.extension") as variable:`. Cela équivaut à faire en une seule commande `open()` et `.close()`. `With` fonctionne comme `if` :  il est suivi d'un bloc indenté qui contient les commandes à exécuter avant de fermer le fichier. Il est utile d'attribuer le contenu du fichier à une autre variable qui pourra ensuite être utilisée une fois le bloc fermé.
 
-**Afficher le contenu textuel d'un fichier stocké localement :** `print(fichier_ouvert.read())`.  
+- **Afficher le contenu textuel d'un fichier stocké localement :** `print(fichier_ouvert.read())`.  
 `read` est une fonction qui permet de lire le contenu d'un fichier dans Python; elle fonctionne avec les objets `TextWrapper`.
 
-**Générer un test unitaire :** `assert ___ , ___`.  
+- **Générer un test unitaire :** `assert ___ , ___`.  
 Cette fonction est suivie d'un test d'égalité ou une condition et, après une `,` d'un message d'erreur qui doit s'afficher (entre `" "`).
 
-**Compter des occurrences dans un texte :** `count()`.  
+- **Compter des occurrences dans un texte :** `count()`.  
 Cette fonction prend en argument l'élément ou la chaîne que l'on souhaite compter. Exemple : `variable = texte.count("e")`.  
 *Remarque : il peut être utile d'utiliser la méthode split() au préalable.*
 
-**Définir une fonction :** `def nom_fonction(params)`.  
+- **transformer une liste en set :** `set()`.  
+Cette fonction permet de générer une nouvelle liste particulière (entre `{}`) qui contient tous les éléments de la liste précédente une et une seule fois. Contrairement à une liste, un set n'est pas ordonné : on ne peut pas utiliser l'indexation.  
+
+- **ajouter un élément à un set :** `add()`.  
+*Remarque : on utilise rarement cette fonction.*    
+
+- **Définir une fonction :** `def nom_fonction(params)`.  
 Les paramètres sont optionnels, mais les parenthèses doivent toujours être écrites (même si elles restent vides). Les paramètres sont séparés par des `,`. La ligne de définition de la fonction est suivie d'un `bloc indenté contenant le code de la fonction`. Il peut se terminer par un `return` qui permet de renvoyer la valeur de renvoi.
+
+- **transformer une chaine de caractères en minuscule ou en majuscule :** `.lower()` ou `.upper()`.  
+
+- **remplacer des caractères par d'autres caractères :** `.replace()`.  
+On donne en premier argument le caractère à remplacer et en deuxième argument le nouveau caractère. On peut utiliser `replace` pour surpprimer un caractère dans une chaine : pour cela il suffit de le remplacer par `""`.  
+*Remarque : si on veut remplacer plusieurs caractères qui ne sont pas forcément à la suite, il faut utiliser plusieurs `replace()`. On peut les mettre à la suite sur la même ligne puisqu'ils renvoient systématiquement une nouvelle chaîne de caractères.*  
+*Remarque 2 : pour supprimer plusieurs signes de ponctuation, on peut faire appel à une liste de ces signes, et à une boucle.*
+
 
 ### Traitement du texte
 
@@ -56,3 +70,28 @@ Une méthode se différencie d'une fonction sa syntaxe. Alors qu'une fonction s'
 
 #### Scope et portée
 Une variable qui existe dans une fonction est séparée du reste du code : on ne peut pas faire appel à une variable utilisée dans la définition de la fonction ailleurs quand dans cette même définition. 
+
+#### Documenter une fonction
+Il existe plusieurs normes/méthodes pour documenter une fonction : documentation Google, [reStructuredText (rST)](https://docs.python.org/devguide/documenting.html).  
+
+Exemple de doc en RST :  
+```
+def comptage2(mots):
+    """ Compte et stocke le décompte de chaque mot dans une liste de mots
+    
+    :param mots: Liste de mosts
+    :type mots: list
+    :returns: Dictionnaire où les clefs sont les mots et les valeurs le nombre d'occurrences
+    :rtype: dict
+    """
+```
+
+Explication : 
+- la doc est donnée entre `"""` (commentaire multilignes)
+- la 1ère ligne donne la description de ce à quoi sert la fonction
+- `:param nom_du_paremetre:` décrit ce qui est attendu
+- `:type nom_du_parametre:`donne le type attendu (`list`, `int`, `str`, `dict`, `TextIOWrapper`, ...)
+- `:retuns:` est donné après tous les paramètres et décrit ce qui sera renvoyé par le `return`
+- `:rtype:` indique le type du `return`
+- *remarque : on peut se contenter de préciser les type uniquement lorsque c'est nécessaire*  
+
