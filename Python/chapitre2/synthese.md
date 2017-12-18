@@ -38,6 +38,11 @@ On donne en premier argument le caractère à remplacer et en deuxième argument
 *Remarque : si on veut remplacer plusieurs caractères qui ne sont pas forcément à la suite, il faut utiliser plusieurs `replace()`. On peut les mettre à la suite sur la même ligne puisqu'ils renvoient systématiquement une nouvelle chaîne de caractères.*  
 *Remarque 2 : pour supprimer plusieurs signes de ponctuation, on peut faire appel à une liste de ces signes, et à une boucle.*
 
+- **créer un intervalle :** `range()`.
+
+- **écrire dans un document ouvert :** `.write()`.  
+On met entre parenthèses le texte que l'on souhaite inscrire dans le document. Il n'est pas possible d'ajouter du texte au document sans réécrire par-dessus : il faut donc récupérer le texte du document, puis ajouter le sien avant de réécrire. 
+----
 
 ### Traitement du texte
 
@@ -46,6 +51,11 @@ La fonction open permet d'attribuer un fichier enregistré localement dans une v
 
 #### Traitement du texte
 Les objetcits du traitement du texte en sciences humaines sont notamment de nettoyer les données pour ensuite les analyser, convertire une collection de textes en un format différent, ... .
+
+#### Écrire dans un document
+Lorsqu'on utilise `open()`, on peut préciser en attribut : `mode="w"` pour se mettre en mode écriture. `mode="r"` permet de se mettre en mode lecture.
+
+----
 
 ### Les Fonctions
 Une fonction est composée de `paramètres/arguments` (aussi appelés args ou params). Elle renvoie une valeur, appelée `valeur de retour` (return value).
@@ -69,7 +79,18 @@ def compter_dans_une_autre_chaine(aiguille, botte_de_foin):
 Une méthode se différencie d'une fonction sa syntaxe. Alors qu'une fonction s'écrit `nom_fonction(paramètres)`, une méthode s'écrit de la maniètre suivante : `variable.methode(paramètres)`.
 
 #### Scope et portée
-Une variable qui existe dans une fonction est séparée du reste du code : on ne peut pas faire appel à une variable utilisée dans la définition de la fonction ailleurs quand dans cette même définition. 
+Une variable qui existe dans une fonction est séparée du reste du code : on ne peut pas faire appel à une variable utilisée dans la définition de la fonction ailleurs quand dans cette même définition.
+
+#### Paramètres optionnels
+Il est possible en Python de préciser des paramètres par défaut : s'ils ne sont pas précisé au moment de la convocation de la fonction, ce sont ces paramètres par défaut qui seront utilisés.  
+syntaxe :
+```
+def fonction (param, param="chaîne qui fait param par défaut")
+```
+
+Il est également possible de donner des paramètres dans un ordre différent de celui qui a été donné au moment de la définitin de la fonction. On appelle cela les `named arguments`/`keyword argument`/`kwargs`.  
+
+
 
 #### Documenter une fonction
 Il existe plusieurs normes/méthodes pour documenter une fonction : documentation Google, [reStructuredText (rST)](https://docs.python.org/devguide/documenting.html).  
@@ -78,7 +99,7 @@ Exemple de doc en RST :
 ```
 def comptage2(mots):
     """ Compte et stocke le décompte de chaque mot dans une liste de mots
-    
+
     :param mots: Liste de mosts
     :type mots: list
     :returns: Dictionnaire où les clefs sont les mots et les valeurs le nombre d'occurrences
@@ -86,7 +107,7 @@ def comptage2(mots):
     """
 ```
 
-Explication : 
+Explication :
 - la doc est donnée entre `"""` (commentaire multilignes)
 - la 1ère ligne donne la description de ce à quoi sert la fonction
 - `:param nom_du_paremetre:` décrit ce qui est attendu
@@ -94,4 +115,3 @@ Explication :
 - `:retuns:` est donné après tous les paramètres et décrit ce qui sera renvoyé par le `return`
 - `:rtype:` indique le type du `return`
 - *remarque : on peut se contenter de préciser les type uniquement lorsque c'est nécessaire*  
-
