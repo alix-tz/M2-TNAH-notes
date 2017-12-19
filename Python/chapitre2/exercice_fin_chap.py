@@ -22,6 +22,11 @@ for marqueur in ponctuation:
     texte = texte.replace(marqueur, '')
 texte = texte.replace("'", " ").replace("-", " ").replace("\n"," ")
 
+'''
+pour aller plus vite : 
+- .split() : coupe sur les espaces, les sauts de lignes et les tabulations. Donc on pouvait se contenter de remplacer tous les signes de ponctuation par des espaces. Ensuite split aurait tout nettoyé.
+'''
+
 # Calculer la distribution
 liste_mots = texte.split()
 
@@ -31,6 +36,10 @@ for mot in liste_mots:
         dict_frequence[mot]= liste_mots.count(mot)
 
 # Ouvrir le fichier `frequence_horace.txt` pour écrire
-with open("resultats/frequence_horace.txt", mode="w") as fichier_texte:
+with open ("resultats/frequence_horace.txt", mode="w") as fichier_texte:
 # Utiliser la fonction ecrire_colonne pour écrire dans ce fichier
     ecrire_colonne(dict_frequence, fichier_texte)
+
+'''
+Remarque : il fallait faire des fonctions pour chaque étape !
+'''

@@ -1,0 +1,1 @@
+PARCER ça veut dire lire un fichier dans un format quelconque, pour qu'on puisse ensuite interroger par le biais de l'ordinateur. -> lire un fichier et le comprendre en n'importe quel langage informatique. 
