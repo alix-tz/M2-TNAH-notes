@@ -1,4 +1,4 @@
-# L'éco-système de la date
+# L'éco-système de la data
 ## Objectifs :
 - mieux connaître le vocabulaire
 - comprendre comment ça fonctionne en théorie
@@ -135,3 +135,4 @@ Tim Berners-Lee classe les pratiques d'open data, pour promouvoir un open data d
 Ces deux derniers niveaux donnent lieu au `linked open data` : c'est la mise à disposition de données en utilisant une licence, tout en respectant les préconisations de Berners-Lee.
 
 ### Linked Data
+(... cf cours ?)
