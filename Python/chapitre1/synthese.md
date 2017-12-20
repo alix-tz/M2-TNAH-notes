@@ -7,7 +7,7 @@
   + une chaîne de caractère entre `" "` ou `""" """`
   + une variable
   + une opération
-  + une suite de variables, de chaînes et d'opération, séparés par des `, ` ou ` + `.  
+  + une suite de variables, de chaînes et d'opérations, séparés par des `, ` ou ` + `.  
 
 - ** Calculer la longueur d'une chaîne ou d'une liste : `len()`.** On peut placer cette valeur dans une variable, ou l'afficher à l'aide de print().
 
@@ -89,15 +89,15 @@ On peut générer des tranches en partant de la fin selon le même principe, tou
 + on écrira `tranche[-2:-5]` et non pas `tranche[-5:-2]` ; et cela affichera : **"ach"** (c'est bien la borne à droite de la chaîne qui est excluante, même si elle se situe à gauche lorsqu'on exprime la tranche).
 
 Pour mieux comprendre :  
-| Pos    | Neg     |  
-| ------ | ------- |   
-| t(0)   | t(-7)   |  
-| r(1)   | r(-6)   |  
-| a(2)   | a(-5)   |  
-| n(3)   | n(-4)   |  
-| c(4)   | c(-3)   |  
-| h(5)   | h(-2)   |  
-| e(6)   | e(-1)   |  
+| Pos  | Neg   |  
+|------| ------|   
+| t(0) | t(-7) |  
+| r(1) | r(-6) |  
+| a(2) | a(-5) |  
+| n(3) | n(-4) |  
+| c(4) | c(-3) |  
+| h(5) | h(-2) |  
+| e(6) | e(-1) |  
 
 #### Manipuler une chaîne de caractères
 
@@ -160,15 +160,28 @@ dictionnaire_liste = list(dictionnaire.keys())
 ---
 
 ### Les tuples
-Ce sont des listes simplifiées et `immutables`. Les tuples sont utiles lorsque les valeurs d'une liste ne doivent plus changer dans le reste du programme. Les tuples permettent des `dézipages`, c'est-à-dire l'assignation des valeurs d'un tuple à des variables de manière très simple :
+Ce sont des listes simplifiées et `immutables`. Les tuples sont utiles lorsque les valeurs d'une liste ne doivent plus changer dans le reste du programme. On peut par ailleur itérer sur un tuple.  
+Les tuples permettent des `dézipages`, c'est-à-dire l'assignation des valeurs d'un tuple à des variables de manière très simple :
 ```
-tuple = [
-("A", "B")
-]
+tuple = [("A", "B")];
+#remarque : ici c'est une liste de tuples
+
 titre, auteur = tuple[0]
 # titre <- "A"
 # auteur <- "B"
 ```
+On peut mettre une seule ou plusieurs valeurs dans un tuple. La syntaxe est la suivante :
+```
+tup = (x,);
+tup = (x, y);
+tup = (x, y, z, a, b, c);
+```
+On peut caster une liste en tuple de la manière suivante :  
+```
+tup = tuple(liste)
+```
+Les tuples sont très utilisés pour des couples de valeurs, ça permet de ne pas avoir à créer une liste ou un dictionnaire juste pour deux valeurs. L'avantage peut être la mémoire, mais c'est surtout d'un point de vue "sécurité" : on est sûr que les valeurs ne changeront pas et on sait comment travailler avec ces valeurs.
+
 ---
 
 ### Les conditions

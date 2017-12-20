@@ -1,0 +1,162 @@
+@import "tei_oxygen.css";
+
+@namespace oxy "http://www.oxygenxml.com/extensions/author";
+
+corr::before{
+    content:"["
+}
+corr::after{
+    content:"]"
+}
+sic::before{
+    content:"<"
+}
+sic::after{
+    content:">"
+}
+
+sic{
+    display:inline
+}
+
+reg{
+    display:none
+}
+expan{
+    display:none
+}
+pc[type = 'supplied']
+{
+    display:none
+}
+
+space[quantity = "0.5"]{
+    content:" ";
+    text-decoration:underline;
+}
+
+space{
+    content:" ";
+    text-decoration:underline;
+}
+
+gb::before{
+    content:"[cah. ";
+    font-weight:bold;
+}
+gb::after{
+    content:"]";
+    font-weight:bold;
+}
+gb{
+    display:block;
+    content:attr(n);
+    color:blue;
+    font-weight:bold;
+}
+
+pb::before{
+    content:"[fol. ";
+    font-weight:bold;
+}
+pb::after{
+    content:"]";
+    font-weight:bold;
+}
+pb{
+    display:block;
+    content:attr(n);
+    color:blue;
+    font-weight:bold;
+    counter-reset:lb;
+}
+cb::before{
+    content:"[col. ";
+    font-weight:bold;
+}
+cb::after{
+    content:"]";
+    font-weight:bold;
+}
+cb{
+    display:block;
+    content:attr(n);
+    color:blue;
+    font-weight:bold;
+    counter-reset:lb;
+}
+
+
+lg::before{
+    display:block;
+    content:attr(n);
+    font-weight:bold;
+}
+
+
+l::before{
+    content:counter(lb);
+    color:gray;
+    width:2em;
+    display:inline-block;
+}
+
+lb{
+    counter-increment:lb;
+}
+
+/*Décoration, lettrines, initiales*/
+
+hi[rend="initiale peint 5l"]{
+    font-size:5em;  
+}
+
+hi[rend="initiale filigr 4l"]{
+    font-size:4em; 
+}
+
+hi[rend="initiale filigr 2l"]{
+    font-size:2em;
+}
+
+ 
+hi[rend="initiale detach"]{
+    font-size:120%;
+}
+
+hi[rend="litteraNotabilior"]{
+    font-size:120%;
+}
+hi[rend="litteraElongata"]{
+    -webkit-transform:scale(1,3); /* Safari and Chrome */
+    -moz-transform:scale(1,3); /* Firefox */
+/*-ms-transform:scale(1,2);*/ /* IE 9+ */
+    -o-transform:scale(1,3); /* Opera */
+}
+
+/* Vérification de la segmentation*/
+w[rend="aggl"]{
+    color:blue;
+}
+
+w[rend="elision"]{
+    color:fuchsia;
+}
+
+name{
+    color:brown;
+}
+persName{
+    color:brown;
+}
+placeName{
+    color:brown;
+}
+rs{
+    color:brown;
+}
+
+unclear{
+    color:red;
+    font-weight:bold;
+}

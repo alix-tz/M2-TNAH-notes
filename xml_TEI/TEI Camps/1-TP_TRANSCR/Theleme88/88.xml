@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?oxygen RNGSchema="../myTei.rng" type="xml"?> -->
+<TEI>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>1109. Acte episcopal (Sens)</title>
+                <author>Guyotjeannin, Olivier (professeur à l'École nationale des Chartes)</author>
+                <author>Sonnefraud, Claire (élève à l'Ecole nationale des Chartes)</author>
+                <respStmt>
+                    <resp>document encodé par</resp>
+                    <name>Jouguet, Hélène (responsable des applications documentaires</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <idno type="numero">88</idno>
+                <publisher>École nationale des Chartes</publisher>
+                <date when-iso="2007-09">octobre 2007</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Fac-sim. ENC : NF 42 (héliogravure).</p>
+                <p>Original conservé aux Archives Nationales.</p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="lat"/>
+                <language ident="frm"/>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front/>
+        <body>
+            <div type="facsimile" rend="fax.jpg">
+                <div type="remarque">
+                    <p>Note sur la transcription. Les “e cédillés” sont rendus selon le cas par “æ” ou "œ".</p>
+                </div>
+                <div>
+                    <p>
+                        <seg rend="22,73,58,72,50,366,23,367" n="poly">
+                            <expan>Chrismon</expan>
+                        </seg>
+                        <seg rend="64,70,520,61,520,95,63,102" n="poly">In nomine D<expan>omi</expan>ni. DAIMBERTUS
+                            archiep<expan>iscopu</expan>s.</seg>
+                        <seg rend="55,107,571,95,574,127,55,136" n="poly">Notu<expan>m</expan> esse volum<expan>us</expan>
+                                om<expan>n</expan>ib<expan>us</expan> Chr<expan>ist</expan>i fidelib<expan>us</expan> q<expan>u</expan>ia,
+                                cu<expan>m</expan> in gremio</seg>
+                        <seg rend="56,141,581,132,581,157,309,160,60,167" n="poly">s<expan>an</expan>c<expan>t</expan>æ Matris
+                                aeccl<expan>esi</expan>æ sacru<expan>m</expan> cælebrarem<expan>us</expan>
+                            c<expan>on</expan>ventu<expan>m</expan>, venit in</seg>
+                        <seg rend="59,174,309,166,579,163,576,192,303,194,65,199" n="poly">p<expan>re</expan>sentia<expan>m</expan>
+                                n<expan>ost</expan>ram abbas S<expan>an</expan>c<expan>t</expan>i Germani de Prato Parisiensis</seg>
+                        <seg rend="63,207,291,198,587,195,587,224,307,225,61,232" n="poly">æccl<expan>esi</expan>æ, dep<expan>re</expan>cans
+                            ut ei altare de Absedo villa, q<expan>uo</expan>d est in pa-</seg>
+                        <seg rend="61,238,312,229,580,231,582,257,302,257,59,265" n="poly">-go Senonensi, in honore
+                                s<expan>an</expan>c<expan>t</expan>i Germani <expan>et</expan> s<expan>an</expan>c<expan>t</expan>i
+                            Vincentii,</seg>
+                        <seg rend="57,273,312,259,590,263,593,286,296,288,56,296" n="poly">q<expan>uo</expan>d ad
+                                p<expan>er</expan>sona<expan>m</expan> vicarii esse solebat, in censu<expan>m</expan> mittere dignare-</seg>
+                        <seg rend="54,301,311,291,595,293,591,320,301,320,54,323" n="poly">-m<expan>ur</expan>. Nos itaq<expan>ue</expan>,
+                            peticioni ej<expan>us</expan> assensu<expan>m</expan> dantes, concedim<expan>us</expan> ei eo te-</seg>
+                        <seg rend="53,330,309,325,598,327,594,354,297,352,52,356" n="poly">-nore ut sing<expan>u</expan>lis annis in
+                            festivitate s<expan>an</expan>c<expan>t</expan>i Remigii k<expan>a</expan>l<expan>endas</expan>
+                            octob<expan>ris</expan></seg>
+                        <seg rend="37,363,320,355,597,363,599,383,293,384,40,388" n="poly">de censu XX sol<expan>idi</expan>
+                            nob<expan>is</expan> solvant<expan>ur</expan>, salva debita obœdientia <expan>et</expan> cir-</seg>
+                        <seg rend="32,395,323,388,599,391,599,417,295,416,33,420" n="poly">-cadis atq<expan>ue</expan> synodis necnon
+                                <expan>et</expan> debitis justiciis n<expan>ost</expan>ris. Q<expan>uo</expan>d si negle-</seg>
+                        <seg rend="33,428,308,421,603,423,597,452,295,450,32,456" n="poly">-xerit, legem inde faciat <expan>et</expan> non
+                                p<expan>er</expan>dat. Et ut hoc firmu<expan>m</expan> p<expan>er</expan>mane-</seg>
+                        <seg rend="28,465,311,455,597,457,591,486,265,483,30,486" n="poly">-at, manu n<expan>ost</expan>ra
+                            subt<expan>er</expan> firmavim<expan>us</expan> synodoq<expan>ue</expan> firmandu<expan>m</expan>
+                                tradidim<expan>us</expan>.</seg>
+                        <seg rend="25,496,310,488,543,491,539,520,33,526" n="poly">Actu<expan>m</expan> felicit<expan>er</expan> in
+                                eccl<expan>esi</expan>a S<expan>an</expan>c<expan>t</expan>i Stephani publicæ.</seg>
+                        <seg rend="34,558,492,549,492,584,36,592" n="poly">DAIMBERT<expan>US</expan>, D<expan>e</expan>i miseratione
+                                archiep<expan>iscopu</expan>s.</seg>
+                        <seg rend="34,624,596,610,596,648,311,645,33,652" n="poly">Ansellus archidiacon<expan>us</expan>.
+                            Stephan<expan>us</expan> archidiacon<expan>us</expan>. Girar-</seg>
+                        <seg rend="30,658,319,650,578,653,584,679,30,689" n="poly">-d<expan>us</expan> archid<expan>iaconus</expan>.
+                                Tetbaud<expan>us</expan> archid<expan>iaconus</expan>. Hilduin<expan>us</expan>
+                            archidiacon<expan>us</expan>.</seg>
+                        <seg rend="31,721,597,707,597,741,290,746,40,752" n="poly">Hugo archipr<expan>es</expan>b<expan>iter</expan>.
+                                Harduin<expan>us</expan> archipr<expan>es</expan>b<expan>iter</expan>. Bauduin<expan>us</expan>
+                                archipr<expan>es</expan>b<expan>iter</expan>.</seg>
+                        <seg rend="33,759,482,748,484,774,37,783" n="poly">Gislehard<expan>us</expan>
+                            archipr<expan>es</expan>b<expan>iter</expan>. Isembard<expan>us</expan>
+                            archipr<expan>es</expan>b<expan>ite</expan>r.</seg>
+                        <seg rend="37,792,304,781,598,781,598,809,302,808,43,815" n="poly">Rotb<expan>er</expan>t<expan>us</expan>
+                                archipr<expan>esbiter</expan>. Goffrid<expan>us</expan> archipr<expan>esbiter</expan>.
+                            Joh<expan>ann</expan>es archipr<expan>esbiter</expan>.Goffri-</seg>
+                        <seg rend="39,820,325,814,581,816,574,840,35,840" n="poly">-dus archipr<expan>esbiter</expan>. Tetbaudus
+                                archipr<expan>esbiter</expan>. Leonius archipr<expan>es</expan>b<expan>iter</expan>.</seg>
+                        <seg rend="35,848,275,843,275,877,39,875" n="poly">Rodulfus archipr<expan>es</expan>b<expan>ite</expan>r.</seg>
+                        <seg rend="36,979,596,971,597,1009,31,1009" n="poly">Data mense septembri, regnante LUDOVICO rege anno</seg>
+                        <seg rend="40,1014,108,1016,104,1043,39,1036" n="poly">II.</seg>
+                        <seg rend="43,1158,428,1156,428,1202,32,1200" n="poly">Girard<expan>us</expan> cancellarius scripsit.</seg>
+                    </p>
+                </div>
+            </div>
+            <div type="transcription">
+                <div type="texte">
+                    <p>
+                        <expan><hi rend="italic">Chrismon</hi></expan> In nomine Domini. <term n="Daimbert, archevêque de Sens de 1097 à 1122.">DAIMBERTUS</term> archiepiscopus.
+                        Notum esse <lb/> volumus omnibus Christi fidelibus quia, cum in gremio sanctæ matris <lb/> aecclesiæ sacrum
+                        cælebraremus <term n="Cette assemblée est plus bas qualifiée de « synode ». Les souscriptions,
+                            des cinq archidiacres et de douze archiprêtres, montrent bien que le noyau des participants
+                            (outre les abbés non exempts et les curés) était constitué par les relais du pouvoir épiscopal dans
+                            le diocèse, quadrillé par un réseau d’archidiaconés et, à un niveau inférieur,
+                            d’archiprêtrés (ou doyennés).">conventum</term>, venit in presentiam nostram <lb/> abbas <term
+                            n="Saint-Germain-des-Prés, abbaye bénédictine hors les murs de Paris, fondée au milieu du VIe siècle,
+                            dite pendant deux siècles Sainte-Croix-et-Saint-Vincent.">Sancti Germani de Prato</term> Parisiensis æcclesiæ,
+                        deprecans ut ei <term n="altare : l’autel est alors défini en droit canonique comme l’ensemble des revenus
+                            liés au culte (offrandes et tout ou partie des dîmes), réservés au desservant, distinct de l’ecclesia
+                            (bâtiment et sans doute biens-fonds attachés) et susceptible de suivre un sort différent.">altare</term> de <lb/>
+                        <term n="Absedo : ancienne église proche de Marolles-sur-Seine (Seine-et-Marne, cant. Montereau-Fault-Yonne),
+                            peut-être Saint-Germain-Laval. Sise en bord de Seine, elle était au cœur d’un important groupe domanial
+                            de l’abbaye parisienne. On notera sa dédicace double qui fait écho à la titulature
+                            primitive de l’abbaye.">Absedo</term> villa, quod est in pago Senonensi, in honore sancti Germani et sancti
+                        <lb/> Vincentii, quod ad <term n="persona : ici au sens courant de titulaire (qui pouvait être desservant ou en
+                            déléguer un),                                  d’affectataire de l’autel.">personam</term> vicarii esse solebat,
+                        in censum mittere dignaremur. <lb/> Nos itaque, peticioni ejus assensum dantes, concedimus ei eo tenore ut singulis
+                        <lb/> annis in festivitate sancti Remigii kalendas octobris de censu XX solidi nobis <lb/> solvantur, salva debita
+                        obœdientia et circadis atque synodis necnon et debitis <lb/> justiciis nostris. Quod si neglexerit, legem inde
+                        faciat et non perdat. Et ut hoc <lb/> firmum permaneat, manu nostra subter firmavimus synodoque firmandum <lb/>
+                        tradidimus. <lb/> Actum feliciter in ecclesia <term n="Cathédrale de Sens.">Sancti Stephani</term> publicæ. <lb/>
+                        DAIMBERTUS, Dei miseratione archiepiscopus. <lb/> Ansellus <term n="Le vaste diocèse de Sens était divisé en cinq
+                            archidiaconés qui correspondaient                                  peu ou prou aux cinq pagi qui le formaient
+                            (Sens, Melun, Provins, Gâtinais, Étampes).">archidiaconus</term>. Stephanus archidiaconus. Girardus
+                        archidiaconus. <lb/> Tetbaudus archidiaconus. Hilduinus archidiaconus. <lb/> Hugo <term n="Autre indice de
+                            continuité : en 1350, on recense dans le diocèse de Sens treize archiprêtrés ou doyennés,
+                            chiffre proche des douze titulaires ici présents.">archipresbiter</term>. Harduinus archipresbiter. Bauduinus
+                        archipresbiter. <lb/> Gislehardus archipresbiter. Isembardus archipresbiter. Rotbertus <lb/> archipresbiter.
+                        Goffridus archipresbiter. Johannes archipresbiter. Goffridus <lb/> archipresbiter. Tetbaudus archipresbiter. Leonius
+                        archipresbiter. Rodulfus <lb/> archipresbiter. <lb/> Data mense septembri, regnante LUDOVICO rege <term n="Comme
+                            Daimbert est archevêque de 1097 à 1122, il s’agit de Louis VI,                                  couronné roi par
+                            le même Daimbert en août 1108.                                  Il existe plusieurs points de départ possibles
+                            du décompte des années de règne, mais comme l’acte ne mentionne pas                                  le roi
+                            Philippe Ier (mort en juillet 1108), on peut supposer que l’on vise le règne de Louis VI seul roi.
+                            Nous serions donc en 1109.">anno II</term>. <lb/> Girardus cancellarius scripsit. </p>
+                </div>
+                <div type="traduction">
+                    <p> (<hi rend="italic">Chrismon</hi>) Au nom du Seigneur, <term n="Daimbert, archevêque de Sens de 1097 à 1122."
+                            >DAIMBERT</term> archevêque. Nous voulons qu’il soit su <lb/> de tous les fidèles du Christ que, comme nous
+                        célébrions l’<term n="Cette assemblée est plus bas qualifiée de « synode ». Les souscriptions,
+                            des cinq archidiacres et de douze archiprêtres, montrent bien que le noyau des participants (outre les abbés non
+                            exempts et les curés)                                  était constitué par les relais du pouvoir épiscopal dans
+                            le diocèse, quadrillé par un réseau d’archidiaconés et,                                  à un niveau inférieur,
+                            d’archiprêtrés (ou doyennés).">assemblée</term> sacrée dans le giron <lb/> de notre sainte mère église, vint en
+                        notre présence l’abbé de <term n="Saint-Germain-des-Prés, abbaye bénédictine hors les murs de Paris,
+                            fondée au milieu du VIe siècle, dite pendant deux siècles Sainte-Croix-et-Saint-Vincent."
+                        >Saint-Germain-des-Prés</term>, en <lb/> l’église de Paris, nous priant de daigner lui céder à cens l’<term
+                            n="altare : l’autel est alors défini en droit canonique comme l’ensemble                                  des
+                            revenus liés au culte (offrandes et tout ou partie des dîmes), réservés au desservant, distinct de l’ecclesia
+                            (bâtiment et sans doute biens-fonds attachés) et susceptible de suivre un sort différent.">autel</term> de la
+                        localité d’<term n="Absedo : ancienne église proche de Marolles-sur-Seine (Seine-et-Marne, cant.
+                            Montereau-Fault-Yonne),                                  peut-être Saint-Germain-Laval. Sise en bord de Seine,
+                            elle était au cœur d’un important groupe domanial de l’abbaye parisienne.                                  On
+                            notera sa dédicace double qui fait écho à la titulature primitive de l’abbaye." xml:lang="frm">Absedo</term>, en <lb/>
+                        Sénonais, dédié à saint Germain et saint Vincent, <term n="persona : ici au sens courant de titulaire (qui pouvait
+                            être desservant ou en déléguer un),                                  d’affectataire de l’autel.">attribué</term>
+                        jusque-là à un vicaire. Nous <lb/> donc, acquiesçant à sa demande, le lui avons concédé à cette condition que chaque
+                        année à <lb/> la fête de saint Remi, aux calendes d’octobre, nous soient versés vingt sous de cens, <lb/> réservant
+                        l’obéissance qui nous est due, ainsi que nos droits de visite, de synode et de <lb/> justice. Que s’il néglige de le
+                        faire, il paiera l’amende mais ne perdra pas [l’autel]. Et afin <lb/> que cela reste ferme, nous l’avons ci-dessous
+                        confirmé de notre main et remis à confirmer <lb/> au synode. Fait sous d’heureux auspices en l’église de <term
+                            n="Cathédrale de Sens.">Saint-Étienne</term>, en public. <lb/> DAIMBERT, par la miséricorde de Dieu archevêque.
+                        <lb/> Anseau <term n="Le vaste diocèse de Sens était divisé en cinq archidiaconés qui correspondaient peu ou prou
+                            aux cinq pagi qui le formaient                                  (Sens, Melun, Provins, Gâtinais, Étampes)."
+                            >archidiacre</term>. Étienne archidiacre. Gérard archidiacre. Thibaud archidiacre. <lb/> Hilduin archidiacre.
+                        <lb/> Hugues <term n="Autre indice de continuité : en 1350, on recense dans le diocèse de Sens treize archiprêtrés
+                            ou doyennés,                                  chiffre proche des douze titulaires ici présents."
+                        >archiprêtre</term>. Harduin archiprêtre. Baudouin archiprêtre. Gislehard archiprêtre. <lb/> Isembard archiprêtre.
+                        Robert archiprêtre. Geoffroi, archiprêtre. Jean, archiprêtre. Geoffroi <lb/> archiprêtre. Thibaud archiprêtre. Léon
+                        archiprêtre. Raoul archiprêtre. <lb/> Donné au mois de septembre, du règne du roi Louis la <term n="Comme Daimbert
+                            est archevêque de 1097 à 1122, il s’agit de Louis VI, couronné roi par le même Daimbert en août 1108.
+                            Il existe plusieurs points de départ possibles du décompte des années de règne, mais comme l’acte ne mentionne
+                            pas                                  le roi Philippe Ier (mort en juillet 1108), on peut supposer que l’on vise
+                            le règne de Louis VI seul roi.                                  Nous serions donc en 1109.">deuxième
+                        année</term>. <lb/> Gérard, chancelier, a écrit. </p>
+                </div>
+                <div type="regeste">
+                    <head>1109, septembre. – Sens, cathédrale Saint-Étienne.</head>
+                    <p>L’archevêque de Sens Daimbert, à la demande de l’abbé de Saint-Germain-des-Prés, concède à celui-ci l’autel d’<hi
+                            rend="italic">Absedo</hi> en Sénonais, dédié à saint Germain et saint Vincent et jusque-là attribué à un
+                        vicaire, contre un cens de 20 sous à la Saint-Remi du 1er octobre, l’archevêque réservant l’obéissance due, ses
+                        droits de visite, de synode et de justice.</p>
+                    <p>N.B. : L’acte est édité par René Poupardin, <hi rend="italic">Recueil des chartes de l’abbaye de
+                            Saint-Germain-des-Prés</hi>, t. I, Paris, 1909, n<hi rend="exposant">°</hi> 74, p. 119-120.</p>
+                </div>
+            </div>
+            <div type="commentaire" n="diplomatique">
+                <head>Commentaire diplomatique</head>
+                <div n="1">
+                    <head>Caractères externes</head>
+                    <div type="contenu_commentaire">
+                        <p>
+                            <figure rend="88/faxexterne.jpg"/>
+                        </p>
+                        <p> L’acte est écrit sur un parchemin réglé, nettement plus haut que large. Le texte est écrit en bloc dans la
+                            partie supérieure de l’acte, avec des marges quasi inexistantes. Après un chrismon étiré sur neuf lignes,
+                            l’invocation verbale et la suscription sont mises en valeur sur la première ligne ; les souscriptions et la
+                            date, sans doute ajoutée après coup, sont séparées du corps du texte par de nombreux sauts de lignes,
+                            correspondant à la hiérarchie ecclésiastique pour les souscriptions. Une grande surface du parchemin est ainsi
+                            laissée blanche, signe d’une certaine solennité, et de l’importance accordée aux souscriptions. L’ornementation
+                            se limite au chrismon initial, décoré de points et de petits traits horizontaux. </p>
+                        <p> Tout l’acte est de la même main, malgré l’annonce de corroboration <hi rend="italic">manu nostra</hi> : les
+                            souscriptions ne sont pas autographes, le scribe a confisqué tout l’écrit, ce qui ne veut pas dire que les
+                            souscripteurs sont illettrés : ce sont des clercs de haut rang, qui savent évidemment écrire. </p>
+                        <p> L’écriture est nettement livresque : c’est un mélange de minuscules carolines et d’onciales pour les capitales,
+                            en particulier dans les noms propres. Elle est très soignée et lisible, les lettres sont bien distinctes, même
+                            si le module diminue un peu au fil du texte. Les mots sont pour la plupart séparés, sauf pour les prépositions,
+                            généralement accolées au mot suivant, conformément aux pratiques de l’époque, et le texte est ponctué comme dans
+                            un livre, avec ponctuation faible en forme de point, ponctuation médiane en point-virgule inversé, et
+                            ponctuation forte en point-virgule, à la fin des souscriptions, et en double-point virgule à la toute fin de
+                            l’acte. Des majuscules sont mises deux fois au nom du prélat, au nom du roi ; parfois aussi titres ou nom sont
+                            écrits dans un mélange de majuscules et de minuscules, entre lesquelles le départ n’est pas aisé à faire («
+                            archiepiscopus » deux fois au même endroit ; « ANSellus », premier des souscripteurs ; recognition du
+                            chancelier). Le scripteur use et abuse de « e » cédillés, une fois pour « oe » et même par hypercorrection à «
+                            publice ». Les pratiques abréviatives sont diversifiées : dans les souscriptions, le « presbiter » de «
+                            archipresbiter » connaît pas moins de trois types de contraction (<hi rend="italic">prb, prbr, pr</hi>). </p>
+                        <p> Une double queue de parchemin pend sous l’acte, signe qu’il y avait un sceau, même s’il n’est pas mentionné dans
+                            l’acte : on est ici au début de la diffusion du sceau, et les chancelleries n’ont pas encore totalement intégré
+                            l’annonce du sceau à leurs formulaires. Les quatre petits traits verticaux dans la marge supérieure sont
+                            l’inscription moderne (XVII<hi rend="exposant">e</hi> siècle ?) de la date, qui a été faussement convertie en «
+                            1111 » par un archiviste. </p>
+                    </div>
+                </div>
+                <div n="2">
+                    <head>Interprétation</head>
+                    <div type="contenu_commentaire">
+                        <p> La langue utilisée est un latin ordinaire pour cette époque. Le texte est assez concis, presque elliptique. Le
+                            chancelier se nomme dans la recognition de chancellerie, mais rien ne dit s’il est scribe et/ou rédacteur du
+                            texte. Les parties en présence sont l’auteur de l’action juridique, l’archevêque de Sens Daimbert, qui est mis
+                            en scène dans une narration subjective, l’abbé de Saint-Germain des Prés Guillaume, et le synode diocésain, qui
+                            corrobore l’acte. Derrière le don, se cache une délicate transaction au difficile point d’équilibre entre la
+                            construction d’une stricte hiérarchie diocésaine et une active politique monastique d’acquisition d’« autels »
+                            de paroisses dont les « églises » étaient depuis longtemps intégrées aux domaines abbatiaux. </p>
+                        <p>De même que l’écriture penchait du côté de la livresque, la disposition du texte et son formulaire trahissent un
+                            concours d’influences qu’il n’est pas toujours aisé de démêler. La part de la tradition est forte et, dans sa
+                            disposition comme dans sa conception, l’acte n’est pas encore sorti des modèles haut-médiévaux : d’abord parce
+                            qu’il est encore à mi-chemin entre un acte épiscopal pur et un procès-verbal de synode ; ensuite parce que sa
+                            forme, de loin influencée par la diplomatique royale, n’a pas encore fait la synthèse des éléments de nouveauté
+                            qui percent ailleurs : le fond même du négoce, les emprunts diffus faits au modèle ecclésiologique grégorien, la
+                            diffusion du sceau, qui n’est pas encore annoncé dans le texte. </p>
+                        <p>L’examen de l’acte seul, isolé du double corpus des actes de l’archevêque Daimbert et de ceux du chartrier
+                            abbatial, ne permet absolument pas d’attribuer sa rédaction à la chancellerie de l’archevêque de Sens ou au
+                            scriptorium de l’abbaye de Saint-Germain-des-Prés. </p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
