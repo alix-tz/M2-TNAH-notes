@@ -35,7 +35,7 @@ cours magistraux
 Vincent Vedese  
 20h  
 XML EAD  
-**Validation :** encodage d'un instrument de recherche
+**Validation :** encodage d'un instrument de recherche  
 **Description :** Ce module se penche sur les problématiques de pérennisation des données en les envisageant du point de vue des normes et formats pour la conception d’instruments de recherche archivistiques (notamment ISAD(G) et XML/EAD).  
 
 
