@@ -15,7 +15,7 @@ RDF ; Web sémantique ; Sparql ; Manipulation de données
 Branislav Meszaros  
 18h  
 MySQL  
-**Validation : ** /  
+**Validation :** /  
 **Description :** Ce module intervient pour présenter une autre forme de structuration des données qui est celle réalisée par le biais des bases de données relationnelles. Y sont étudiés le fonctionnement théorique et pratique de ces bases de données, le langage de requête SQL et le SGBDR MySQL.
 
 ### ENC2412
@@ -23,7 +23,7 @@ MySQL
 Antoine Meissonier ; Baptiste Nichele ; Marion Massol ; Cécile Cecconi ; Laurent Duplouy  
 18h  
 cours magistraux  
-**Validation : ** /  
+**Validation :** /  
 **Description :** Ce module de cours magistraux fait un état des lieux de la problématique, essentielle aujourd’hui, de la pérennisation et de l'échange de l’information numérique : enjeux, concepts, méthodes et outils (normes, formats de données, procédures, logiciels). Des réalisations et projets y sont également présentés.  
 
 ---
@@ -56,7 +56,7 @@ XML TEI ; DTD ; ODD
 Foulonneau ; Clément Oury ; Bertrand Couasnon ; Carole Bauer ; Alain Carou ; Dominique Théron ; Thibault Clérice  
 24h  
 cours magistraux  
-**Validation : ** /  
+**Validation :** /  
 **Description :** Ce module présente les grandes catégories de documents primaires numérisés ou de documents nativement électroniques (textes, images fixes et animées, sons) et leurs principales caractéristiques techniques. Il permet également de connaître les procédés techniques de dématérialisation et les principes, les techniques et les outils de post-traitement des documents numériques obtenus. Certaines recherches informatiques dans le domaine sont également présentées. Ce module est l’un des premiers du semestre ; il combine des cours essentiellement magistraux et des visites d’ateliers.
 
 ### ENC2419
@@ -100,7 +100,7 @@ HTML ; CSS ; Python ; Flask ; Javascription (introduction) ; Backend/Frontend ; 
 R. Delmotte  
 10h  
 xQuery ; BaseX  
-**Validation : ** /
+**Validation :** /
 **Description :** Ce module vis à initier les élèves aux problématiques des bases de données document orientées XML via la manipulation d'outils tels que BaseX et eXistDB. Ces logiciels, à mi-chemin entre base de données et applications web, permettent la gestion de corpus XML via leur exploitation à base de xQuery et de feuilles XSLT.
 
 ---
@@ -120,7 +120,7 @@ Git ; Unit-Testing ; Intégration continue
 Syphaïwong Bay  
 6h  
 SEO  
-**Validation : ** /
+**Validation :** /
 **Description :** Ce module a pour objectif de d'acquérir les fondamentaux du référencement naturel (SEO) pour une prise de conscience de ses enjeux pour la visibilité des projets numériques. Nous aborderons à la fois les aspects sémantiques et techniques, ainsi que la problématique de la mesure de performance des pages Web. Il s'agit de pouvoir intégrer SEO dans un cahier des charges, mais aussi proposer les optimisations de supports numériques déjà existants. Une partie sera consacrée aux méthodes d'optimisation et de stratégie éditoriale permettant de cibler le public visé par les applications numériques. Pour ce faire, le cours se basera sur des études de cas et des données réelles pour une approche concrète de chaque bonne pratique enseignée.
 
 ### ENC2417
