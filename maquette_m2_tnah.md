@@ -16,10 +16,10 @@ Branislav Meszaros
 18h  
 MySQL  
 **Validation :** /  
-**Description :** Ce module intervient pour présenter une autre forme de structuration des données qui est celle réalisée par le biais des bases de données relationnelles. Y sont étudiés le fonctionnement théorique et pratique de ces bases de données, le langage de requête SQL et le SGBDR MySQL.
+**Description :** Ce module intervient pour présenter une autre forme de structuration des données qui est celle réalisée par le biais des bases de données relationnelles. Y sont étudiés le fonctionnement théorique et pratique de ces bases de données, le langage de requête SQL et le SGBDR MySQL.  
 
 ### ENC2412
-#### Données : pérennisation, échange, standards (SIAF) 
+#### Données : pérennisation, échange, standards (SIAF)  
 Antoine Meissonier ; Baptiste Nichele ; Marion Massol ; Cécile Cecconi ; Laurent Duplouy  
 18h  
 cours magistraux  
@@ -57,15 +57,15 @@ Foulonneau ; Clément Oury ; Bertrand Couasnon ; Carole Bauer ; Alain Carou ; Do
 24h  
 cours magistraux  
 **Validation :** /  
-**Description :** Ce module présente les grandes catégories de documents primaires numérisés ou de documents nativement électroniques (textes, images fixes et animées, sons) et leurs principales caractéristiques techniques. Il permet également de connaître les procédés techniques de dématérialisation et les principes, les techniques et les outils de post-traitement des documents numériques obtenus. Certaines recherches informatiques dans le domaine sont également présentées. Ce module est l’un des premiers du semestre ; il combine des cours essentiellement magistraux et des visites d’ateliers.
+**Description :** Ce module présente les grandes catégories de documents primaires numérisés ou de documents nativement électroniques (textes, images fixes et animées, sons) et leurs principales caractéristiques techniques. Il permet également de connaître les procédés techniques de dématérialisation et les principes, les techniques et les outils de post-traitement des documents numériques obtenus. Certaines recherches informatiques dans le domaine sont également présentées. Ce module est l’un des premiers du semestre ; il combine des cours essentiellement magistraux et des visites d’ateliers.  
 
 ### ENC2419
 #### Techniques et chaîne de publication électronique  
 Branislav Meszaros  
 20h  
 XSLT  
-**Validation :** Ecriture d'une feuille XSL
-**Description :** Ce module, qui est programmé en fin de semestre, permet de compléter les acquis génériques du module de fondamentaux sur le même sujet. Il est consacré à l'étude d'XSLT, un puissant langage de programmation permettant de transformer des documents XML. Ce module se compose de cours magistraux étroitement associés à de nombreuses heures de travaux dirigés. Des exercices sont à faire entre chaque cours.
+**Validation :** Ecriture d'une feuille XSL  
+**Description :** Ce module, qui est programmé en fin de semestre, permet de compléter les acquis génériques du module de fondamentaux sur le même sujet. Il est consacré à l'étude d'XSLT, un puissant langage de programmation permettant de transformer des documents XML. Ce module se compose de cours magistraux étroitement associés à de nombreuses heures de travaux dirigés. Des exercices sont à faire entre chaque cours.  
 
 ---
 
@@ -100,8 +100,8 @@ HTML ; CSS ; Python ; Flask ; Javascription (introduction) ; Backend/Frontend ; 
 R. Delmotte  
 10h  
 xQuery ; BaseX  
-**Validation :** /
-**Description :** Ce module vis à initier les élèves aux problématiques des bases de données document orientées XML via la manipulation d'outils tels que BaseX et eXistDB. Ces logiciels, à mi-chemin entre base de données et applications web, permettent la gestion de corpus XML via leur exploitation à base de xQuery et de feuilles XSLT.
+**Validation :** /  
+**Description :** Ce module vis à initier les élèves aux problématiques des bases de données document orientées XML via la manipulation d'outils tels que BaseX et eXistDB. Ces logiciels, à mi-chemin entre base de données et applications web, permettent la gestion de corpus XML via leur exploitation à base de xQuery et de feuilles XSLT.  
 
 ---
 
@@ -109,24 +109,24 @@ xQuery ; BaseX
 
 ### ENC2418
 #### Conduite et réalisation d'un projet informatique  
-Thibault Clérice  ; Bridget Almas
+Thibault Clérice  ; Bridget Almas  
 9,5h  
-Git ; Unit-Testing ; Intégration continue
+Git ; Unit-Testing ; Intégration continue  
 **Validation :** Gestion d'un corpus et correction de celui-ci en groupe  
-**Description :** Ce module vise à permettre aux élèves d'acquérir des compétences de management de projet informatique. Via l'apprentissage des notions de bases liées à Git et de méthodes de travail autour des interfaces disponibles (Gitlab, Github), les élèves apprendront à interagir et monter des projets en coopération et à construire des chaînes de communications favorables à la collaboration.
+**Description :** Ce module vise à permettre aux élèves d'acquérir des compétences de management de projet informatique. Via l'apprentissage des notions de bases liées à Git et de méthodes de travail autour des interfaces disponibles (Gitlab, Github), les élèves apprendront à interagir et monter des projets en coopération et à construire des chaînes de communications favorables à la collaboration.  
 
 ### ENC2420
 #### Initiation à l'optimisation du référencement  
 Syphaïwong Bay  
 6h  
 SEO  
-**Validation :** /
-**Description :** Ce module a pour objectif de d'acquérir les fondamentaux du référencement naturel (SEO) pour une prise de conscience de ses enjeux pour la visibilité des projets numériques. Nous aborderons à la fois les aspects sémantiques et techniques, ainsi que la problématique de la mesure de performance des pages Web. Il s'agit de pouvoir intégrer SEO dans un cahier des charges, mais aussi proposer les optimisations de supports numériques déjà existants. Une partie sera consacrée aux méthodes d'optimisation et de stratégie éditoriale permettant de cibler le public visé par les applications numériques. Pour ce faire, le cours se basera sur des études de cas et des données réelles pour une approche concrète de chaque bonne pratique enseignée.
+**Validation :** /  
+**Description :** Ce module a pour objectif de d'acquérir les fondamentaux du référencement naturel (SEO) pour une prise de conscience de ses enjeux pour la visibilité des projets numériques. Nous aborderons à la fois les aspects sémantiques et techniques, ainsi que la problématique de la mesure de performance des pages Web. Il s'agit de pouvoir intégrer SEO dans un cahier des charges, mais aussi proposer les optimisations de supports numériques déjà existants. Une partie sera consacrée aux méthodes d'optimisation et de stratégie éditoriale permettant de cibler le public visé par les applications numériques. Pour ce faire, le cours se basera sur des études de cas et des données réelles pour une approche concrète de chaque bonne pratique enseignée.  
 
 ### ENC2417
 #### Anglais de l'informatique
 Meg Roussel  
 18h  
 Anglais ; Wireframe  
-**Validation :** Glossaire, présentation, rapports écrits
-**Description :** Le but de ce module est de faire en sorte que les étudiants soient capables de lire et comprendre la littérature en langue anglaise relative aux domaines des sciences de l'information abordés pendant l'année, et de communiquer en anglais par écrit (listes de discussion, articles) et oralement (conférences) sur ces questions. Un niveau moyen de maîtrise de l'anglais lu, écrit et parlé est un pré-requis indispensable.
+**Validation :** Glossaire, présentation, rapports écrits  
+**Description :** Le but de ce module est de faire en sorte que les étudiants soient capables de lire et comprendre la littérature en langue anglaise relative aux domaines des sciences de l'information abordés pendant l'année, et de communiquer en anglais par écrit (listes de discussion, articles) et oralement (conférences) sur ces questions. Un niveau moyen de maîtrise de l'anglais lu, écrit et parlé est un pré-requis indispensable.  
