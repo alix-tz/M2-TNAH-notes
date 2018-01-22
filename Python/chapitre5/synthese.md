@@ -57,7 +57,7 @@ cf. plus tard dans le cours.
 
 
 ### Flask
-`Flask` est un framework pour le développement d'applications web en Python. (Il existe aussi `Django`, son concurrent, qui est plus utilisé mais qui ne convient pas à des débutant ni à des petits projets). Flask est un package python disponible au téléchargement via [`PyPI`](https://pypi.python.org/pypi) (**Py**thon **P**ackage **I**ndex) et qui s'installe via la commande `pip install flask`.  
+`Flask` est un framework pour le développement d'applications web en Python. (Il existe aussi `Django`, son concurrent, qui est plus utilisé mais qui ne convient pas à des débutant ni à des petits projets). Flask est un package python disponible au téléchargement via [`PyPI`](https://pypi.python.org/pypi) (**Py** thon **P** ackage **I** ndex) et qui s'installe via la commande `pip install flask`.
 
 > Miguel Grinberg a réalisé un tutoriel pour flask qu'il est utile de consulter : https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world.
 
@@ -76,6 +76,7 @@ app = Flask("Nom de l'application")
 def index():
     return "Hello world !"
 ```
+
 ```
 app.run()
 ```
@@ -109,3 +110,189 @@ source env/bin/activate
 
 Pour vérifier que l'on se trouve bien dans un environnement virtuel, on peut généralement se référé au nom indiqué au début de chaque ligne de commande : le nom de l'environnement virtuel se trouve entre parenthèses.  
 La commande `which Python` permet d'afficher à quel fichier binaire de Python l'environnement dans lequel on travaille est rattaché.  
+
+
+---
+
+**(à ajouter à la synthèse déja réalisée (?)) // ou bien : faire synthèse du début du chapitre 5 !**  
+
+---
+
+on peut donner plusieurs `@app.route` dans un même script.  
+
+*Petit épiphanie : les fonctions que l'on encode (et les templates) réagissent à l'url que l'on tape ! C'est ça notre requête, de type GET généralement. Ce que l'on paramètre avec @app.route, c'est la manière dont la fonction réagit à la requête URL que le serveur reçoit.*  
+
+---
+
+### Les templates
+Les templates sont des fichiers html, xml ou équivalents qui sont pris en compte par le frameworks, complétés par des informations fournies, pour générer les réponses du serveur.  
+
+Les éléments de templates sont rangés dans un dossier `templates` au sein du dossier principal de l'application.  
+Par ailleurs, une bonne pratique de nommage des templates consiste à utiliser des sous dossiers pour les éléments commun/de même responsabilité.  
+
+#### héritages dans les templates : les blocs
+La gestion des héritages permet d'éviter de répéter des morceaux de code et de simplifier leur modification.  
+La page doit donc être pensée comme un conteneur dont les éléments sont constants, qui reçoit des éléments propres à chaque page (corps). Cette manipulation se fait en deux temps :  
+- `côté conteneur.html` : Les blocs sont définis dans un fichier html qui fait office de conteneur à l'aide des éléments `{% block nom_de_bloc %}` et `{% endblock %}`.
+- `côté template (corps)` : on commence par une ligne qui "étend" le contenu html du conteneur (`{% extends "conteneur.html" %}`), puis la définition du contenu du corps. Attention, il n'y a pas d'élément de type *{% endextends %}*.
+
+Cela donne les deux éléments suivants :  
+**templates/conteneur.html**
+``` html
+<html>
+    <head>
+        <title>Gazetteer</title>
+    </head>
+    <body>
+        <div><h1>Bienvenue sur le Gazetteer</h1></div>
+        <div>{% block corps%}{%endblock%}</div>
+    </body>
+</html>
+
+```
+
+**templates/accueil.html**
+``` html
+{% extends "conteneur.html" %}
+{% block corps %}
+Il y a {{lieux|length}} enregistrés :
+<ul>
+    {% for lieu_id, lieu in lieux.items() %}
+        <li><a href="{{url_for('lieu', place_id=lieu_id)}}">{{lieu.nom}}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
+```
+
+Il est possible d'étendre plusieurs blocs dans un seul conteneur, il suffit de déclarer l'ensemble des blocs, et de leur donner un nom différent.  
+
+#### composer les templates : les includes
+Plutôt que d'étendre un ensemble d'élément, on peut choisir de simplement l'inclure dans la page. Cela permet de ne pas avoir à multiplier les squelettes principaux ou quand un ensemble de sous-éléments se répète.  
+Les pages doivent donc être composées comme suit :  
+1. un ensemble de pages
+2. des conteneurs étendus par ces pages
+3. des sous-éléments incrustables dans les conteneurs ou les pages
+
+On utilise `{% include "chemin/vers/inclusion.html" %}`. Comme `extends`, `include` ne fait pas appel à un élément *{% endincludes %}*.  
+
+Une inclusion suit la même logique que le bloc, mais elle s'en différencie dans le sens où on l'inclusion se fait du coté du conteneur (et va chercher les morceaux à ajouter), alors que le bloc s'étend sur une page vers lequel on l'envoie. Le include fonctionne vraiment comme un copier-coller.  
+
+*exemple :*  
+**conteneur.html**
+``` html
+<html>
+    <head>
+        <title>Gazetteer {%block titre %}{%endblock%}</title>
+        {% include "partials/metadata.html" %}
+    </head>
+    <body>
+        <div><h1>Bienvenue sur le Gazetteer</h1></div>
+        <div>{% block corps%}{%endblock%}</div>
+    </body>
+</html>
+
+```
+
+**partials/metadata.html**
+``` html
+<meta name="description" content="Gazetteer formidable développé par l'Ecole Nationale des Chartes">
+<meta name="keywords" content="Gazetteer,Chartes,Ecole,Topographie,Dictionnaire,Topologie">
+<meta name="author" content="Thibault Clérice">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+#### assets et statiques
+Les `assets` s'opposent aux `templates` en ce qu'ils sont des éléments statiques, qui n'induisent pas de calcul ou de remplacement. On inclut dans le dossier principal de l'application un dossier `static/` dans lequel on ajoute les dossiers de types assets: `css`, `fonts`, `js`, etc. Ils permettent donc de personnaliser l'aspect de l'application en ajoutant les éléments nécessaires aux éléments de type CSS.  
+
+#### Jinja
+`Jinja` est le nom du système de templates utilisé par Flask. On peut néanmoins l'utiliser sans Flask.  
+
+#### variables
+Dans un template, il existe des `variables` qui sont signalées à l'aide d'un **nom de variable** placé entre `{{ }}`.  
+*exemple :*  
+``` html
+<html>
+    <head>
+        <title>{{nom}}</title>
+    </head>
+    <body>Bienvenue !</body>
+</html>
+```
+> dans l'exemple suivant, "nom" est une variable.
+
+#### render_template
+On indique dans le script de l'application ce qui devra remplacer la variable. Il faut pour cela importer, au préalable, la fonction `render_template`.  
+``` Python
+from flask import Flask, render_template
+
+app = Flask("Application")
+
+@app.route("/")
+def accueil():
+    return render_template("accueil.html", nom="Gazetteer")
+```
+
+On peut également définir un dictionnaire dans le script, *exemple*:  
+``` python
+from flask import Flask, render_template
+
+app = Flask("Application")
+
+lieux = [
+    {
+        "nom": "Col. Lugdunum",
+        "moderne": "Lyon",
+        "latlong": [45.762095775, 4.822438025],
+        "type": "ville",
+        "description": "Col. Lugdunum was a Roman military colony from 43 BC and a major center in Gaul. Marcus "
+                       "Agrippa was involved in its expansion and two Roman emperors, Claudius and Caracalla, "
+                       "were born there."
+    },
+    {
+        "nom": "Samarobriva Ambianorum",
+        "moderne": "Amiens",
+        "type": "ville",
+        "description": "An ancient place, cited: BAtlas 11 C3 Samarobriva Ambianorum ",
+        "latlong": [49.8936075, 2.297948]
+    }
+]
+
+
+@app.route("/")
+def accueil():
+    return render_template("accueil.html", nom="Gazetteer", lieux=lieux)
+
+
+@app.route("/place/<int:place_id>")
+def lieu(place_id):
+    return render_template("place.html", nom="Gazetteer", lieu=lieux[place_id])
+```
+
+#### conditions
+On peut prendre en compte des `conditions` dans les templates. Elles sont données entre `{% %}`. La syntaxe complète pour exprimer une condition est la suivante :  
+- `{% if *condition* %}`
+- `{% elif %}` *(optionnel)*
+- `{% else %}` *(optionnel)*
+- `{% endif %}`
+
+Sous chacun de ces blocs de condition, on affiche le code que l'on souhaite afficher.  
+
+#### boucles
+On peut générer des boucles dans les templates de la même manière que pour les conditions :  
+- `{% for *valeur* in *conteneur* %}`
+- `{% endfor %}`
+
+#### url_for
+La fonction `url_for` permet de générer un url. `url_for` est utilisé dans le template, il y est inséré de la même manière qu'une variable, mais complété d'éléments qui permettent de générer l'url. Dans l'exemple, ces arguments sont des éléments tirés d'un dictionnaire :  
+``` html
+{% for lieu_id, lieu in lieux.items() %} # c'est un dézipage ici
+        <li><a href="{{url_for('lieu', place_id=lieu_id)}}">{{lieu.nom}}</a></li>
+    {% endfor %}
+```
+
+#### particularité concernant la syntaxe des dictionnaires
+En python, on écrit normalement, pour un dictionnaire :  
+> dictionnaire["clef1"][0]["etc"]
+Or dans les templates, on peut se contenter d'écrire :
+> dictionnaire.clef1[0].etc
+Il n'y a aucune différence entre les deux syntaxes.
