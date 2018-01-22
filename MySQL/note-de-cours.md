@@ -265,3 +265,77 @@ AJOUTER DES DONNEES :
 ======
 - `INSERT INTO clients (cl_nom, cl_prenom, cl_naissance, cl_ville, cl_nbr_achats) VALUES ('Repa', 'Jan', '1974-03-03', 'Bratislava', 23),('Doom', 'Thomas', '1985-12-12', 'Trnava', NULL);` : ajoute 2 lignes.
 - `SELECT * FROM client;` : permet d'afficher ce qu'il y a dans la base
+
+---
+
+# interrogations simples
+
+- requête de sélection : `select`
+- éviter les doublon : `distinct`
+- renommer une colonne : `as`
+- trier les résultats : `order by`
+- limiter le nombre de lignes de résultats : `top`/`limit`
+- restreindre les résultats : `where`
+  - comparaison de chaine : `like`
+  - comparaison à une liste : `in`
+  - intervalle : `between`
+  - `and` et `or`
+
+## composition d'une requête complète :  
+1. select <champ1>, <champ2>, ...
+2. from <table>
+3. where <condition>
+4. (group by <champ1, <champ2>, ...)
+5. having <conditions>
+6. order by <champ1>, <champ2>, ...
+7. limit;  
+
+**select** co_nom, co_prenom, co_naissance **from** coureur;  
+-> permet de n'afficher que les colonnes CO_NOM, CO_PRENOM et CO_NAISSANCE de la table COUREUR.  
+
+**select** distinct from COUREUR_RESULTAT;  
+DISTINCT permet d'éviter les redondances de lignes dans les résultats de la requête.  
+
+select <champ> AS <champ_nouv> FROM nom_table ORDER BY colonne ASC;  
+ASC : ordre ascendant (valeur par défault).  
+DESC : ordre descendant  
+champ est le nom de la colonne dans la base, champ_nous est le nom de la colonne que l'on veut afficher à la place du vrai nom.  
+> select CO_NOM as 'NOM', CO_PRENOM as 'PRENOM' from COUREUR order by CO_NOM ASC;
+
+Deux manières de limiter le nombre de résultats en fonction du système de bdd. LIMIT c'est notamment pour mysql et Oracle :  
+SELECT TOP <nombre> <champ1>, <champ2> (,...) FROM <table>;   
+SELECT <champ1>, <champ2> FROM <table> LIMIT <nombre>;
+> select CO_NOM, CO_PRENOM from COUREUR order by CO_PRENOM limit 5;  
+
+select <champ1>, <champ2>, ... from <table> limit <nombre> offset <nombre>;  
+> permet de limiter le nombre de résultats à 5, mais en partant d'un rang donné.
+
+Avec SELECT on choisit les colonne; avec WHERE on choisit les lignes.  
+WHERE utilise des opérateurs :
+- = : égal,
+- >, <, >=, <= : plus petit, plus grand ou plus petit ou égal, etc,
+- <>/!= : différent,
+- <=> : y compris les valeurs nulles ?
+
+Il y a aussi d'autres opérateurs possibles (conditions) :
+- [not]in
+- [not]between
+- [not]like
+- is null
+- is not null
+- and et or
+
+
+SELECT <champ1>, <champ2>, ... from <table> where <champ1> like 'K%';
+- % représente n'importe quelle chaine de caractères, quelle que soit sa longueur (y compris 0).
+- _ représente un seul caractère
+
+select CO_NOM, CO_PRENOM, CO_NAISSANCE from COUREUR WHERE CO_PRENOM in('Cédric', 'Etienne', 'Richard');
+
+select CO_NOM, CO_PRENOM from COUREUR where CO_NAISSANCE between '1940-03-01' AND '1960-12-31';
+
+select CO_NOM, CO_PRENOM from COUREUR where year(CO_NAISSANCE) between '1940' AND '1960'; -> comme les dates sont codifiées en MySQL, il comprend la date.
+
+select CO_NOM, CO_PRENOM from COUREUR where CO_NOM like '%a%' year(CO_NAISSANCE) between '1940' AND '1960'; -> par défaut, certaines bases de données comprennent l'enchaînement des deux condition comme "OR" sur certaines bases. Dans mysql on est obligé de préciser le connecteur.
+
+A propose des connecteur : AND a toujours la priorité sur OR. Globalement, il vaut mieux utiliser les ().
