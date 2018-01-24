@@ -385,3 +385,6 @@ Exercices
 
 - **Afficher le nom et la date de naissance des coureurs dont le prénom commence par un S ou un B et dont le nom contient un w :**
 > select CO_NOM, CO_NAISSANCE from COUREUR where (CO_PRENOM like "S%" or CO_PRENOM like "B%") and CO_NOM like "%w%";
+
+
+## Utilisation de MySQL Workbench
