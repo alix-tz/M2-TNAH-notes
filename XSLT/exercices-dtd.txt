@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT composition (auteur, date_de_creation, fleuriste*, composants) >
+<!ELEMENT auteur (#PCDATA) >
+<!ELEMENT date_de_creation (#PCDATA) >
+
+<!ELEMENT fleuriste (ville|lieu) >
+<!ELEMENT ville (#PCDATA) >
+<!ELEMENT lieu (#PCDATA) >
+
+<!ELEMENT composants (vase, fleurs) >
+
+<!ELEMENT vase (matiere, taille) >
+<!ELEMENT matiere (#PCDATA) >
+<!ELEMENT taille (#PCDATA) >
+
+<!ELEMENT fleurs (nature, item)+ >
+<!ELEMENT nature (#PCDATA)>
+<!ELEMENT item (#PCDATA)>
+
+
+---
+
+<aa>
+  <aa1>blabla</aa1>
+</aa>
+
+---
+
+<!DOCTYPE compactdiscs [
+<!ELEMENT compactdiscs (compactdisc)*>
+<!ELEMENT compactdisc (artist, title, tracks, price)>
+
+<!ELEMENT artist (#PCDATA)>
+<!ATTLIST artist type "individuel|groupe" #FIXED>
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title numberoftracks #CDATA #REQUIRED>
+
+<!ELEMENT tracks (track)+>
+<!ELEMENT track (#PCDATA)>
+
+<!ELEMENT price (#PCDATA)>
+]
+
+---
+
+<!DOCTYPE bibliographie [
+<!ELEMENT bibliographie (livre | article)*>
+
+<!ELEMENT livre (titre, auteur+, tome+, edition, avis?)>
+<!ELEMENT article (titre, auteur+, pub_ref, avis?)>
+
+<!ELEMENT titre (#PCDATA)>
+<!ATTLIST titre sous-titre CDATA #IMPLIED>
+
+<!ELEMENT auteur (#PCDAT#PCDATA)>
+
+<!ELEMENT tome EMPTY>
+<!ATTLIST tome nb_page CDATA #REQUIRED>
+<!ATTLIST tome sous-titre CDATA #IMPLIED>
+
+
+<!ELEMENT edition (editeur, loc_edition, loc_impression, isbn)>
+<!ELEMENT editeur (#PCDATA)>
+<!ELEMENT loc_edition (#PCDATA)>
+<!ELEMENT loc_impression (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+
+<!ELEMENT pub_ref (journal, nombre_de_pages, date, numero)>
+<!ELEMENT journal (#PCDATA)>
+<!ATTLIST nom_journal CDATA "Feuille de Chou" IMPLIED>
+<!ELEMENT date (#PCDATA)>
+<!ATTLIST date année ("2000"|"2001"|"2002"|"avant_2000"|"inconnue") "inconnue">
+<!ELEMENT numero (#PCDATA)
+
+<!ELEMENT avis (#PCDATA)>
+
+]
