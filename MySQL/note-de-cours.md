@@ -282,13 +282,13 @@ AJOUTER DES DONNEES :
   - `and` et `or`
 
 ## composition d'une requête complète :  
-1. select <champ1>, <champ2>, ...
-2. from <table>
-3. where <condition>
-4. (group by <champ1, <champ2>, ...)
-5. having <conditions>
-6. order by <champ1>, <champ2>, ...
-7. limit;  
+1. `select <champ1>, <champ2>, ...`
+2. `from <table>`
+3. `where <condition>`
+4. (`group by <champ1, <champ2>, ...`)
+5. `having <conditions>`
+6. `order by <champ1>, <champ2>, ...`
+7. `limit;`  
 
 **select** co_nom, co_prenom, co_naissance **from** coureur;  
 -> permet de n'afficher que les colonnes CO_NOM, CO_PRENOM et CO_NAISSANCE de la table COUREUR.  
@@ -296,26 +296,27 @@ AJOUTER DES DONNEES :
 **select** distinct from COUREUR_RESULTAT;  
 DISTINCT permet d'éviter les redondances de lignes dans les résultats de la requête.  
 
-select <champ> AS <champ_nouv> FROM nom_table ORDER BY colonne ASC;  
-ASC : ordre ascendant (valeur par défault).  
-DESC : ordre descendant  
-champ est le nom de la colonne dans la base, champ_nous est le nom de la colonne que l'on veut afficher à la place du vrai nom.  
+select *[champ]* AS *[champ_nouv]* FROM nom_table ORDER BY colonne ASC;  
+- ASC : ordre ascendant (valeur par défault).  
+- DESC : ordre descendant  
+
+*champ* est le nom de la colonne dans la base, *champ_nouv* est le nom de la colonne que l'on veut afficher à la place du vrai nom.  
 > select CO_NOM as 'NOM', CO_PRENOM as 'PRENOM' from COUREUR order by CO_NOM ASC;
 
 Deux manières de limiter le nombre de résultats en fonction du système de bdd. LIMIT c'est notamment pour mysql et Oracle :  
-SELECT TOP <nombre> <champ1>, <champ2> (,...) FROM <table>;   
-SELECT <champ1>, <champ2> FROM <table> LIMIT <nombre>;
+SELECT TOP *[nombre]* *[champ1]*, *[champ2]* (,...) FROM *[table]*;   
+SELECT *[champ1]*, *[champ2]* FROM *[table]* LIMIT *[nombre]*;
 > select CO_NOM, CO_PRENOM from COUREUR order by CO_PRENOM limit 5;  
 
-select <champ1>, <champ2>, ... from <table> limit <nombre> offset <nombre>;  
+select *[champ1]*, *[champ2]*, ... from *[table]* limit *[nombre]* offset *[nombre]*;  
 > permet de limiter le nombre de résultats à 5, mais en partant d'un rang donné.
 
 Avec SELECT on choisit les colonne; avec WHERE on choisit les lignes.  
 WHERE utilise des opérateurs :
-- = : égal,
-- >, <, >=, <= : plus petit, plus grand ou plus petit ou égal, etc,
-- <>/!= : différent,
-- <=> : y compris les valeurs nulles ?
+- `=` : égal,
+- `>`, `<`, `>=`, `<=` : plus petit, plus grand ou plus petit ou égal, etc,
+- `<>`/`!=` : différent,
+- `<=>` : y compris les valeurs nulles ?
 
 Il y a aussi d'autres opérateurs possibles (conditions) :
 - [not]in
@@ -326,16 +327,61 @@ Il y a aussi d'autres opérateurs possibles (conditions) :
 - and et or
 
 
-SELECT <champ1>, <champ2>, ... from <table> where <champ1> like 'K%';
-- % représente n'importe quelle chaine de caractères, quelle que soit sa longueur (y compris 0).
-- _ représente un seul caractère
+SELECT *[champ1]*, *[champ2]*, ... from *[table]* where *[champ1]* like 'K%';
+- `%` représente n'importe quelle chaine de caractères, quelle que soit sa longueur (y compris 0).
+- `_` représente un seul caractère
 
-select CO_NOM, CO_PRENOM, CO_NAISSANCE from COUREUR WHERE CO_PRENOM in('Cédric', 'Etienne', 'Richard');
+> select CO_NOM, CO_PRENOM, CO_NAISSANCE from COUREUR WHERE CO_PRENOM in('Cédric', 'Etienne', 'Richard');
 
-select CO_NOM, CO_PRENOM from COUREUR where CO_NAISSANCE between '1940-03-01' AND '1960-12-31';
+> select CO_NOM, CO_PRENOM from COUREUR where CO_NAISSANCE between '1940-03-01' AND '1960-12-31';
 
-select CO_NOM, CO_PRENOM from COUREUR where year(CO_NAISSANCE) between '1940' AND '1960'; -> comme les dates sont codifiées en MySQL, il comprend la date.
+> select CO_NOM, CO_PRENOM from COUREUR where year(CO_NAISSANCE) between '1940' AND '1960'; -> comme les dates sont codifiées en MySQL, il comprend la date.
 
-select CO_NOM, CO_PRENOM from COUREUR where CO_NOM like '%a%' year(CO_NAISSANCE) between '1940' AND '1960'; -> par défaut, certaines bases de données comprennent l'enchaînement des deux condition comme "OR" sur certaines bases. Dans mysql on est obligé de préciser le connecteur.
+> select CO_NOM, CO_PRENOM from COUREUR where CO_NOM like '%a%' year(CO_NAISSANCE) between '1940' AND '1960';
 
-A propose des connecteur : AND a toujours la priorité sur OR. Globalement, il vaut mieux utiliser les ().
+-> par défaut, certaines bases de données comprennent l'enchaînement des deux condition comme "OR" sur certaines bases. Dans mysql on est obligé de préciser le connecteur.
+
+A propos des connecteurs : `AND` a toujours la priorité sur `OR`. Globalement, il vaut mieux utiliser les `()`.
+
+---
+
+> select CO_NOM, CO_PRENOM if (CO_SEXE = 1, "Homme", "Femme") as "SEXE"
+
+-> sélectionne les éléments co_nom et co_prenom en changer la valeur des cellule de la colonne co_sexe en "Homme", si elle vaut 1, et en "Femme" dans les autres cas, tout en affichant la colonne sous le nom "SEXE".  
+
+Exercices
+====
+> select CL_NOM from CLUB where (CL_VILLE like "Bordeaux") order by CL_NOM;
+
+> select IN_TEMP_EFFECTUE from COUREUR_RESULTAT where (CO_NOM like 'Aldrin');
+
+**compter / afficher le nombre d'occurence du résultat d'une requête**  
+> select CO_NOM, count(CO_NOM) from COUREUR_RESULTAT group by CO_NOM;
+
+> select COUREUR.CO_NOM AS "nom", COUREUR.CO_PRENOM as "prenom", count(COUREUR_RESULTAT.CO_NOM) as "epreuves" from COUREUR, COUREUR_RESULTAT where COUREUR_RESULTAT.CO_NOM = "Aldrin";
+
+-> restreint le nombre de résultat en croisant deux tables.  
+
+
+- **Afficher le nom, prénom et date de naissance des 4 coureurs hommes les plus jeunes :**  
+> select CO_NOM as "Nom", CO_PRENOM as "Prénom", CO_NAISSANCE as "Date de naissance" from COUREUR where CO_SEXE = 1 order by CO_NAISSANCE DESC limit 4;
+
+- **Afficher les noms et prénoms des coureurs dont le nom contient un "o" :**
+> select CO_NOM as "Nom", CO_PRENOM as "Prénom", CO_NAISSANCE as "Date de naissance" from COUREUR where CO_SEXE = 1 order by CO_NAISSANCE DESC limit 4;
+
+- **Afficher le nom, prénom et date de naissance des femmes nées entre le 15/06/1920 et le 18/10/1950 :**
+> select CO_NOM as "nom", CO_PRENOM as "prénom", CO_NAISSANCE as "date de naissance" from COUREUR  where CO_NAISSANCE between "1922-06-15" and "1950-10-18" AND CO_SEXE = 2 order by CO_NAISSANCE ASC;
+
+- **Afficher les villes où se trouvent des clubs :**
+> select distinct CL_VILLE from CLUB;
+
+- **Lister les heures de départ des épreuves qui se sont déroulées en avril 2016 :**  
+> select distinct EP_HEURE from EPREUVE where EP_DATE like "2016-04-%";  
+> OU  
+> select EP_HEURE as "Heure de départ" from EPREUVE where EP_DATE between "2016-03-31"and "2016-05-01";
+
+- **Afficher le nom de la catégorie d'un coureur agé de 21 ans :**
+> select distinct CA_LIBELLE from CATEGORIE_AGE where CA_AGEDEB < 21 and CA_AGEFIN > 21;
+
+- **Afficher le nom et la date de naissance des coureurs dont le prénom commence par un S ou un B et dont le nom contient un w :**
+> select CO_NOM, CO_NAISSANCE from COUREUR where (CO_PRENOM like "S%" or CO_PRENOM like "B%") and CO_NOM like "%w%";
