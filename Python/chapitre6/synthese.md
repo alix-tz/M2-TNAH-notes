@@ -10,6 +10,7 @@
 - `.order_by()` : appliqué à la suite de query ou d'une requête plus complexe, permet de trier les résultats en fonction des valeurs d'un champ dont le nom est donné entre ().  
 - `.asc()` ou `.desc()` : appliqué à la suite du champ sur lequel porte order_by, dans le cadre des paramètres de order_by, permet d'indiquer le sens du tri à opérer (croissant/décroissant).  
 - `.filter()` : appliqué à la suite de query, permet de donner en paramètre une série de critères pour filtrer la recherche. Ces critères sont exprimés sur le modèle : `champ + opérateur + valeur`. On peut combiner plusieurs critères.
+- `.like()` : à la suite du champ sur lequel porte filter, dans le cadre des paramètres de filter, permet de donner une valeur que l'on cherche dans un champ de la table. Comme en MySQL l'utilisation des joker `%` avant ou après la valeur permet préciser ou non la position de la valeur dans les éléments du champ. *cf. chapitre 8*. 
 
 ### Remarques
 Par convention :  
