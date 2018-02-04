@@ -78,33 +78,34 @@ def recherche():
 La valeur donnée à l'attribut "action" de l'élément "form" sera `url_for("recherche")` ; qui permet donc d'envoyer la requête vers la route "/recherche" qu'on a ainsi paramétrée.  
 
 #### utiliser plusieurs formulaires
-Les formulaires sont autant de points d'entrées vers une même type de requête, tant qu'ils sont rattachés à la même valeur pour "action". Il peut donc y avoir plusieurs point d'entrée (plusieurs formulaires à différents endroits du site/de l'application) pour réaliser une requête donnée. En revanche, un formulaire ne peut pas conduire à plusieurs endroits différents : un élément form n'a qu'un seul attribut "action". 
+Les formulaires sont autant de points d'entrées vers une même type de requête, tant qu'ils sont rattachés à la même valeur pour "action". Il peut donc y avoir plusieurs point d'entrée (plusieurs formulaires à différents endroits du site/de l'application) pour réaliser une requête donnée. En revanche, un formulaire ne peut pas conduire à plusieurs endroits différents : un élément form n'a qu'un seul attribut "action".
 
 ---
 
 ### Percent-encoding
-Les percent-encoding permette d'écrire des caractères réservés. Les principaux %-encoding sont :
-| caractère | %-encoding | *entité XML* |
-| --------- | ---------- | ---------- |
-| ` ` | %20 | *&nbsp* |
-| `!` | %21 |     |
-| `#` | %23 |     |
-| `&` | %26 | *&amp* |
-| `$` | %24 |       |
-| `'` | %27 | *&apos* |
-| `"` |     | *&quot* |
-| `(` | %28 |     |
-| `)` | %29 |     |
-| `*` | %2A |     |
-| `+` | %2B |     |
-| `,` | %2C |     |
-| `/` | %2F |     |
-| `:` | %3A |     |
-| `;` | %3B |     |
-| `=` | %3D |     |
-| `?` | %3F |     |
-| `@` | %40 |     |
-| `[` | %5B |     |
-| `]` | %5D |     |
-| `<` |     | *&lt* |
-| `>` |     | *&lg* |
+Les percent-encoding permette d'écrire des caractères réservés. Les principaux `%-encoding` sont :
+
+| caractère | `%-encoding` | *entité XML* |  
+| - | - | - |  
+| ` ` | %20 | *&nbsp* |  
+| `!` | %21 |  .  |  
+| `#` | %23 |  .  |  
+| `&` | %26 | *&amp* |  
+| `$` | %24 |  .    |  
+| `'` | %27 | *&apos* |  
+| `"` |  .  | *&quot* |  
+| `(` | %28 |  .  |  
+| `)` | %29 |  .  |  
+| `*` | %2A |  .  |  
+| `+` | %2B |  .  |  
+| `,` | %2C |  .  |  
+| `/` | %2F |  .  |  
+| `:` | %3A |  .  |  
+| `;` | %3B |  .  |  
+| `=` | %3D |  .  |  
+| `?` | %3F |  .  |  
+| `@` | %40 |  .  |  
+| `[` | %5B |  .  |  
+| `]` | %5D |  .  |  
+| `<` |  .  | *&lt* |  
+| `>` |  .  | *&lg* |  
