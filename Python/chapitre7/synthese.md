@@ -24,13 +24,13 @@ Un module est un fichier py (.py) contenu dans un dossier. Il peut contenir un o
 #### Créer un package
 Pour créer un package, il faut qu'un fichier \_\_init\_\_.py soit présent dans un dossier contenant le(s) module(s).
 
-`__init__.py` contient les éléments que l'on peut importer depuis le module/package. Il peut aussi directement contenir une variable.
-> si __init__.py setrouve dans un dossier exemple et contient le texte "ma_variable = 0"  
+`\_\_init\_\_.py` contient les éléments que l'on peut importer depuis le module/package. Il peut aussi directement contenir une variable.
+> si \_\_init\_\_.py setrouve dans un dossier exemple et contient le texte "ma_variable = 0"  
 > quand on écrit dans un fichier "from exemple import ma_variable  
-> on récupère la valeur "0". On utilise donc un élément listé dans __init__.py en convoquant le nom du dossier qui le contient.
+> on récupère la valeur "0". On utilise donc un élément listé dans \_\_init\_\_.py en convoquant le nom du dossier qui le contient.
 
 Un package peut contenir plusieurs modules. Pour cela, on ajoute des fichier .py dans le dossier (package), en plus du fichier \_\_init\_\_.py. S'ils ne sont pas présents dans \_\_init\_\_.py, ce sont des `sous-modules`, que l'on convoque en ajoutant leur nom, séparé d'un `.` à la suite du nom du package.  
-> Si j'ai un dossier "exemple" qui contient un fichier __init__.py vide, et un fichier application.py dans lequel se trouve la variable app  
+> Si j'ai un dossier "exemple" qui contient un fichier \_\_init\_\_.py vide, et un fichier application.py dans lequel se trouve la variable app  
 > j'importe le module app, en faisant :  
 > from exemple.application import app
 
@@ -49,20 +49,20 @@ Un package peut contenir un package, il suffit qu'un sous-dossier de package con
 
 #### Import relatif
 Les imports permettent de faire interagir les modules au sein d'un ou plusieurs packages. On navigue entre ces packages à l'aide d'une syntaxe de chemins relatif :  
-- `.` : dossier courant
-- `..` : dossier parent
-- `...` : dossier grand-parent
-- etc.
+- `.` : dossier courant  
+- `..` : dossier parent  
+- `...` : dossier grand-parent  
+- etc.  
 
 Dans le cas de la configuration suivante :
-gazetteer/
-   |- __init__.py
-   |- application.py
-   |- modeles/
-       |- __init__.py
-       |- donnees.py
-       |- utilisateurs.py
-run.py
++ gazetteer/  
+   + \_\_init\_\_.py  
+   + application.py  
+   + modeles/  
+       + \_\_init\_\_.py  
+       + donnees.py  
+       + utilisateurs.py  
++ run.py  
 
 En se plaçant depuis modeles.donnees, on pourra par exemple utiliser ces commandes suivantes :
 - `from ..application import nom_dapplication`
