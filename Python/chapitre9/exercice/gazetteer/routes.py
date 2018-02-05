@@ -52,3 +52,16 @@ def recherche():
         titre=titre,
         keyword=motclef
     )
+
+@app.route("/index")
+def index():
+    page = request.args.get("page", 1)
+    if isinstance(page, str) and page.isdigit():
+        page = int(page)
+    else:
+        page = 1
+    list_index = Place.query.order_by(Place.place_nom).paginate(page=page, per_page=LIEUX_PAR_PAGES)
+    return render_template(
+    "pages/index.html",
+    list_index=list_index
+    )
