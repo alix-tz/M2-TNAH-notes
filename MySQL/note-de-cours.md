@@ -386,5 +386,103 @@ Exercices
 - **Afficher le nom et la date de naissance des coureurs dont le prénom commence par un S ou un B et dont le nom contient un w :**
 > select CO_NOM, CO_NAISSANCE from COUREUR where (CO_PRENOM like "S%" or CO_PRENOM like "B%") and CO_NOM like "%w%";
 
+- **is null** ou **is not null** : permet de cibler un élément vide ou n'est pas vide
 
 ## Utilisation de MySQL Workbench
+
+## Exercice SELECT BDD (aerien)
+Les fonctions agrégatives disponibles sont généralement les suivantes :
+- SUM() somme,
+- AVG() moyenne arithmétique,
+- COUNT() nombre ou cardinalité,
+- MAX() valeur maximale,
+- MIN() valeur minimale,
+- STDDEV() écart type,
+- VARIANCE() variance
+
+- ROUND() permet d'arrondir un élément. On donne en premier argument ce qu'il faut arrondir et ensuite éventuellement des paramètres (ex ,2 pour 2 chiffres après la virgule). On peut emboîter des fonctions.
+
+## Exercices Base de données à partir d'un cas de figure
+Simulation d'une situation où on doit faire une bdd puisqu'on part normalement d'un cahier des charges qui évoque d'abord le contexte, puis liste les contraintes. On définit donc les éléments de la BDD, les entités, et les relations (donc aussi, et c'est très important, les cardinalités).
+
+### Salle de cinema
+```
+[SALLE_CINEMA:  
+- nom_salle  
+- adresse ]  
+   |  
+   | [0,1]  
+   |  
+[Projection / heure]
+   |  
+   | [0, n]  
+   |  
+[FILM:  
+- visa  
+- titre  
+- realisateur  
+- année_sortie ]  
+   |  
+   | [0, n]  
+   |  
+[Appreciation / impression]
+   |  
+   | [0, n]  
+   |  
+[SPECTATEUR:  
+- numero  
+- nom  
+- prenom  
+- adresse  
+- date_naissance  
+- cat_prp ]  
+```
+
+Groupement d'achat & banque  
+```
+cf. cahier
+```
+
+## Contraintes d'intégrité
+
+Comment passer d'une traduction en schéma à une schéma relationnel et ensuite à des tables.  
+Les contraintes d'intégrité sont des expressions logiques qui doivent être vraies à tout moment dans une base. On les traduit par des cardinalités.  
+- contrainte de domaine (les valeurs que peuvent avoir un attribut ; TINYINT, TEXT, etc)
+- contrainte de clef (ex deux éléments d'une table ne peuvent pas avoir la même valeur ; PRIMARY_KEY)
+- contrainte obligatoire (par ex une colonne doit toujours avoir une variable ; NOT NULL)
+- etc.
+- contrainte d'intégrité référentielle (aussi appelée contrainte d'inclusion ; conditionne par exemple l'enregistrement d'une commande par la présence d'un client ; cf. cardinalité).
+- contraintes transactionnelle
+Ces contraintes permettent de contrôler la cohérence des données et permettent la vérification systématique par le SGBD.  
+
+Les contraintes d'intégrité sont souvent mises sur le même niveau que les **dépendances fonctionnelles** (DF). Ce sont des propriétés définies sur le schéma. Une dépendance fonctionnelle est un cas particulier. Ex : A implique B ; ou B n'existe pas sans A. On écrit : A -> B. Un élément peut être fonctionnellement dépendant de plusieurs autres éléments.  
+Les **liens relationnels** entre les données sont exprimés à travers plusieurs entités :
+- domaine (ensemble des valeur qu'un attribut peut prendre)
+- relation (un sous-ensemble d'un produit cartésien entre plusieurs entités)
+- attribut (représente le nom de valeur d'un domaine utilisé)
+- schéma de relation (le nom de la relation avec l'ensemble d'attributs qui la définissent)
+- clé (attribut ou ensemble d'attributs qui permet d'identifier les éléments d'une relation)
+
+La **normalisation** désigne un type particulier de la relation entre les entités qui est définie via plusieurs formes normales qu'une relation peut avoir. Elle sert à minimiser les anomalies transactionnelles qui peuvent provoquer différentes autres anomalies comme celle de lecture, d'écriture, de redondance et de la contre performance. La normalisation des données vérifie la robustesse de la conception du modèle, améliore le traitement des données en minimisant la redondance et les problèmes avec la mise à jour et avec la cohérence.  
+
+-> [https://fr.wikipedia.org/wiki/Forme_normale_(bases_de_donn%C3%A9es_relationnelles)](https://fr.wikipedia.org/wiki/Forme_normale_(bases_de_donn%C3%A9es_relationnelles))
+Il existe plusieurs types de dépendances :
+- fonctionnelles
+- multivaluées
+- de jointure
+- hiérarchique
+- hiérarchique de jointures
+
+On se concentre sur les dépendances fonctionnelles.  
+`1FN, 2FN, 3FN, FNBC, 4FN, 5FN, ...`. 1FN, 2FN et 3FN sont des dépendances fonctionnelles. On ne va pas souvent plus loin pour des projets simples, et on n'ira pas plus loin dans le cadre de ce cours.   
+
+La normalisation sert surtout à rendre une base de donnée robuste, quelque chose dont toutes les contraintes ont été maîtrisées. Mais il ne faut pas non plus qu'elle empêche la base de données de fonctionner. Trop de contraintes peu devenir une contrainte en elle-même. La normalisation rajoute des calculs et ralenti les performances de la base. C'est pourquoi on adapte le niveau de normalisation aux besoins.
+
+`OLTP : online transaction processing :` des types de bases de données pour lesquels la normalisation doit aller à un stade très avancé, au moins le 5e.
+`OLAP : online analytical processing :` ces tales sont avant tout lues (pas écrites), on n'a donc pas besoin d'avoir une normalisation trop rigide. NoSQL par exemple ne prend presque pas en compte la normalisation.  
+
+## Jointure
+Select ne vise qu'une seule table.  
+Les jointures permettent de piocher les données dans plusieurs tables et de les agréger. Les jointures complexifie la fouille de la base.  
+
+une relation en 1FN est une relation dont les attributs possèdent tous un valeur sémantiquement atomique. Donc un attribut est dit atomique si aucune subdivision de l'information initiale n'apporte une information supplémentaire ou complémentaire. On devrait dire "minimale" plutôt qu'atomique.  
