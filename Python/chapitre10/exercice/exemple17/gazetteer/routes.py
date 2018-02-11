@@ -6,6 +6,7 @@ from .modeles.donnees import Place
 from .modeles.utilisateurs import User
 from .constantes import LIEUX_PAR_PAGE
 from flask_login import login_user, current_user, logout_user
+from flask_login import login_required
 
 
 @app.route("/")
@@ -78,7 +79,7 @@ def inscription():
             flash("Enregistrement effectué. Identifiez-vous maintenant", "success")
             return redirect("/")
         else:
-            flash("Les erreurs suivantes ont été rencontrées : " + ",".join(donnees), "error")
+            flash("Les erreurs suivantes ont été rencontrées : " + ",".join(donnees), "alert")
             return render_template("pages/inscription.html")
     else:
         return render_template("pages/inscription.html")
@@ -102,7 +103,7 @@ def connexion():
             login_user(utilisateur)
             return redirect("/")
         else:
-            flash("Les identifiants n'ont pas été reconnus", "error")
+            flash("Les identifiants n'ont pas été reconnus", "alert")
 
     return render_template("pages/connexion.html")
 login.login_view = 'connexion'
@@ -114,3 +115,28 @@ def deconnexion():
         logout_user()
     flash("Vous êtes déconnecté-e", "info")
     return redirect("/")
+
+
+
+@app.route("/create", methods=["POST", "GET"])
+@login_required
+def create():
+    """ Route gérant la création d'un nouveau lieu
+    """
+
+    if request.method == "POST":
+        statut, donnees = Place.creer_place(
+            place_nom=request.form.get("place_nom", None),
+            place_description=request.form.get("place_description", None),
+            place_longitude=request.form.get("place_longitude", None),
+            place_latitude=request.form.get("place_latitude", None),
+            place_type=request.form.get("place_type", None)
+        )
+        if statut is True:
+            flash("Création d'un nouveau lieu enregistrée", "success")
+            return redirect("pages/create.html")
+        else:
+            flash("Les erreurs suivantes ont été rencontrées : " + ",".join(donnees), "alert")
+            render_template("pages/create.html")
+    else:
+        return render_template("pages/create.html")
