@@ -131,9 +131,9 @@ def create():
         )
         if statut is True:
             flash("Création d'un nouveau lieu enregistrée", "success")
-            return redirect("pages/create.html")
+            return redirect("/pages/create.html") # on aurait pu faire un redirect vers la nouvelle page créée.
         else:
             flash("Les erreurs suivantes ont été rencontrées : " + ",".join(donnees), "alert")
             render_template("pages/create.html")
     else:
-        return render_template("pages/create.html")
+        return render_template("pages/create.htm")

@@ -45,7 +45,7 @@ class Place(db.Model):
             place_description=place_description,
             place_longitude=place_longitude,
             place_latitude=place_latitude,
-            place_type=place_type
+            place_type=place_type # remarque, éviter d'utiliser seulement type parce que c'est une fonction de python
         )
 
         try:
