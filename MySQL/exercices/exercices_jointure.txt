@@ -1,0 +1,62 @@
+use Librairie;
+select livre.titre
+from genre, livre
+where genre.cle=livre.cle_genre and genre.nom="roman";
+
+---
+
+use Librairie;
+select livre.titre, auteur.nom, auteur.prenom, genre.nom, editeur.nom
+from livre, auteur, genre, editeur
+where livre.cle_auteur=auteur.cle and livre.cle_editeur=editeur.cle  and livre.cle_genre=genre.cle;
+
+---
+
+use film;
+select acteur.nom, role.nom
+from acteur, jouer, role
+where acteur.numActeur=jouer.numActeur and role.numRole=jouer.numRole and acteur.nom like "Christian Clavier";
+
+---
+
+use film;
+select acteur.nom, role.nom, film.nom
+from acteur, jouer, role, film
+where acteur.numActeur=jouer.numActeur and role.numRole=jouer.numRole and film.numFilm=jouer.numFilm and acteur.nom like "Christian Clavier";
+
+---
+
+use film;
+select acteur.nom, film.nom
+from acteur, film, jouer
+where acteur.numActeur=jouer.numActeur and film.numFilm=jouer.numFilm and acteur.nom like "Gérard Depardieu";
+
+---
+
+use film;
+select film.nom, role.nom
+from role, film, jouer
+where role.numRole=jouer.numRole and film.numFilm=jouer.numFilm and film.nom like "Les Visiteurs";
+
+---
+
+use film;
+select film.nom, role.nom
+from role, film, jouer
+where role.numRole=jouer.numRole and film.numFilm=jouer.numFilm and film.nom like "Les Visiteurs%";
+
+---
+
+use film;
+select film.nom
+from film, jouer, role
+where film.numFilm=jouer.numFilm and role.numRole=jouer.numRole and role.nom like "Godefroy de Montmirail";
+
+---
+
+use universite;
+select ens.nom, mo.nom, sem.nom
+from enseignant ens, module mo, semestre sem
+where ens.num_enseignant=mo.num_enseignant and sem.num_semestre=mo.num_semestre;
+
+---
