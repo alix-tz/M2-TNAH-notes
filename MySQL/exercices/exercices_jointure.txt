@@ -57,6 +57,189 @@ where film.numFilm=jouer.numFilm and role.numRole=jouer.numRole and role.nom lik
 use universite;
 select ens.nom, mo.nom, sem.nom
 from enseignant ens, module mo, semestre sem
-where ens.num_enseignant=mo.num_enseignant and sem.num_semestre=mo.num_semestre;
+where ens.num_enseignant=mo.num_enseignant and sem.num_semestre=mo.num_semestre and sem.nom like "S1";
 
 ---
+
+11) UNIVERSITE : Sélectionner tous les étudiants inscrits à au moins 1 module du semestre S1.
+
+select distinct etudiant.nom
+from etudiant, module, inscription
+where module.num_module=inscription.num_module
+and inscription.num_etudiant=etudiant.num_etudiant
+and module.num_semestre like "1";
+
+---
+
+12) UNIVERSITE : Voir toutes les notes obtenues au module 1.
+
+select note.note
+from note, evaluation
+where note.num_evaluation=evaluation.num_evaluation
+and evaluation.num_module like "1";
+
+---
+
+select note.note
+from note, evaluation, module
+where note.num_evaluation=evaluation.num_evaluation
+and module.num_module=evaluation.num_module
+and module.num_semestre like "1";
+
+---
+
+13) UNIVERSITE : Extraire la date, le type et le coefficient de chaque évaluation passée par l’étudiant Jules Cesar, et ses notes.
+
+select evaluation.date as "Date", evaluation.type_evaluation as "Type", evaluation.coefficient, note.note
+from note, evaluation, etudiant
+where evaluation.num_evaluation=note.num_evaluation
+and note.num_etudiant=etudiant.num_etudiant
+and etudiant.nom like "Cesar";
+
+---
+
+14) UNIVERSITE : Lister toutes les notes obtenues par Tryphon TOURNESOL.
+
+select note.note
+from note, etudiant
+where note.num_etudiant=etudiant.num_etudiant
+and etudiant.nom like "Tournesol";
+
+---
+
+15) SONDAGE : Donner l’âge et le sexe de chacun des sondés.
+
+select age.intitule, sexe.intitule
+from age, sexe, personne
+where personne.sexe=sexe.sexe
+and personne.age=age.age;
+
+---
+
+16) SONDAGE : Sélectionner l’âge des personnes qui mangent très souvent des bananes.
+
+select age.intitule
+from age, personne
+where personne.age=age.age
+and personne.bananes="4"
+
+---
+
+17) SONDAGE : Sélectionner les fréquences de lecture de bandes dessinées des hommes.
+
+select personne.personne, frequence.intitule
+from personne, frequence
+where personne.bandes_dessinees=frequence.frequence
+and personne.sexe like "2";
+
+---
+
+1.4) Premiers exercices avec fonctions de calcul
+1) UNIVERSITE : Combien y a-t-il de modules ?
+
+select count(*) from module;
+
+---
+
+2) UNIVERSITE : Combien y a-t-il de modules dont le nom commence par la lettre "p" ?
+
+select count(module.nom) from module
+where module.nom like "p%";
+
+---
+
+3) UNIVERSITE : Combien y a-t-il de modules au semstre S1 ?
+
+select count(*)
+from module
+where module.num_semestre like "1";
+
+4) UNIVERSITE : Combien y a-t-il d’étudiants inscrits au module équitation ?
+
+select count(etudiant.nom)
+from etudiant, inscription, module
+where etudiant.num_etudiant=inscription.num_etudiant
+and inscription.num_module=module.num_module
+and module.nom like "Equitation";
+
+---
+
+5) UNIVERSITE : Combien y a-t-il d’étudiants dans chaque module ?
+
+select module.nom as "Module", count(etudiant.num_etudiant) as "Nombre d'étudiants"
+from module, inscription, etudiant
+where inscription.num_module=module.num_module
+and inscription.num_etudiant=etudiant.num_etudiant
+group by module.nom;
+
+---
+
+
+6) UNIVERSITE : Quelle est la moyenne des notes obtenues à l’évaluation du 2005-04-03 ?
+
+select avg(note.note) as Moyenne
+from evaluation, note
+where evaluation.num_evaluation=note.num_evaluation
+and evaluation.date like "2005-04-03";
+
+---
+
+7) UNIVERSITE : Quelle est la moyenne des notes obtenues à chacune des évaluations de chaque module (pour l’instant, seuls les modules qui ont des évaluations vont s’afficher.
+
+select module.nom as "Module évalué", evaluation.type_evaluation as "Epreuve", avg(note.note) as "Moyenne"
+from module, note, evaluation
+where evaluation.num_evaluation=note.num_evaluation
+and evaluation.num_module=module.num_module
+group by evaluation.type_evaluation, module.nom;
+
+---
+
+8) UNIVERSITE : Quelle est la note maximale pour l’évaluation 1 ?
+
+select max(note.note)
+from evaluation, note
+where evaluation.num_evaluation like "1";
+
+---
+
+9) UNIVERSITE : Quelle est la moins bonne des notes obtenue par Tryphon TOURNESOL ?
+
+select min(note.note)
+from note, etudiant
+where note.num_etudiant=etudiant.num_etudiant
+and etudiant.nom like "Tournesol";
+
+---
+
+10) LIBRAIRIE : Quelle est le prix moyen des livres ?
+
+select avg(livre.prix)
+from livre;
+
+---
+
+11) LIBRAIRIE : Quelle est le prix moyen des livres édités chez Larousse ?
+
+select avg(livre.prix)
+from livre, editeur
+where livre.cle_editeur=editeur.cle
+and editeur.nom like "Larousse";
+
+---
+
+12) LIBRAIRIE : Si on achète 1 exemplaire de chacun des livres, combien est-ce que ça va nous coûter ?
+
+select sum(livre.prix)
+from livre;
+
+---
+13) LIBRAIRIE : Si on achète 1 exemplaire de chacun des livres, combien est-ce que ça va nous coûter, sachant que l’on obtient alors une remise de 20% sur l’ensemble ?
+
+select sum(livre.prix)*0.8
+from livre;
+
+---
+14) LIBRAIRIE : Quelle est la valeur des livres en stock ?
+
+select sum(livre.prix*livre.quantite)
+from livre;
