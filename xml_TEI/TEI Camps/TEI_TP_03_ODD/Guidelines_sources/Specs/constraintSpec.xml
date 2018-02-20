@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright TEI Consortium. 
+Dual-licensed under CC-by and BSD2 licences 
+See the file COPYING.txt for details
+$Date$
+$Id$
+-->
+<?xml-model href="http://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/odd/p5.nvdl" type="application/xml" schematypens="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0"?>
+<elementSpec xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" module="tagdocs" ident="constraintSpec">
+  <gloss versionDate="2009-06-10" xml:lang="en">constraint on schema</gloss>
+  <desc versionDate="2017-06-24" xml:lang="en">contains a formal constraint, typically expressed in a rule-based schema language, to which a construct must conform in order to be considered valid<!--ebb: old description of 2009-06-10 was: "contains  a constraint, expressed in some formal syntax,
+  which cannot be expressed in the structural content model"--></desc>
+  <classes>
+    <memberOf key="att.global"/>
+    <memberOf key="att.identified"/>
+    <memberOf key="att.typed"/>
+    <memberOf key="model.oddDecl"/>
+  </classes>
+  <content>
+    <sequence>
+      <alternate minOccurs="0" maxOccurs="unbounded">
+        <classRef key="model.glossLike"/>
+        <classRef key="model.descLike"/>
+      </alternate>
+      <elementRef key="constraint" minOccurs="0"/>
+    </sequence>
+  </content>    
+  <constraintSpec ident="sch_no_more" scheme="schematron">
+    <desc>Relationship between scheme attribute and contents: Schematron 1.x</desc>
+    <constraint>
+      <sch:ns prefix="s" uri="http://www.ascc.net/xml/schematron"/>
+      <sch:report test="tei:constraint/s:*  and  @scheme = ('isoschematron','schematron')">Rules
+        in the Schematron 1.* language must be inside a constraintSpec
+        with a value other than 'schematron' or 'isoschematron' on the
+        scheme attribute</sch:report>
+    </constraint>
+  </constraintSpec>
+  <constraintSpec ident="isosch" scheme="schematron">
+    <desc>Relationship between scheme attribute and contents: ISO Schematron</desc>
+    <constraint>
+      <sch:ns prefix="sch" uri="http://purl.oclc.org/dsdl/schematron"/>
+      <sch:report test="tei:constraint/sch:*  and  not( @scheme eq 'schematron')">Rules
+        in the ISO Schematron language must be inside a constraintSpec
+        with the value 'schematron' on the scheme attribute</sch:report>
+    </constraint>
+  </constraintSpec>
+  <constraintSpec ident="needrules" scheme="schematron">
+    <constraint>
+      <sch:ns prefix="sch" uri="http://purl.oclc.org/dsdl/schematron"/>
+      <sch:rule context="tei:macroSpec/tei:constraintSpec[@scheme eq 'schematron']/tei:constraint">
+        <sch:report test="sch:assert|sch:report">An ISO Schematron constraint specification for a macro should not
+        have an 'assert' or 'report' element without a parent 'rule' element</sch:report>
+      </sch:rule>
+    </constraint>
+  </constraintSpec>
+  <attList>
+    <attDef ident="scheme" usage="req">
+      <desc versionDate="2009-06-10" xml:lang="en">supplies the name of the language in which the constraints
+      are defined</desc>
+      <datatype><dataRef key="teidata.enumerated"/></datatype>
+      <valList type="semi">
+        <valItem ident="schematron">
+          <gloss versionDate="2016-09-27" xml:lang="en">ISO Schematron</gloss>
+        </valItem>
+      </valList>
+      <remarks versionDate="2016-09-27" xml:lang="en">
+        <p>These Guidelines no longer recommend, and the available TEI
+        stylesheets no longer support, the use of Schematron 1.x
+        within <gi>constraintSpec</gi>. Thus the value
+        <val>schematron</val> is used to indicate that ISO Schematron
+        is used within the <gi>constraintSpec</gi>.</p>
+      </remarks>
+    </attDef>
+  </attList>
+  <exemplum xml:lang="en">
+    <p>This constraint uses Schematron to enforce the presence of the
+    <att>spanTo</att> attribute (which comes from an attribute class)
+    on the <gi>addSpan</gi> element: </p>
+    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+      <constraintSpec ident="demo-c1" scheme="schematron">
+        <desc>Enforce the presence of the <att>spanTo</att> attribute</desc>
+        <constraint>
+          <sch:assert test="@spanTo">The spanTo= attribute of <sch:name/>
+          is required.</sch:assert>
+        </constraint>
+      </constraintSpec>
+    </egXML>
+  </exemplum>
+  <exemplum xml:lang="en">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+      <constraintSpec ident="demo-c2" scheme="schematron">
+        <desc>Implement an accessibility rule which says that pictures should
+    have textual explanations</desc>
+        <constraint>
+          <sch:report test="not(tei:figDesc or tei:head)"> You should
+          provide information in a figure from which
+          we can construct an alt attribute in HTML </sch:report>
+        </constraint>
+      </constraintSpec>
+    </egXML>
+  </exemplum>
+  <exemplum xml:lang="en">
+    <p>This constraint uses SPITBOL (a language which is not
+    expressed in XML) to check whether the title and author are identical: </p>
+    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+      <constraintSpec ident="local" scheme="SPITBOL">
+        <constraint> 
+(output = leq(title,author)  "title and author cannot be the same")
+        </constraint>
+      </constraintSpec>
+    </egXML>
+  </exemplum>
+  <listRef>
+    <ptr target="#TDTAG"/>
+  </listRef>
+</elementSpec>
