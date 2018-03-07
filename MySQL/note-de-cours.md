@@ -486,3 +486,31 @@ Select ne vise qu'une seule table.
 Les jointures permettent de piocher les données dans plusieurs tables et de les agréger. Les jointures complexifie la fouille de la base.  
 
 une relation en 1FN est une relation dont les attributs possèdent tous un valeur sémantiquement atomique. Donc un attribut est dit atomique si aucune subdivision de l'information initiale n'apporte une information supplémentaire ou complémentaire. On devrait dire "minimale" plutôt qu'atomique.  
+
+---
+
+Modèle Conceptuel de Données -> Modèle Logique de Données
+- entités
+- cardinalités
+
+Les jointures :
+- si 1-1 ou 1-n :
+
+Pour 0,1 : on ne peut pas fusionner
+
+Relation ternaire
+
+
+---
+
+exercice :
+MLD :
+Auteur(id_a, nom_a, prenom_a, date_de_naissance_a, @id_p)
+Pays(id_p, nom_p)
+Relation(id_a, id_l)
+TypeLivre(id_t, type_t)
+Livre(id_l, titre_l, annee_l, resume_l, @id_t)
+Exemplaire(ref_e, livre_id_@, @edition_id)
+Edition(id_ed, nom_ed)
+Emprunt(id_em, date_em, delais_em, @inscrit_i, @id_e)
+Inscrit(id_i, nom_i, prenom_i, date_naissance_i, rue_i, ville_i, cp_i, email_i, tel_portable_i)

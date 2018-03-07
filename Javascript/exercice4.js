@@ -106,6 +106,8 @@ var texte = {
     "author":"cicero"
 }
 
+// manque documentation de la fonction 
+
 var trouverlemot = function(mot, dictionnaire) {
   var index = [];
   for (var cle in dictionnaire.text) {
@@ -115,5 +117,5 @@ var trouverlemot = function(mot, dictionnaire) {
   };
   console.log(index);
 };
-
-trouverlemot("Sulla", texte);
+var mot = prompt("Choisissez un mot :") /* pour ajouter la possibilité d'entrer soi-même le mot à chercher */
+trouverlemot(mot, texte);
