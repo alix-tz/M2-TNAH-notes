@@ -1,7 +1,0 @@
-Projets présentés pendant le cours :
-- Geoclip et scrib
-- Clunypedia
-- Paris Musée (Portail des musées de la ville de Paris)
-- Portail des monuments aux morts
-- mappinggothic
-- Fleuron (Cambridge University)
